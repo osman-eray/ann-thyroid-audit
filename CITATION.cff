@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+title: >-
+  Code and data for a controlled audit of the ann-thyroid benchmark
+message: >-
+  If you use this software or the analyses it produces, please cite
+  both the repository and the associated article.
+type: software
+authors:
+  - family-names: Eray
+    given-names: Osman
+    orcid: 'https://orcid.org/0000-0000-0000-0000'   # REPLACE with your ORCID
+    affiliation: >-
+      Department of Computer Technologies, Korkuteli Vocational School,
+      Akdeniz University, Antalya, Türkiye
+    email: oeray@akdeniz.edu.tr
+repository-code: 'https://github.com/USERNAME/ann-thyroid-audit'   # REPLACE
+license: MIT
+version: 1.0.0
+date-released: '2026-09-15'   # REPLACE with the release date
+keywords:
+  - machine learning
+  - benchmark audit
+  - class imbalance
+  - thyroid
+  - reproducibility
+  - UCI ann-thyroid
+abstract: >-
+  Code, raw data and generated results for a controlled audit of the UCI
+  ann-thyroid multiclass benchmark. Rebuilds the cohort table from the raw
+  files, establishes the class semantics at record level against the sibling
+  files distributed in the same UCI directory, and evaluates whether reported
+  performance differences between feature-selection methods and class-balancing
+  strategies are large enough to matter.

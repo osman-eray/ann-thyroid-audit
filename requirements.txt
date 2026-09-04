@@ -1,0 +1,22 @@
+# Pinned environment for the ann-thyroid benchmark audit.
+# Python 3.11.7
+#
+# The scikit-learn pin is load-bearing: version 1.6 removed SAMME.R and changed the
+# AdaBoost default to SAMME, which moves AdaBoost's ROC-AUC on this dataset by about
+# 0.006. Every script here sets algorithm="SAMME" explicitly, so results are stable
+# either side of that boundary, but the other pins are not similarly protected.
+scikit-learn==1.3.2
+xgboost==2.0.3
+imbalanced-learn==0.11.0
+shap==0.49.1
+numpy==1.26.4
+pandas==2.1.4
+scipy==1.11.4
+matplotlib==3.8.0
+
+# The original analyses were run with threadpoolctl 2.2.0. That version crashes on some
+# Windows installations when scikit-learn's neighbour search requests a thread limit
+# (AttributeError in threadpoolctl.get_version), which makes any script using KNN
+# unrunnable. It manages thread counts only and takes no part in any computation, so
+# the results are unaffected by the upgrade.
+threadpoolctl>=3.1.0
