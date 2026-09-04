@@ -1,0 +1,73 @@
+run_id,model,true_class,pred_class,case_type,case_index,feature,feature_value_scaled,shap_contribution
+5,Logistic Regression,overt_hypothyroid,overt_hypothyroid,correct,18,TSH,20.2508,145.883891
+5,Logistic Regression,overt_hypothyroid,overt_hypothyroid,correct,18,FTI,-2.7378,28.279167
+5,Logistic Regression,overt_hypothyroid,overt_hypothyroid,correct,18,T3,-2.0082,2.595428
+5,Logistic Regression,overt_hypothyroid,overt_hypothyroid,correct,18,TT4,-2.4792,-3.880406
+5,Logistic Regression,overt_hypothyroid,overt_hypothyroid,correct,18,on_thyroxine,-0.3893,-0.00747
+5,Logistic Regression,overt_hypothyroid,overt_hypothyroid,correct,18,T4U,2.1445,-1.230305
+5,Logistic Regression,overt_hypothyroid,overt_hypothyroid,correct,18,query_hypothyroid,-0.268,-0.009604
+5,Logistic Regression,overt_hypothyroid,overt_hypothyroid,correct,18,sex,-0.6625,0.398891
+5,Logistic Regression,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,TSH,0.2231,1.737378
+5,Logistic Regression,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,FTI,0.363,1.439609
+5,Logistic Regression,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,T3,-2.1423,-0.847744
+5,Logistic Regression,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,TT4,-0.8037,0.135098
+5,Logistic Regression,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,on_thyroxine,-0.3893,1.20243
+5,Logistic Regression,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,T4U,-1.8009,-0.011135
+5,Logistic Regression,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,query_hypothyroid,-0.268,0.000764
+5,Logistic Regression,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,sex,-0.6625,-0.153843
+5,Decision Tree,overt_hypothyroid,overt_hypothyroid,correct,18,TSH,20.2508,0.020773
+5,Decision Tree,overt_hypothyroid,overt_hypothyroid,correct,18,FTI,-2.7378,0.650432
+5,Decision Tree,overt_hypothyroid,overt_hypothyroid,correct,18,T3,-2.0082,-2.6e-05
+5,Decision Tree,overt_hypothyroid,overt_hypothyroid,correct,18,TT4,-2.4792,-0.002115
+5,Decision Tree,overt_hypothyroid,overt_hypothyroid,correct,18,on_thyroxine,-0.3893,0.0
+5,Decision Tree,overt_hypothyroid,overt_hypothyroid,correct,18,T4U,2.1445,-0.002397
+5,Decision Tree,overt_hypothyroid,overt_hypothyroid,correct,18,query_hypothyroid,-0.268,0.0
+5,Decision Tree,overt_hypothyroid,overt_hypothyroid,correct,18,sex,-0.6625,0.0
+5,Decision Tree,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,TSH,0.2231,0.391234
+5,Decision Tree,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,FTI,0.363,0.251767
+5,Decision Tree,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,T3,-2.1423,0.025433
+5,Decision Tree,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,TT4,-0.8037,0.002658
+5,Decision Tree,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,on_thyroxine,-0.3893,0.010779
+5,Decision Tree,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,T4U,-1.8009,-0.01778
+5,Decision Tree,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,query_hypothyroid,-0.268,0.0
+5,Decision Tree,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,sex,-0.6625,0.0
+5,Random Forest,overt_hypothyroid,overt_hypothyroid,correct,18,TSH,20.2508,0.093709
+5,Random Forest,overt_hypothyroid,overt_hypothyroid,correct,18,FTI,-2.7378,0.39289
+5,Random Forest,overt_hypothyroid,overt_hypothyroid,correct,18,T3,-2.0082,0.042837
+5,Random Forest,overt_hypothyroid,overt_hypothyroid,correct,18,TT4,-2.4792,0.086859
+5,Random Forest,overt_hypothyroid,overt_hypothyroid,correct,18,on_thyroxine,-0.3893,-7.9e-05
+5,Random Forest,overt_hypothyroid,overt_hypothyroid,correct,18,T4U,2.1445,0.013359
+5,Random Forest,overt_hypothyroid,overt_hypothyroid,correct,18,query_hypothyroid,-0.268,-0.000285
+5,Random Forest,overt_hypothyroid,overt_hypothyroid,correct,18,sex,-0.6625,0.000219
+5,Random Forest,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,TSH,0.2231,0.28573
+5,Random Forest,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,FTI,0.363,0.213599
+5,Random Forest,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,T3,-2.1423,0.014732
+5,Random Forest,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,TT4,-0.8037,0.089929
+5,Random Forest,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,on_thyroxine,-0.3893,0.01586
+5,Random Forest,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,T4U,-1.8009,-0.019652
+5,Random Forest,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,query_hypothyroid,-0.268,0.000746
+5,Random Forest,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,sex,-0.6625,-0.002192
+5,XGBoost,overt_hypothyroid,overt_hypothyroid,correct,18,TSH,20.2508,1.909857
+5,XGBoost,overt_hypothyroid,overt_hypothyroid,correct,18,FTI,-2.7378,3.780656
+5,XGBoost,overt_hypothyroid,overt_hypothyroid,correct,18,T3,-2.0082,-0.159705
+5,XGBoost,overt_hypothyroid,overt_hypothyroid,correct,18,TT4,-2.4792,-0.397148
+5,XGBoost,overt_hypothyroid,overt_hypothyroid,correct,18,on_thyroxine,-0.3893,0.0
+5,XGBoost,overt_hypothyroid,overt_hypothyroid,correct,18,T4U,2.1445,-0.556074
+5,XGBoost,overt_hypothyroid,overt_hypothyroid,correct,18,query_hypothyroid,-0.268,0.0
+5,XGBoost,overt_hypothyroid,overt_hypothyroid,correct,18,sex,-0.6625,0.0
+5,XGBoost,overt_hypothyroid,euthyroid,misclassified,164,TSH,1.9674,1.489208
+5,XGBoost,overt_hypothyroid,euthyroid,misclassified,164,FTI,-1.3847,2.050062
+5,XGBoost,overt_hypothyroid,euthyroid,misclassified,164,T3,-1.3913,0.700407
+5,XGBoost,overt_hypothyroid,euthyroid,misclassified,164,TT4,-0.6333,-0.735689
+5,XGBoost,overt_hypothyroid,euthyroid,misclassified,164,on_thyroxine,2.5688,0.0
+5,XGBoost,overt_hypothyroid,euthyroid,misclassified,164,T4U,1.9845,-0.197561
+5,XGBoost,overt_hypothyroid,euthyroid,misclassified,164,query_hypothyroid,-0.268,0.0
+5,XGBoost,overt_hypothyroid,euthyroid,misclassified,164,sex,-0.6625,0.0
+5,XGBoost,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,TSH,0.2231,2.670324
+5,XGBoost,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,FTI,0.363,1.846807
+5,XGBoost,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,T3,-2.1423,0.327328
+5,XGBoost,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,TT4,-0.8037,1.037689
+5,XGBoost,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,on_thyroxine,-0.3893,0.099052
+5,XGBoost,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,T4U,-1.8009,0.03504
+5,XGBoost,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,query_hypothyroid,-0.268,-0.004282
+5,XGBoost,subclinical_hypothyroid,subclinical_hypothyroid,correct,19,sex,-0.6625,-0.078661

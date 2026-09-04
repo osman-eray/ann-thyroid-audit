@@ -1,0 +1,95 @@
+==============================================================================
+A. CLASS-WISE METRICS — full pipeline (B_HFS_SMOTE), mean over 10 splits
+==============================================================================
+Model                   ROC-AUC  Overt hypot sens  Overt hypot PR-AUC  Subclinical sens  Subclinical PR-AUC    Euthyroid sens    Euthyroid PR-AUC
+Logistic Regression      0.9909             0.976               0.902             0.989               0.806             0.965               0.999
+Decision Tree            0.9943             0.991               0.929             0.997               0.836             0.987               0.999
+KNN                      0.9716             0.955               0.835             0.868               0.745             0.952               0.996
+SVM (RBF)                0.9937             0.952               0.916             0.976               0.876             0.968               0.999
+SVM (Linear)             0.9923             0.982               0.939             0.993               0.835             0.956               0.999
+Random Forest            0.9980             1.000               0.991             0.995               0.951             0.990               1.000
+AdaBoost                 0.9900             1.000               0.907             1.000               0.706             0.967               0.999
+Bagging                  0.9978             0.994               0.968             0.988               0.943             0.992               1.000
+XGBoost                  0.9976             0.988               0.975             0.977               0.946             0.990               1.000
+Stacking (RF+SVM)        0.9977             0.982               0.986             0.986               0.950             0.990               1.000
+
+  pooled: macro ROC-AUC 0.9924  vs  Overt hypothyroid PR-AUC 0.935, Subclinical hypothyroid PR-AUC 0.860, Euthyroid PR-AUC 0.999
+
+==============================================================================
+A. CLASS-WISE METRICS — baseline (A_baseline), mean over 10 splits
+==============================================================================
+Model                   ROC-AUC  Overt hypot sens  Overt hypot PR-AUC  Subclinical sens  Subclinical PR-AUC    Euthyroid sens    Euthyroid PR-AUC
+Logistic Regression      0.9800             0.800               0.852             0.357               0.754             0.994               0.998
+Decision Tree            0.9961             0.982               0.952             0.991               0.941             0.995               0.999
+KNN                      0.9016             0.761               0.899             0.127               0.431             0.999               0.985
+SVM (RBF)                0.9935             0.612               0.932             0.115               0.896             1.000               0.999
+SVM (Linear)             0.9914             0.739               0.928             0.062               0.816             0.998               0.999
+Random Forest            0.9995             0.970               0.986             0.992               0.999             0.997               1.000
+AdaBoost                 0.9901             1.000               0.911             0.800               0.707             0.978               0.999
+Bagging                  0.9997             0.985               0.979             0.986               0.998             0.997               1.000
+XGBoost                  0.9994             0.955               0.978             0.976               0.997             0.997               1.000
+Stacking (RF+SVM)        0.9996             0.936               0.985             0.992               0.999             0.997               1.000
+
+  pooled: macro ROC-AUC 0.9851  vs  Overt hypothyroid PR-AUC 0.940, Subclinical hypothyroid PR-AUC 0.854, Euthyroid PR-AUC 0.998
+
+==============================================================================
+B. BASELINE vs FULL PIPELINE on Subclinical hypothyroid PR-AUC (paired, 10 splits)
+==============================================================================
+Model                    ROC-AUC Δ    PR-AUC Δ    p_holm
+Logistic Regression        +0.0108     +0.0521    0.4219
+Decision Tree              -0.0019     -0.1047    0.0384
+KNN                        +0.0700     +0.3142    0.0195
+SVM (RBF)                  +0.0002     -0.0197    1.0000
+SVM (Linear)               +0.0009     +0.0193    1.0000
+Random Forest              -0.0015     -0.0479    0.0352
+AdaBoost                   -0.0000     -0.0008    0.9519
+Bagging                    -0.0018     -0.0542    0.0352
+XGBoost                    -0.0018     -0.0511    0.0352
+Stacking (RF+SVM)          -0.0019     -0.0485    0.0352
+
+  significant decreases after Holm: 5 of 10 classifiers (Decision Tree, Random Forest, Bagging, XGBoost, Stacking (RF+SVM))
+  mean ROC-AUC change in those classifiers : -0.0018
+  mean PR-AUC change in those classifiers  : -0.0613  (34x larger)
+
+==============================================================================
+C. TABLE 8 WITH DISPERSION (mean ± SD over 3 classifiers x 10 splits)
+==============================================================================
+  RandomOverSampler      ROC-AUC 0.9954±0.0040   macro-F1 0.9305±0.0554   spec 0.9918±0.0051
+  CostSensitive          ROC-AUC 0.9955±0.0040   macro-F1 0.9295±0.0545   spec 0.9907±0.0057
+  SMOTE                  ROC-AUC 0.9955±0.0039   macro-F1 0.9287±0.0495   spec 0.9917±0.0046
+  ClassWeight            ROC-AUC 0.9956±0.0040   macro-F1 0.9275±0.0531   spec 0.9877±0.0057
+  SMOTEENN               ROC-AUC 0.9953±0.0036   macro-F1 0.9231±0.0502   spec 0.9910±0.0042
+  ADASYN                 ROC-AUC 0.9952±0.0041   macro-F1 0.9225±0.0575   spec 0.9909±0.0051
+  BorderlineSMOTE        ROC-AUC 0.9950±0.0041   macro-F1 0.9207±0.0609   spec 0.9889±0.0056
+  None (no balancing)    ROC-AUC 0.9932±0.0075   macro-F1 0.8826±0.1167   spec 0.9316±0.0837
+
+  pooled SD of macro-F1 over the 30 runs : 0.0539
+  SD within each classifier              : Logistic Regression 0.0162, Random Forest 0.0188, XGBoost 0.0179
+  -> most of the dispersion is between classifiers, not between strategies or splits;
+     say so in the caption or the SD will be read as strategy-level noise.
+
+==============================================================================
+D. FRIEDMAN AND EQUIVALENCE ACROSS THE SEVEN BALANCING STRATEGIES
+==============================================================================
+  f1_macro           chi2(6)= 44.185  p=6.794e-08  spread=0.0098  equivalent within ±0.02: 21/21
+     ranks (1=best): RandomOverSampler 2.50, CostSensitive 3.08, ClassWeight 3.60, SMOTE 3.70, SMOTEENN 4.95, ADASYN 5.03, BorderlineSMOTE 5.13
+  roc_auc_ovr        chi2(6)= 29.100  p=5.825e-05  spread=0.0006  equivalent within ±0.005: 21/21
+     ranks (1=best): SMOTE 3.00, ClassWeight 3.10, CostSensitive 3.33, RandomOverSampler 4.37, SMOTEENN 4.40, ADASYN 4.50, BorderlineSMOTE 5.30
+  specificity_macro  chi2(6)= 36.456  p=2.248e-06  spread=0.0041  equivalent within ±0.01: 21/21
+     ranks (1=best): SMOTE 2.65, RandomOverSampler 3.07, CostSensitive 3.80, SMOTEENN 3.88, ADASYN 4.40, ClassWeight 4.88, BorderlineSMOTE 5.32
+
+==============================================================================
+E. THE TABLE 7 SENTENCE FLAGGED BY REVIEWER 1
+==============================================================================
+  95% CI full widths (t(9)=2.262, n=10): 0.0004 to 0.0031
+  separation between first and last: 0.0018
+    RFE             SD 0.0003  CI width 0.0004  separation is LARGER
+    LASSO           SD 0.0003  CI width 0.0004  separation is LARGER
+    TreeImportance  SD 0.0004  CI width 0.0006  separation is LARGER
+    MutualInfo      SD 0.0005  CI width 0.0007  separation is LARGER
+    SelectKBest     SD 0.0005  CI width 0.0007  separation is LARGER
+    Boruta-like     SD 0.0006  CI width 0.0009  separation is LARGER
+    ReliefF         SD 0.0008  CI width 0.0011  separation is LARGER
+    Hybrid          SD 0.0017  CI width 0.0024  separation is smaller
+    mRMR            SD 0.0022  CI width 0.0031  separation is smaller
+  -> the published sentence is false for 7 of 9 entries; Reviewer 1's arithmetic is confirmed.

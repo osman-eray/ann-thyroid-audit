@@ -1,0 +1,16 @@
+feature,selection_count,selection_pct
+TSH,10,100.0
+FTI,10,100.0
+T3,10,100.0
+TT4,10,100.0
+on_thyroxine,6,60.0
+pregnant,6,60.0
+hypopituitary,5,50.0
+query_hypothyroid,5,50.0
+goitre,5,50.0
+T4U,4,40.0
+sex,3,30.0
+I131_treatment,2,20.0
+query_on_thyroxine,2,20.0
+thyroid_surgery,1,10.0
+lithium,1,10.0

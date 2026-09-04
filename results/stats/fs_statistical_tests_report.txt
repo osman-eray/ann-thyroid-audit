@@ -1,0 +1,101 @@
+==============================================================================
+roc_auc_ovr   (10 splits x 9 methods; equivalence margin delta = 0.005)
+==============================================================================
+Friedman chi2(8) = 37.6000   p = 8.923e-06   Kendall's W = 0.4700
+
+mean rank (1 = best)   mean value   SD
+  RFE               2.30   0.999623   0.000298
+  TreeImportance    2.50   0.999509   0.000442
+  LASSO             3.70   0.999475   0.000343
+  SelectKBest       4.80   0.999112   0.000478
+  MutualInfo        5.40   0.999053   0.000503
+  Boruta-like       5.60   0.999013   0.000570
+  HFS (proposed)    5.90   0.998059   0.001661
+  mRMR              7.20   0.997843   0.002175
+  ReliefF           7.60   0.998567   0.000843
+
+spread between best and worst mean: 0.001780   (margin 0.005)
+
+Nemenyi critical difference (alpha 0.05): 3.799 mean ranks
+  observed mean-rank span: 5.300
+
+Wilcoxon resolution floor: smallest exact two-sided p = 0.00195; Holm over 36 pairs = 0.0703
+
+pairs separated by Nemenyi          : 5 / 36
+pairs significant at Holm-adjusted 0.05: 0 / 36  (unattainable here -- see resolution floor)
+pairs equivalent within +/-0.005 (TOST): 36 / 36
+largest absolute mean difference        : 0.001780
+
+  pairs separated by Nemenyi:
+    RFE              vs ReliefF           rank diff 5.30  mean diff +0.001056  equivalent
+    ReliefF          vs TreeImportance    rank diff 5.10  mean diff -0.000942  equivalent
+    RFE              vs mRMR              rank diff 4.90  mean diff +0.001780  equivalent
+    TreeImportance   vs mRMR              rank diff 4.70  mean diff +0.001665  equivalent
+    LASSO            vs ReliefF           rank diff 3.90  mean diff +0.000908  equivalent
+
+==============================================================================
+f1_macro   (10 splits x 9 methods; equivalence margin delta = 0.02)
+==============================================================================
+Friedman chi2(8) = 32.5168   p = 7.524e-05   Kendall's W = 0.3827
+
+mean rank (1 = best)   mean value   SD
+  TreeImportance    2.70   0.978752   0.010271
+  RFE               3.30   0.977531   0.009332
+  LASSO             4.40   0.975386   0.007321
+  SelectKBest       4.45   0.975534   0.008085
+  MutualInfo        4.75   0.974878   0.010090
+  Boruta-like       5.10   0.975163   0.008153
+  ReliefF           5.60   0.973090   0.009948
+  HFS (proposed)    6.20   0.962313   0.020710
+  mRMR              8.50   0.958502   0.018334
+
+spread between best and worst mean: 0.020250   (margin 0.02)
+
+Nemenyi critical difference (alpha 0.05): 3.799 mean ranks
+  observed mean-rank span: 5.800
+
+Wilcoxon resolution floor: smallest exact two-sided p = 0.00195; Holm over 36 pairs = 0.0703
+
+pairs separated by Nemenyi          : 4 / 36
+pairs significant at Holm-adjusted 0.05: 0 / 36  (unattainable here -- see resolution floor)
+pairs equivalent within +/-0.02 (TOST): 21 / 36
+largest absolute mean difference        : 0.020250
+
+  pairs separated by Nemenyi:
+    TreeImportance   vs mRMR              rank diff 5.80  mean diff +0.020250  NOT equivalent
+    RFE              vs mRMR              rank diff 5.20  mean diff +0.019029  NOT equivalent
+    LASSO            vs mRMR              rank diff 4.10  mean diff +0.016885  NOT equivalent
+    SelectKBest      vs mRMR              rank diff 4.05  mean diff +0.017032  NOT equivalent
+
+==============================================================================
+specificity_macro   (10 splits x 9 methods; equivalence margin delta = 0.01)
+==============================================================================
+Friedman chi2(8) = 29.8459   p = 2.251e-04   Kendall's W = 0.3510
+
+mean rank (1 = best)   mean value   SD
+  TreeImportance    2.90   0.997555   0.001590
+  LASSO             3.00   0.997287   0.002094
+  RFE               3.60   0.996644   0.002143
+  SelectKBest       4.90   0.997114   0.001573
+  MutualInfo        5.30   0.997065   0.001552
+  Boruta-like       5.50   0.997066   0.001536
+  ReliefF           5.50   0.996609   0.002466
+  HFS (proposed)    6.50   0.995455   0.002507
+  mRMR              7.80   0.994300   0.004322
+
+spread between best and worst mean: 0.003255   (margin 0.01)
+
+Nemenyi critical difference (alpha 0.05): 3.799 mean ranks
+  observed mean-rank span: 4.900
+
+Wilcoxon resolution floor: smallest exact two-sided p = 0.00195; Holm over 36 pairs = 0.0703
+
+pairs separated by Nemenyi          : 3 / 36
+pairs significant at Holm-adjusted 0.05: 0 / 36  (unattainable here -- see resolution floor)
+pairs equivalent within +/-0.01 (TOST): 36 / 36
+largest absolute mean difference        : 0.003255
+
+  pairs separated by Nemenyi:
+    TreeImportance   vs mRMR              rank diff 4.90  mean diff +0.003255  equivalent
+    LASSO            vs mRMR              rank diff 4.80  mean diff +0.002987  equivalent
+    RFE              vs mRMR              rank diff 4.20  mean diff +0.002344  equivalent

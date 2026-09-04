@@ -1,0 +1,9 @@
+method,mean_jaccard_with_HFS,mean_overlap_count
+SelectKBest,0.577,5.6
+MutualInfo,0.565,5.7
+ReliefF,0.4,4.5
+RFE,0.501,5.3
+LASSO,0.408,4.6
+Boruta-like,0.464,5.0
+mRMR,0.421,4.7
+TreeImportance,0.476,5.1

@@ -1,0 +1,8 @@
+strategy,recall_overt_hypo_mean,recall_overt_hypo_std,recall_subclin_hypo_mean,recall_subclin_hypo_std,recall_euthyroid_mean
+ADASYN,0.9949,0.0115,0.9793,0.0187,0.9802
+BorderlineSMOTE,0.9899,0.02,0.9658,0.0265,0.9806
+ClassWeight,0.9818,0.0219,0.9707,0.0261,0.9827
+CostSensitive,0.9869,0.019,0.9851,0.0199,0.9822
+RandomOverSampler,0.9909,0.0181,0.9878,0.0125,0.9821
+SMOTE,0.9869,0.0235,0.9874,0.0158,0.9817
+SMOTEENN,0.9909,0.0197,0.9856,0.0154,0.9797

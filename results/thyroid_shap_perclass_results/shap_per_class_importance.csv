@@ -1,0 +1,961 @@
+run_id,model,class,feature,mean_abs_shap
+0,Logistic Regression,overt_hypothyroid,TSH,1.837975
+0,Logistic Regression,overt_hypothyroid,hypopituitary,0.0
+0,Logistic Regression,overt_hypothyroid,FTI,5.030333
+0,Logistic Regression,overt_hypothyroid,T3,0.48504
+0,Logistic Regression,overt_hypothyroid,TT4,0.12017
+0,Logistic Regression,overt_hypothyroid,on_thyroxine,0.130472
+0,Logistic Regression,overt_hypothyroid,pregnant,0.002693
+0,Logistic Regression,overt_hypothyroid,query_hypothyroid,0.023329
+0,Logistic Regression,subclinical_hypothyroid,TSH,1.680418
+0,Logistic Regression,subclinical_hypothyroid,hypopituitary,0.0
+0,Logistic Regression,subclinical_hypothyroid,FTI,2.390085
+0,Logistic Regression,subclinical_hypothyroid,T3,0.084146
+0,Logistic Regression,subclinical_hypothyroid,TT4,0.156638
+0,Logistic Regression,subclinical_hypothyroid,on_thyroxine,2.027465
+0,Logistic Regression,subclinical_hypothyroid,pregnant,0.109617
+0,Logistic Regression,subclinical_hypothyroid,query_hypothyroid,0.003627
+0,Logistic Regression,euthyroid,TSH,3.518394
+0,Logistic Regression,euthyroid,hypopituitary,0.0
+0,Logistic Regression,euthyroid,FTI,2.640248
+0,Logistic Regression,euthyroid,T3,0.400894
+0,Logistic Regression,euthyroid,TT4,0.036468
+0,Logistic Regression,euthyroid,on_thyroxine,2.157937
+0,Logistic Regression,euthyroid,pregnant,0.11231
+0,Logistic Regression,euthyroid,query_hypothyroid,0.019702
+0,Decision Tree,overt_hypothyroid,TSH,0.159927
+0,Decision Tree,overt_hypothyroid,hypopituitary,0.0
+0,Decision Tree,overt_hypothyroid,FTI,0.179616
+0,Decision Tree,overt_hypothyroid,T3,0.008796
+0,Decision Tree,overt_hypothyroid,TT4,0.004978
+0,Decision Tree,overt_hypothyroid,on_thyroxine,0.0
+0,Decision Tree,overt_hypothyroid,pregnant,0.0
+0,Decision Tree,overt_hypothyroid,query_hypothyroid,0.0
+0,Decision Tree,subclinical_hypothyroid,TSH,0.365635
+0,Decision Tree,subclinical_hypothyroid,hypopituitary,0.0
+0,Decision Tree,subclinical_hypothyroid,FTI,0.097238
+0,Decision Tree,subclinical_hypothyroid,T3,0.0
+0,Decision Tree,subclinical_hypothyroid,TT4,0.02118
+0,Decision Tree,subclinical_hypothyroid,on_thyroxine,0.028196
+0,Decision Tree,subclinical_hypothyroid,pregnant,0.0
+0,Decision Tree,subclinical_hypothyroid,query_hypothyroid,0.0
+0,Decision Tree,euthyroid,TSH,0.521272
+0,Decision Tree,euthyroid,hypopituitary,0.0
+0,Decision Tree,euthyroid,FTI,0.085427
+0,Decision Tree,euthyroid,T3,0.008796
+0,Decision Tree,euthyroid,TT4,0.024424
+0,Decision Tree,euthyroid,on_thyroxine,0.028196
+0,Decision Tree,euthyroid,pregnant,0.0
+0,Decision Tree,euthyroid,query_hypothyroid,0.0
+0,Random Forest,overt_hypothyroid,TSH,0.135736
+0,Random Forest,overt_hypothyroid,hypopituitary,6e-06
+0,Random Forest,overt_hypothyroid,FTI,0.140704
+0,Random Forest,overt_hypothyroid,T3,0.026064
+0,Random Forest,overt_hypothyroid,TT4,0.055601
+0,Random Forest,overt_hypothyroid,on_thyroxine,0.001564
+0,Random Forest,overt_hypothyroid,pregnant,0.000265
+0,Random Forest,overt_hypothyroid,query_hypothyroid,0.002006
+0,Random Forest,subclinical_hypothyroid,TSH,0.354424
+0,Random Forest,subclinical_hypothyroid,hypopituitary,0.0
+0,Random Forest,subclinical_hypothyroid,FTI,0.078311
+0,Random Forest,subclinical_hypothyroid,T3,0.027949
+0,Random Forest,subclinical_hypothyroid,TT4,0.043225
+0,Random Forest,subclinical_hypothyroid,on_thyroxine,0.028591
+0,Random Forest,subclinical_hypothyroid,pregnant,0.001154
+0,Random Forest,subclinical_hypothyroid,query_hypothyroid,0.001922
+0,Random Forest,euthyroid,TSH,0.486936
+0,Random Forest,euthyroid,hypopituitary,6e-06
+0,Random Forest,euthyroid,FTI,0.064778
+0,Random Forest,euthyroid,T3,0.046857
+0,Random Forest,euthyroid,TT4,0.032474
+0,Random Forest,euthyroid,on_thyroxine,0.027057
+0,Random Forest,euthyroid,pregnant,0.00142
+0,Random Forest,euthyroid,query_hypothyroid,0.003878
+0,XGBoost,overt_hypothyroid,TSH,2.923877
+0,XGBoost,overt_hypothyroid,hypopituitary,0.0
+0,XGBoost,overt_hypothyroid,FTI,3.299607
+0,XGBoost,overt_hypothyroid,T3,0.804454
+0,XGBoost,overt_hypothyroid,TT4,1.468836
+0,XGBoost,overt_hypothyroid,on_thyroxine,0.05285
+0,XGBoost,overt_hypothyroid,pregnant,0.0
+0,XGBoost,overt_hypothyroid,query_hypothyroid,0.0
+0,XGBoost,subclinical_hypothyroid,TSH,3.618007
+0,XGBoost,subclinical_hypothyroid,hypopituitary,0.0
+0,XGBoost,subclinical_hypothyroid,FTI,0.710282
+0,XGBoost,subclinical_hypothyroid,T3,0.487598
+0,XGBoost,subclinical_hypothyroid,TT4,0.56155
+0,XGBoost,subclinical_hypothyroid,on_thyroxine,0.675669
+0,XGBoost,subclinical_hypothyroid,pregnant,0.0
+0,XGBoost,subclinical_hypothyroid,query_hypothyroid,0.0
+0,XGBoost,euthyroid,TSH,5.291855
+0,XGBoost,euthyroid,hypopituitary,0.0
+0,XGBoost,euthyroid,FTI,0.213834
+0,XGBoost,euthyroid,T3,0.9358
+0,XGBoost,euthyroid,TT4,0.46432
+0,XGBoost,euthyroid,on_thyroxine,0.164627
+0,XGBoost,euthyroid,pregnant,0.0
+0,XGBoost,euthyroid,query_hypothyroid,0.062601
+1,Logistic Regression,overt_hypothyroid,TSH,1.374166
+1,Logistic Regression,overt_hypothyroid,FTI,3.480497
+1,Logistic Regression,overt_hypothyroid,T3,0.438671
+1,Logistic Regression,overt_hypothyroid,TT4,1.870235
+1,Logistic Regression,overt_hypothyroid,on_thyroxine,0.07221
+1,Logistic Regression,overt_hypothyroid,T4U,0.301463
+1,Logistic Regression,overt_hypothyroid,query_hypothyroid,0.043867
+1,Logistic Regression,overt_hypothyroid,I131_treatment,0.004241
+1,Logistic Regression,subclinical_hypothyroid,TSH,1.268822
+1,Logistic Regression,subclinical_hypothyroid,FTI,1.442249
+1,Logistic Regression,subclinical_hypothyroid,T3,0.038081
+1,Logistic Regression,subclinical_hypothyroid,TT4,1.29753
+1,Logistic Regression,subclinical_hypothyroid,on_thyroxine,3.762074
+1,Logistic Regression,subclinical_hypothyroid,T4U,0.297172
+1,Logistic Regression,subclinical_hypothyroid,query_hypothyroid,0.024926
+1,Logistic Regression,subclinical_hypothyroid,I131_treatment,0.000626
+1,Logistic Regression,euthyroid,TSH,2.642988
+1,Logistic Regression,euthyroid,FTI,2.038248
+1,Logistic Regression,euthyroid,T3,0.40059
+1,Logistic Regression,euthyroid,TT4,0.572705
+1,Logistic Regression,euthyroid,on_thyroxine,3.689864
+1,Logistic Regression,euthyroid,T4U,0.004292
+1,Logistic Regression,euthyroid,query_hypothyroid,0.01894
+1,Logistic Regression,euthyroid,I131_treatment,0.003615
+1,Decision Tree,overt_hypothyroid,TSH,0.147972
+1,Decision Tree,overt_hypothyroid,FTI,0.185553
+1,Decision Tree,overt_hypothyroid,T3,0.010117
+1,Decision Tree,overt_hypothyroid,TT4,0.022221
+1,Decision Tree,overt_hypothyroid,on_thyroxine,0.0
+1,Decision Tree,overt_hypothyroid,T4U,0.007879
+1,Decision Tree,overt_hypothyroid,query_hypothyroid,0.0
+1,Decision Tree,overt_hypothyroid,I131_treatment,0.0
+1,Decision Tree,subclinical_hypothyroid,TSH,0.361042
+1,Decision Tree,subclinical_hypothyroid,FTI,0.110019
+1,Decision Tree,subclinical_hypothyroid,T3,0.0
+1,Decision Tree,subclinical_hypothyroid,TT4,0.014132
+1,Decision Tree,subclinical_hypothyroid,on_thyroxine,0.026272
+1,Decision Tree,subclinical_hypothyroid,T4U,0.0
+1,Decision Tree,subclinical_hypothyroid,query_hypothyroid,0.0
+1,Decision Tree,subclinical_hypothyroid,I131_treatment,0.0
+1,Decision Tree,euthyroid,TSH,0.509014
+1,Decision Tree,euthyroid,FTI,0.089384
+1,Decision Tree,euthyroid,T3,0.010117
+1,Decision Tree,euthyroid,TT4,0.035153
+1,Decision Tree,euthyroid,on_thyroxine,0.026272
+1,Decision Tree,euthyroid,T4U,0.007879
+1,Decision Tree,euthyroid,query_hypothyroid,0.0
+1,Decision Tree,euthyroid,I131_treatment,0.0
+1,Random Forest,overt_hypothyroid,TSH,0.128545
+1,Random Forest,overt_hypothyroid,FTI,0.143711
+1,Random Forest,overt_hypothyroid,T3,0.030833
+1,Random Forest,overt_hypothyroid,TT4,0.056456
+1,Random Forest,overt_hypothyroid,on_thyroxine,0.001856
+1,Random Forest,overt_hypothyroid,T4U,0.007932
+1,Random Forest,overt_hypothyroid,query_hypothyroid,0.000521
+1,Random Forest,overt_hypothyroid,I131_treatment,0.000598
+1,Random Forest,subclinical_hypothyroid,TSH,0.35055
+1,Random Forest,subclinical_hypothyroid,FTI,0.083911
+1,Random Forest,subclinical_hypothyroid,T3,0.033011
+1,Random Forest,subclinical_hypothyroid,TT4,0.038518
+1,Random Forest,subclinical_hypothyroid,on_thyroxine,0.02842
+1,Random Forest,subclinical_hypothyroid,T4U,0.006066
+1,Random Forest,subclinical_hypothyroid,query_hypothyroid,0.002073
+1,Random Forest,subclinical_hypothyroid,I131_treatment,0.000443
+1,Random Forest,euthyroid,TSH,0.478125
+1,Random Forest,euthyroid,FTI,0.060949
+1,Random Forest,euthyroid,T3,0.054019
+1,Random Forest,euthyroid,TT4,0.034053
+1,Random Forest,euthyroid,on_thyroxine,0.026727
+1,Random Forest,euthyroid,T4U,0.010168
+1,Random Forest,euthyroid,query_hypothyroid,0.002527
+1,Random Forest,euthyroid,I131_treatment,0.000301
+1,XGBoost,overt_hypothyroid,TSH,2.036053
+1,XGBoost,overt_hypothyroid,FTI,3.80966
+1,XGBoost,overt_hypothyroid,T3,0.426355
+1,XGBoost,overt_hypothyroid,TT4,0.5098
+1,XGBoost,overt_hypothyroid,on_thyroxine,0.024096
+1,XGBoost,overt_hypothyroid,T4U,0.149046
+1,XGBoost,overt_hypothyroid,query_hypothyroid,0.0
+1,XGBoost,overt_hypothyroid,I131_treatment,0.0
+1,XGBoost,subclinical_hypothyroid,TSH,4.438178
+1,XGBoost,subclinical_hypothyroid,FTI,0.790342
+1,XGBoost,subclinical_hypothyroid,T3,0.604442
+1,XGBoost,subclinical_hypothyroid,TT4,0.529866
+1,XGBoost,subclinical_hypothyroid,on_thyroxine,0.306228
+1,XGBoost,subclinical_hypothyroid,T4U,0.170853
+1,XGBoost,subclinical_hypothyroid,query_hypothyroid,0.015173
+1,XGBoost,subclinical_hypothyroid,I131_treatment,0.0
+1,XGBoost,euthyroid,TSH,5.267134
+1,XGBoost,euthyroid,FTI,0.098941
+1,XGBoost,euthyroid,T3,0.471273
+1,XGBoost,euthyroid,TT4,0.312788
+1,XGBoost,euthyroid,on_thyroxine,0.377089
+1,XGBoost,euthyroid,T4U,0.247841
+1,XGBoost,euthyroid,query_hypothyroid,0.023546
+1,XGBoost,euthyroid,I131_treatment,0.0
+2,Logistic Regression,overt_hypothyroid,hypopituitary,0.0
+2,Logistic Regression,overt_hypothyroid,TSH,2.066755
+2,Logistic Regression,overt_hypothyroid,FTI,4.840014
+2,Logistic Regression,overt_hypothyroid,TT4,0.015077
+2,Logistic Regression,overt_hypothyroid,T3,0.492194
+2,Logistic Regression,overt_hypothyroid,goitre,0.007535
+2,Logistic Regression,overt_hypothyroid,pregnant,0.001296
+2,Logistic Regression,overt_hypothyroid,thyroid_surgery,0.10107
+2,Logistic Regression,subclinical_hypothyroid,hypopituitary,0.0
+2,Logistic Regression,subclinical_hypothyroid,TSH,1.811961
+2,Logistic Regression,subclinical_hypothyroid,FTI,2.282182
+2,Logistic Regression,subclinical_hypothyroid,TT4,0.078634
+2,Logistic Regression,subclinical_hypothyroid,T3,0.123069
+2,Logistic Regression,subclinical_hypothyroid,goitre,0.005322
+2,Logistic Regression,subclinical_hypothyroid,pregnant,0.075803
+2,Logistic Regression,subclinical_hypothyroid,thyroid_surgery,0.141863
+2,Logistic Regression,euthyroid,hypopituitary,0.0
+2,Logistic Regression,euthyroid,TSH,3.878716
+2,Logistic Regression,euthyroid,FTI,2.557832
+2,Logistic Regression,euthyroid,TT4,0.063557
+2,Logistic Regression,euthyroid,T3,0.369125
+2,Logistic Regression,euthyroid,goitre,0.012857
+2,Logistic Regression,euthyroid,pregnant,0.074507
+2,Logistic Regression,euthyroid,thyroid_surgery,0.242932
+2,Decision Tree,overt_hypothyroid,hypopituitary,0.0
+2,Decision Tree,overt_hypothyroid,TSH,0.151631
+2,Decision Tree,overt_hypothyroid,FTI,0.187819
+2,Decision Tree,overt_hypothyroid,TT4,0.0
+2,Decision Tree,overt_hypothyroid,T3,0.009743
+2,Decision Tree,overt_hypothyroid,goitre,0.0
+2,Decision Tree,overt_hypothyroid,pregnant,0.0
+2,Decision Tree,overt_hypothyroid,thyroid_surgery,0.000123
+2,Decision Tree,subclinical_hypothyroid,hypopituitary,0.0
+2,Decision Tree,subclinical_hypothyroid,TSH,0.372527
+2,Decision Tree,subclinical_hypothyroid,FTI,0.109933
+2,Decision Tree,subclinical_hypothyroid,TT4,0.019128
+2,Decision Tree,subclinical_hypothyroid,T3,0.0
+2,Decision Tree,subclinical_hypothyroid,goitre,0.0
+2,Decision Tree,subclinical_hypothyroid,pregnant,0.0
+2,Decision Tree,subclinical_hypothyroid,thyroid_surgery,0.00376
+2,Decision Tree,euthyroid,hypopituitary,0.0
+2,Decision Tree,euthyroid,TSH,0.524158
+2,Decision Tree,euthyroid,FTI,0.097911
+2,Decision Tree,euthyroid,TT4,0.019128
+2,Decision Tree,euthyroid,T3,0.009743
+2,Decision Tree,euthyroid,goitre,0.0
+2,Decision Tree,euthyroid,pregnant,0.0
+2,Decision Tree,euthyroid,thyroid_surgery,0.003883
+2,Random Forest,overt_hypothyroid,hypopituitary,7e-06
+2,Random Forest,overt_hypothyroid,TSH,0.128146
+2,Random Forest,overt_hypothyroid,FTI,0.152311
+2,Random Forest,overt_hypothyroid,TT4,0.045695
+2,Random Forest,overt_hypothyroid,T3,0.029125
+2,Random Forest,overt_hypothyroid,goitre,0.000119
+2,Random Forest,overt_hypothyroid,pregnant,0.000218
+2,Random Forest,overt_hypothyroid,thyroid_surgery,0.000995
+2,Random Forest,subclinical_hypothyroid,hypopituitary,0.0
+2,Random Forest,subclinical_hypothyroid,TSH,0.35545
+2,Random Forest,subclinical_hypothyroid,FTI,0.087918
+2,Random Forest,subclinical_hypothyroid,TT4,0.040849
+2,Random Forest,subclinical_hypothyroid,T3,0.030431
+2,Random Forest,subclinical_hypothyroid,goitre,0.000255
+2,Random Forest,subclinical_hypothyroid,pregnant,0.001105
+2,Random Forest,subclinical_hypothyroid,thyroid_surgery,0.003704
+2,Random Forest,euthyroid,hypopituitary,7e-06
+2,Random Forest,euthyroid,TSH,0.482671
+2,Random Forest,euthyroid,FTI,0.070422
+2,Random Forest,euthyroid,TT4,0.033023
+2,Random Forest,euthyroid,T3,0.049037
+2,Random Forest,euthyroid,goitre,0.000374
+2,Random Forest,euthyroid,pregnant,0.001323
+2,Random Forest,euthyroid,thyroid_surgery,0.002749
+2,XGBoost,overt_hypothyroid,hypopituitary,0.0
+2,XGBoost,overt_hypothyroid,TSH,2.755556
+2,XGBoost,overt_hypothyroid,FTI,4.294393
+2,XGBoost,overt_hypothyroid,TT4,1.314828
+2,XGBoost,overt_hypothyroid,T3,0.639329
+2,XGBoost,overt_hypothyroid,goitre,0.0
+2,XGBoost,overt_hypothyroid,pregnant,0.0
+2,XGBoost,overt_hypothyroid,thyroid_surgery,0.009018
+2,XGBoost,subclinical_hypothyroid,hypopituitary,0.0
+2,XGBoost,subclinical_hypothyroid,TSH,3.086362
+2,XGBoost,subclinical_hypothyroid,FTI,0.571755
+2,XGBoost,subclinical_hypothyroid,TT4,0.483743
+2,XGBoost,subclinical_hypothyroid,T3,0.604694
+2,XGBoost,subclinical_hypothyroid,goitre,0.0
+2,XGBoost,subclinical_hypothyroid,pregnant,0.0
+2,XGBoost,subclinical_hypothyroid,thyroid_surgery,0.037769
+2,XGBoost,euthyroid,hypopituitary,0.0
+2,XGBoost,euthyroid,TSH,5.382442
+2,XGBoost,euthyroid,FTI,0.303696
+2,XGBoost,euthyroid,TT4,0.700665
+2,XGBoost,euthyroid,T3,0.576236
+2,XGBoost,euthyroid,goitre,0.0
+2,XGBoost,euthyroid,pregnant,0.0
+2,XGBoost,euthyroid,thyroid_surgery,0.052403
+3,Logistic Regression,overt_hypothyroid,TSH,3.006678
+3,Logistic Regression,overt_hypothyroid,FTI,4.886073
+3,Logistic Regression,overt_hypothyroid,T3,0.377401
+3,Logistic Regression,overt_hypothyroid,TT4,0.319199
+3,Logistic Regression,overt_hypothyroid,goitre,0.038809
+3,Logistic Regression,overt_hypothyroid,pregnant,0.012332
+3,Logistic Regression,overt_hypothyroid,lithium,0.084121
+3,Logistic Regression,overt_hypothyroid,query_on_thyroxine,0.281673
+3,Logistic Regression,subclinical_hypothyroid,TSH,2.685609
+3,Logistic Regression,subclinical_hypothyroid,FTI,2.352318
+3,Logistic Regression,subclinical_hypothyroid,T3,0.07879
+3,Logistic Regression,subclinical_hypothyroid,TT4,0.12005
+3,Logistic Regression,subclinical_hypothyroid,goitre,0.034649
+3,Logistic Regression,subclinical_hypothyroid,pregnant,0.128195
+3,Logistic Regression,subclinical_hypothyroid,lithium,0.042857
+3,Logistic Regression,subclinical_hypothyroid,query_on_thyroxine,0.123653
+3,Logistic Regression,euthyroid,TSH,5.692287
+3,Logistic Regression,euthyroid,FTI,2.533755
+3,Logistic Regression,euthyroid,T3,0.298612
+3,Logistic Regression,euthyroid,TT4,0.199149
+3,Logistic Regression,euthyroid,goitre,0.073458
+3,Logistic Regression,euthyroid,pregnant,0.140527
+3,Logistic Regression,euthyroid,lithium,0.041264
+3,Logistic Regression,euthyroid,query_on_thyroxine,0.15802
+3,Decision Tree,overt_hypothyroid,TSH,0.146344
+3,Decision Tree,overt_hypothyroid,FTI,0.169927
+3,Decision Tree,overt_hypothyroid,T3,0.012603
+3,Decision Tree,overt_hypothyroid,TT4,0.016824
+3,Decision Tree,overt_hypothyroid,goitre,0.0
+3,Decision Tree,overt_hypothyroid,pregnant,0.0
+3,Decision Tree,overt_hypothyroid,lithium,0.0
+3,Decision Tree,overt_hypothyroid,query_on_thyroxine,0.0
+3,Decision Tree,subclinical_hypothyroid,TSH,0.378808
+3,Decision Tree,subclinical_hypothyroid,FTI,0.104896
+3,Decision Tree,subclinical_hypothyroid,T3,0.0
+3,Decision Tree,subclinical_hypothyroid,TT4,0.021168
+3,Decision Tree,subclinical_hypothyroid,goitre,0.0
+3,Decision Tree,subclinical_hypothyroid,pregnant,0.0
+3,Decision Tree,subclinical_hypothyroid,lithium,0.0
+3,Decision Tree,subclinical_hypothyroid,query_on_thyroxine,0.0
+3,Decision Tree,euthyroid,TSH,0.521535
+3,Decision Tree,euthyroid,FTI,0.083963
+3,Decision Tree,euthyroid,T3,0.012603
+3,Decision Tree,euthyroid,TT4,0.036494
+3,Decision Tree,euthyroid,goitre,0.0
+3,Decision Tree,euthyroid,pregnant,0.0
+3,Decision Tree,euthyroid,lithium,0.0
+3,Decision Tree,euthyroid,query_on_thyroxine,0.0
+3,Random Forest,overt_hypothyroid,TSH,0.127927
+3,Random Forest,overt_hypothyroid,FTI,0.148223
+3,Random Forest,overt_hypothyroid,T3,0.031264
+3,Random Forest,overt_hypothyroid,TT4,0.04236
+3,Random Forest,overt_hypothyroid,goitre,0.000114
+3,Random Forest,overt_hypothyroid,pregnant,0.000182
+3,Random Forest,overt_hypothyroid,lithium,0.000178
+3,Random Forest,overt_hypothyroid,query_on_thyroxine,0.000595
+3,Random Forest,subclinical_hypothyroid,TSH,0.351632
+3,Random Forest,subclinical_hypothyroid,FTI,0.082216
+3,Random Forest,subclinical_hypothyroid,T3,0.034757
+3,Random Forest,subclinical_hypothyroid,TT4,0.035103
+3,Random Forest,subclinical_hypothyroid,goitre,0.000435
+3,Random Forest,subclinical_hypothyroid,pregnant,0.000899
+3,Random Forest,subclinical_hypothyroid,lithium,0.00021
+3,Random Forest,subclinical_hypothyroid,query_on_thyroxine,0.000831
+3,Random Forest,euthyroid,TSH,0.478681
+3,Random Forest,euthyroid,FTI,0.071012
+3,Random Forest,euthyroid,T3,0.0556
+3,Random Forest,euthyroid,TT4,0.03824
+3,Random Forest,euthyroid,goitre,0.000549
+3,Random Forest,euthyroid,pregnant,0.001081
+3,Random Forest,euthyroid,lithium,0.000199
+3,Random Forest,euthyroid,query_on_thyroxine,0.001415
+3,XGBoost,overt_hypothyroid,TSH,2.66972
+3,XGBoost,overt_hypothyroid,FTI,3.721164
+3,XGBoost,overt_hypothyroid,T3,0.751206
+3,XGBoost,overt_hypothyroid,TT4,1.52192
+3,XGBoost,overt_hypothyroid,goitre,0.0
+3,XGBoost,overt_hypothyroid,pregnant,0.0
+3,XGBoost,overt_hypothyroid,lithium,0.0
+3,XGBoost,overt_hypothyroid,query_on_thyroxine,0.0
+3,XGBoost,subclinical_hypothyroid,TSH,3.416806
+3,XGBoost,subclinical_hypothyroid,FTI,0.596601
+3,XGBoost,subclinical_hypothyroid,T3,0.78264
+3,XGBoost,subclinical_hypothyroid,TT4,0.486538
+3,XGBoost,subclinical_hypothyroid,goitre,0.0
+3,XGBoost,subclinical_hypothyroid,pregnant,0.0
+3,XGBoost,subclinical_hypothyroid,lithium,0.0
+3,XGBoost,subclinical_hypothyroid,query_on_thyroxine,0.0
+3,XGBoost,euthyroid,TSH,4.897017
+3,XGBoost,euthyroid,FTI,0.449326
+3,XGBoost,euthyroid,T3,0.914121
+3,XGBoost,euthyroid,TT4,0.482191
+3,XGBoost,euthyroid,goitre,0.0
+3,XGBoost,euthyroid,pregnant,0.0
+3,XGBoost,euthyroid,lithium,0.0
+3,XGBoost,euthyroid,query_on_thyroxine,0.0
+4,Logistic Regression,overt_hypothyroid,TSH,2.890665
+4,Logistic Regression,overt_hypothyroid,hypopituitary,0.0
+4,Logistic Regression,overt_hypothyroid,FTI,4.098979
+4,Logistic Regression,overt_hypothyroid,T3,0.386073
+4,Logistic Regression,overt_hypothyroid,TT4,0.393953
+4,Logistic Regression,overt_hypothyroid,pregnant,0.000319
+4,Logistic Regression,overt_hypothyroid,goitre,0.036351
+4,Logistic Regression,overt_hypothyroid,query_on_thyroxine,0.070255
+4,Logistic Regression,subclinical_hypothyroid,TSH,2.714674
+4,Logistic Regression,subclinical_hypothyroid,hypopituitary,0.0
+4,Logistic Regression,subclinical_hypothyroid,FTI,1.966672
+4,Logistic Regression,subclinical_hypothyroid,T3,0.057805
+4,Logistic Regression,subclinical_hypothyroid,TT4,0.232595
+4,Logistic Regression,subclinical_hypothyroid,pregnant,0.035563
+4,Logistic Regression,subclinical_hypothyroid,goitre,0.080067
+4,Logistic Regression,subclinical_hypothyroid,query_on_thyroxine,0.033913
+4,Logistic Regression,euthyroid,TSH,5.605339
+4,Logistic Regression,euthyroid,hypopituitary,0.0
+4,Logistic Regression,euthyroid,FTI,2.132307
+4,Logistic Regression,euthyroid,T3,0.328269
+4,Logistic Regression,euthyroid,TT4,0.161357
+4,Logistic Regression,euthyroid,pregnant,0.035882
+4,Logistic Regression,euthyroid,goitre,0.116418
+4,Logistic Regression,euthyroid,query_on_thyroxine,0.036342
+4,Decision Tree,overt_hypothyroid,TSH,0.120815
+4,Decision Tree,overt_hypothyroid,hypopituitary,0.0
+4,Decision Tree,overt_hypothyroid,FTI,0.144299
+4,Decision Tree,overt_hypothyroid,T3,0.011254
+4,Decision Tree,overt_hypothyroid,TT4,0.084522
+4,Decision Tree,overt_hypothyroid,pregnant,0.0
+4,Decision Tree,overt_hypothyroid,goitre,0.0
+4,Decision Tree,overt_hypothyroid,query_on_thyroxine,0.0
+4,Decision Tree,subclinical_hypothyroid,TSH,0.372979
+4,Decision Tree,subclinical_hypothyroid,hypopituitary,0.0
+4,Decision Tree,subclinical_hypothyroid,FTI,0.109593
+4,Decision Tree,subclinical_hypothyroid,T3,0.0
+4,Decision Tree,subclinical_hypothyroid,TT4,0.019765
+4,Decision Tree,subclinical_hypothyroid,pregnant,0.0
+4,Decision Tree,subclinical_hypothyroid,goitre,0.0
+4,Decision Tree,subclinical_hypothyroid,query_on_thyroxine,0.0
+4,Decision Tree,euthyroid,TSH,0.493793
+4,Decision Tree,euthyroid,hypopituitary,0.0
+4,Decision Tree,euthyroid,FTI,0.056101
+4,Decision Tree,euthyroid,T3,0.011254
+4,Decision Tree,euthyroid,TT4,0.103126
+4,Decision Tree,euthyroid,pregnant,0.0
+4,Decision Tree,euthyroid,goitre,0.0
+4,Decision Tree,euthyroid,query_on_thyroxine,0.0
+4,Random Forest,overt_hypothyroid,TSH,0.13242
+4,Random Forest,overt_hypothyroid,hypopituitary,2e-06
+4,Random Forest,overt_hypothyroid,FTI,0.14064
+4,Random Forest,overt_hypothyroid,T3,0.031855
+4,Random Forest,overt_hypothyroid,TT4,0.059664
+4,Random Forest,overt_hypothyroid,pregnant,0.000252
+4,Random Forest,overt_hypothyroid,goitre,9.8e-05
+4,Random Forest,overt_hypothyroid,query_on_thyroxine,0.000571
+4,Random Forest,subclinical_hypothyroid,TSH,0.342313
+4,Random Forest,subclinical_hypothyroid,hypopituitary,0.0
+4,Random Forest,subclinical_hypothyroid,FTI,0.072336
+4,Random Forest,subclinical_hypothyroid,T3,0.044749
+4,Random Forest,subclinical_hypothyroid,TT4,0.042426
+4,Random Forest,subclinical_hypothyroid,pregnant,0.001174
+4,Random Forest,subclinical_hypothyroid,goitre,0.000347
+4,Random Forest,subclinical_hypothyroid,query_on_thyroxine,0.000341
+4,Random Forest,euthyroid,TSH,0.473457
+4,Random Forest,euthyroid,hypopituitary,2e-06
+4,Random Forest,euthyroid,FTI,0.072544
+4,Random Forest,euthyroid,T3,0.065758
+4,Random Forest,euthyroid,TT4,0.042518
+4,Random Forest,euthyroid,pregnant,0.001426
+4,Random Forest,euthyroid,goitre,0.000445
+4,Random Forest,euthyroid,query_on_thyroxine,0.000585
+4,XGBoost,overt_hypothyroid,TSH,2.231271
+4,XGBoost,overt_hypothyroid,hypopituitary,0.0
+4,XGBoost,overt_hypothyroid,FTI,3.589099
+4,XGBoost,overt_hypothyroid,T3,0.595367
+4,XGBoost,overt_hypothyroid,TT4,0.858597
+4,XGBoost,overt_hypothyroid,pregnant,0.0
+4,XGBoost,overt_hypothyroid,goitre,0.0
+4,XGBoost,overt_hypothyroid,query_on_thyroxine,0.0
+4,XGBoost,subclinical_hypothyroid,TSH,3.342335
+4,XGBoost,subclinical_hypothyroid,hypopituitary,0.0
+4,XGBoost,subclinical_hypothyroid,FTI,0.583918
+4,XGBoost,subclinical_hypothyroid,T3,0.561872
+4,XGBoost,subclinical_hypothyroid,TT4,0.492743
+4,XGBoost,subclinical_hypothyroid,pregnant,0.0
+4,XGBoost,subclinical_hypothyroid,goitre,0.0
+4,XGBoost,subclinical_hypothyroid,query_on_thyroxine,0.001661
+4,XGBoost,euthyroid,TSH,5.108236
+4,XGBoost,euthyroid,hypopituitary,0.0
+4,XGBoost,euthyroid,FTI,0.244646
+4,XGBoost,euthyroid,T3,0.663082
+4,XGBoost,euthyroid,TT4,0.515202
+4,XGBoost,euthyroid,pregnant,0.0
+4,XGBoost,euthyroid,goitre,0.0
+4,XGBoost,euthyroid,query_on_thyroxine,0.005838
+5,Logistic Regression,overt_hypothyroid,TSH,1.895092
+5,Logistic Regression,overt_hypothyroid,FTI,7.16001
+5,Logistic Regression,overt_hypothyroid,T3,0.811055
+5,Logistic Regression,overt_hypothyroid,TT4,1.155866
+5,Logistic Regression,overt_hypothyroid,on_thyroxine,0.019498
+5,Logistic Regression,overt_hypothyroid,T4U,0.467905
+5,Logistic Regression,overt_hypothyroid,query_hypothyroid,0.034189
+5,Logistic Regression,overt_hypothyroid,sex,0.552946
+5,Logistic Regression,subclinical_hypothyroid,TSH,1.576177
+5,Logistic Regression,subclinical_hypothyroid,FTI,3.118163
+5,Logistic Regression,subclinical_hypothyroid,T3,0.249929
+5,Logistic Regression,subclinical_hypothyroid,TT4,0.114352
+5,Logistic Regression,subclinical_hypothyroid,on_thyroxine,3.138343
+5,Logistic Regression,subclinical_hypothyroid,T4U,0.004716
+5,Logistic Regression,subclinical_hypothyroid,query_hypothyroid,0.002718
+5,Logistic Regression,subclinical_hypothyroid,sex,0.213259
+5,Logistic Regression,euthyroid,TSH,3.471269
+5,Logistic Regression,euthyroid,FTI,4.041847
+5,Logistic Regression,euthyroid,T3,0.561126
+5,Logistic Regression,euthyroid,TT4,1.041514
+5,Logistic Regression,euthyroid,on_thyroxine,3.118845
+5,Logistic Regression,euthyroid,T4U,0.463189
+5,Logistic Regression,euthyroid,query_hypothyroid,0.031471
+5,Logistic Regression,euthyroid,sex,0.339688
+5,Decision Tree,overt_hypothyroid,TSH,0.157877
+5,Decision Tree,overt_hypothyroid,FTI,0.180434
+5,Decision Tree,overt_hypothyroid,T3,0.019538
+5,Decision Tree,overt_hypothyroid,TT4,0.009132
+5,Decision Tree,overt_hypothyroid,on_thyroxine,0.0
+5,Decision Tree,overt_hypothyroid,T4U,0.000793
+5,Decision Tree,overt_hypothyroid,query_hypothyroid,0.0
+5,Decision Tree,overt_hypothyroid,sex,0.0
+5,Decision Tree,subclinical_hypothyroid,TSH,0.345264
+5,Decision Tree,subclinical_hypothyroid,FTI,0.093909
+5,Decision Tree,subclinical_hypothyroid,T3,0.005962
+5,Decision Tree,subclinical_hypothyroid,TT4,0.023065
+5,Decision Tree,subclinical_hypothyroid,on_thyroxine,0.032233
+5,Decision Tree,subclinical_hypothyroid,T4U,0.008585
+5,Decision Tree,subclinical_hypothyroid,query_hypothyroid,0.0
+5,Decision Tree,subclinical_hypothyroid,sex,0.0
+5,Decision Tree,euthyroid,TSH,0.502369
+5,Decision Tree,euthyroid,FTI,0.087515
+5,Decision Tree,euthyroid,T3,0.024659
+5,Decision Tree,euthyroid,TT4,0.030661
+5,Decision Tree,euthyroid,on_thyroxine,0.032233
+5,Decision Tree,euthyroid,T4U,0.009116
+5,Decision Tree,euthyroid,query_hypothyroid,0.0
+5,Decision Tree,euthyroid,sex,0.0
+5,Random Forest,overt_hypothyroid,TSH,0.133461
+5,Random Forest,overt_hypothyroid,FTI,0.153545
+5,Random Forest,overt_hypothyroid,T3,0.030498
+5,Random Forest,overt_hypothyroid,TT4,0.044432
+5,Random Forest,overt_hypothyroid,on_thyroxine,0.000878
+5,Random Forest,overt_hypothyroid,T4U,0.008972
+5,Random Forest,overt_hypothyroid,query_hypothyroid,0.000801
+5,Random Forest,overt_hypothyroid,sex,0.001128
+5,Random Forest,subclinical_hypothyroid,TSH,0.33363
+5,Random Forest,subclinical_hypothyroid,FTI,0.082799
+5,Random Forest,subclinical_hypothyroid,T3,0.035532
+5,Random Forest,subclinical_hypothyroid,TT4,0.032556
+5,Random Forest,subclinical_hypothyroid,on_thyroxine,0.030432
+5,Random Forest,subclinical_hypothyroid,T4U,0.006483
+5,Random Forest,subclinical_hypothyroid,query_hypothyroid,0.002809
+5,Random Forest,subclinical_hypothyroid,sex,0.001564
+5,Random Forest,euthyroid,TSH,0.46629
+5,Random Forest,euthyroid,FTI,0.073201
+5,Random Forest,euthyroid,T3,0.055636
+5,Random Forest,euthyroid,TT4,0.030265
+5,Random Forest,euthyroid,on_thyroxine,0.030978
+5,Random Forest,euthyroid,T4U,0.0115
+5,Random Forest,euthyroid,query_hypothyroid,0.003392
+5,Random Forest,euthyroid,sex,0.002377
+5,XGBoost,overt_hypothyroid,TSH,2.433616
+5,XGBoost,overt_hypothyroid,FTI,3.962175
+5,XGBoost,overt_hypothyroid,T3,0.480746
+5,XGBoost,overt_hypothyroid,TT4,0.365079
+5,XGBoost,overt_hypothyroid,on_thyroxine,0.0
+5,XGBoost,overt_hypothyroid,T4U,0.164583
+5,XGBoost,overt_hypothyroid,query_hypothyroid,0.0
+5,XGBoost,overt_hypothyroid,sex,0.0
+5,XGBoost,subclinical_hypothyroid,TSH,4.306488
+5,XGBoost,subclinical_hypothyroid,FTI,0.840574
+5,XGBoost,subclinical_hypothyroid,T3,0.43754
+5,XGBoost,subclinical_hypothyroid,TT4,0.470092
+5,XGBoost,subclinical_hypothyroid,on_thyroxine,0.427203
+5,XGBoost,subclinical_hypothyroid,T4U,0.344247
+5,XGBoost,subclinical_hypothyroid,query_hypothyroid,0.007838
+5,XGBoost,subclinical_hypothyroid,sex,0.0837
+5,XGBoost,euthyroid,TSH,5.270029
+5,XGBoost,euthyroid,FTI,0.118965
+5,XGBoost,euthyroid,T3,0.553074
+5,XGBoost,euthyroid,TT4,0.322739
+5,XGBoost,euthyroid,on_thyroxine,0.417983
+5,XGBoost,euthyroid,T4U,0.254768
+5,XGBoost,euthyroid,query_hypothyroid,0.052809
+5,XGBoost,euthyroid,sex,0.119022
+6,Logistic Regression,overt_hypothyroid,TSH,1.130896
+6,Logistic Regression,overt_hypothyroid,FTI,7.318707
+6,Logistic Regression,overt_hypothyroid,T3,0.577744
+6,Logistic Regression,overt_hypothyroid,TT4,1.034921
+6,Logistic Regression,overt_hypothyroid,T4U,0.591467
+6,Logistic Regression,overt_hypothyroid,on_thyroxine,0.433809
+6,Logistic Regression,overt_hypothyroid,sex,0.291863
+6,Logistic Regression,overt_hypothyroid,query_hypothyroid,4e-05
+6,Logistic Regression,subclinical_hypothyroid,TSH,1.088828
+6,Logistic Regression,subclinical_hypothyroid,FTI,3.147519
+6,Logistic Regression,subclinical_hypothyroid,T3,0.125191
+6,Logistic Regression,subclinical_hypothyroid,TT4,0.008039
+6,Logistic Regression,subclinical_hypothyroid,T4U,0.028782
+6,Logistic Regression,subclinical_hypothyroid,on_thyroxine,4.709605
+6,Logistic Regression,subclinical_hypothyroid,sex,0.080604
+6,Logistic Regression,subclinical_hypothyroid,query_hypothyroid,0.015329
+6,Logistic Regression,euthyroid,TSH,2.219724
+6,Logistic Regression,euthyroid,FTI,4.171188
+6,Logistic Regression,euthyroid,T3,0.452554
+6,Logistic Regression,euthyroid,TT4,1.026882
+6,Logistic Regression,euthyroid,T4U,0.562685
+6,Logistic Regression,euthyroid,on_thyroxine,4.275795
+6,Logistic Regression,euthyroid,sex,0.211259
+6,Logistic Regression,euthyroid,query_hypothyroid,0.015289
+6,Decision Tree,overt_hypothyroid,TSH,0.15437
+6,Decision Tree,overt_hypothyroid,FTI,0.179861
+6,Decision Tree,overt_hypothyroid,T3,0.00892
+6,Decision Tree,overt_hypothyroid,TT4,0.0
+6,Decision Tree,overt_hypothyroid,T4U,0.000943
+6,Decision Tree,overt_hypothyroid,on_thyroxine,0.000826
+6,Decision Tree,overt_hypothyroid,sex,0.0
+6,Decision Tree,overt_hypothyroid,query_hypothyroid,0.0
+6,Decision Tree,subclinical_hypothyroid,TSH,0.366463
+6,Decision Tree,subclinical_hypothyroid,FTI,0.094266
+6,Decision Tree,subclinical_hypothyroid,T3,0.0
+6,Decision Tree,subclinical_hypothyroid,TT4,0.019667
+6,Decision Tree,subclinical_hypothyroid,T4U,0.0
+6,Decision Tree,subclinical_hypothyroid,on_thyroxine,0.028038
+6,Decision Tree,subclinical_hypothyroid,sex,0.0
+6,Decision Tree,subclinical_hypothyroid,query_hypothyroid,0.0
+6,Decision Tree,euthyroid,TSH,0.520833
+6,Decision Tree,euthyroid,FTI,0.086377
+6,Decision Tree,euthyroid,T3,0.00892
+6,Decision Tree,euthyroid,TT4,0.019667
+6,Decision Tree,euthyroid,T4U,0.000943
+6,Decision Tree,euthyroid,on_thyroxine,0.028269
+6,Decision Tree,euthyroid,sex,0.0
+6,Decision Tree,euthyroid,query_hypothyroid,0.0
+6,Random Forest,overt_hypothyroid,TSH,0.130398
+6,Random Forest,overt_hypothyroid,FTI,0.138688
+6,Random Forest,overt_hypothyroid,T3,0.031251
+6,Random Forest,overt_hypothyroid,TT4,0.048109
+6,Random Forest,overt_hypothyroid,T4U,0.009809
+6,Random Forest,overt_hypothyroid,on_thyroxine,0.002109
+6,Random Forest,overt_hypothyroid,sex,0.001486
+6,Random Forest,overt_hypothyroid,query_hypothyroid,0.00031
+6,Random Forest,subclinical_hypothyroid,TSH,0.350365
+6,Random Forest,subclinical_hypothyroid,FTI,0.077598
+6,Random Forest,subclinical_hypothyroid,T3,0.031777
+6,Random Forest,subclinical_hypothyroid,TT4,0.032559
+6,Random Forest,subclinical_hypothyroid,T4U,0.006045
+6,Random Forest,subclinical_hypothyroid,on_thyroxine,0.028549
+6,Random Forest,subclinical_hypothyroid,sex,0.001851
+6,Random Forest,subclinical_hypothyroid,query_hypothyroid,0.002714
+6,Random Forest,euthyroid,TSH,0.480662
+6,Random Forest,euthyroid,FTI,0.062325
+6,Random Forest,euthyroid,T3,0.051918
+6,Random Forest,euthyroid,TT4,0.032537
+6,Random Forest,euthyroid,T4U,0.0091
+6,Random Forest,euthyroid,on_thyroxine,0.026473
+6,Random Forest,euthyroid,sex,0.00301
+6,Random Forest,euthyroid,query_hypothyroid,0.002919
+6,XGBoost,overt_hypothyroid,TSH,2.373626
+6,XGBoost,overt_hypothyroid,FTI,4.487337
+6,XGBoost,overt_hypothyroid,T3,0.250688
+6,XGBoost,overt_hypothyroid,TT4,0.32816
+6,XGBoost,overt_hypothyroid,T4U,0.241204
+6,XGBoost,overt_hypothyroid,on_thyroxine,0.097377
+6,XGBoost,overt_hypothyroid,sex,0.016633
+6,XGBoost,overt_hypothyroid,query_hypothyroid,0.031827
+6,XGBoost,subclinical_hypothyroid,TSH,3.849187
+6,XGBoost,subclinical_hypothyroid,FTI,0.603367
+6,XGBoost,subclinical_hypothyroid,T3,0.489849
+6,XGBoost,subclinical_hypothyroid,TT4,0.496989
+6,XGBoost,subclinical_hypothyroid,T4U,0.330575
+6,XGBoost,subclinical_hypothyroid,on_thyroxine,0.763247
+6,XGBoost,subclinical_hypothyroid,sex,0.13076
+6,XGBoost,subclinical_hypothyroid,query_hypothyroid,0.007076
+6,XGBoost,euthyroid,TSH,5.705563
+6,XGBoost,euthyroid,FTI,0.133458
+6,XGBoost,euthyroid,T3,0.834964
+6,XGBoost,euthyroid,TT4,0.665938
+6,XGBoost,euthyroid,T4U,0.318744
+6,XGBoost,euthyroid,on_thyroxine,0.213834
+6,XGBoost,euthyroid,sex,0.017457
+6,XGBoost,euthyroid,query_hypothyroid,0.093129
+7,Logistic Regression,overt_hypothyroid,TSH,1.693222
+7,Logistic Regression,overt_hypothyroid,FTI,8.221512
+7,Logistic Regression,overt_hypothyroid,T3,0.636993
+7,Logistic Regression,overt_hypothyroid,TT4,2.656035
+7,Logistic Regression,overt_hypothyroid,on_thyroxine,0.303663
+7,Logistic Regression,overt_hypothyroid,T4U,1.02976
+7,Logistic Regression,overt_hypothyroid,sex,0.557025
+7,Logistic Regression,overt_hypothyroid,query_hypothyroid,0.049117
+7,Logistic Regression,subclinical_hypothyroid,TSH,1.664586
+7,Logistic Regression,subclinical_hypothyroid,FTI,3.593149
+7,Logistic Regression,subclinical_hypothyroid,T3,0.112818
+7,Logistic Regression,subclinical_hypothyroid,TT4,0.747862
+7,Logistic Regression,subclinical_hypothyroid,on_thyroxine,3.808898
+7,Logistic Regression,subclinical_hypothyroid,T4U,0.267701
+7,Logistic Regression,subclinical_hypothyroid,sex,0.245777
+7,Logistic Regression,subclinical_hypothyroid,query_hypothyroid,0.00255
+7,Logistic Regression,euthyroid,TSH,3.357808
+7,Logistic Regression,euthyroid,FTI,4.628364
+7,Logistic Regression,euthyroid,T3,0.524175
+7,Logistic Regression,euthyroid,TT4,1.908173
+7,Logistic Regression,euthyroid,on_thyroxine,3.505235
+7,Logistic Regression,euthyroid,T4U,0.76206
+7,Logistic Regression,euthyroid,sex,0.311249
+7,Logistic Regression,euthyroid,query_hypothyroid,0.046568
+7,Decision Tree,overt_hypothyroid,TSH,0.15156
+7,Decision Tree,overt_hypothyroid,FTI,0.19548
+7,Decision Tree,overt_hypothyroid,T3,0.010648
+7,Decision Tree,overt_hypothyroid,TT4,0.00012
+7,Decision Tree,overt_hypothyroid,on_thyroxine,0.0
+7,Decision Tree,overt_hypothyroid,T4U,0.000344
+7,Decision Tree,overt_hypothyroid,sex,0.0
+7,Decision Tree,overt_hypothyroid,query_hypothyroid,0.0
+7,Decision Tree,subclinical_hypothyroid,TSH,0.358792
+7,Decision Tree,subclinical_hypothyroid,FTI,0.111657
+7,Decision Tree,subclinical_hypothyroid,T3,0.0
+7,Decision Tree,subclinical_hypothyroid,TT4,0.01907
+7,Decision Tree,subclinical_hypothyroid,on_thyroxine,0.023001
+7,Decision Tree,subclinical_hypothyroid,T4U,0.0
+7,Decision Tree,subclinical_hypothyroid,sex,0.0
+7,Decision Tree,subclinical_hypothyroid,query_hypothyroid,0.0
+7,Decision Tree,euthyroid,TSH,0.510267
+7,Decision Tree,euthyroid,FTI,0.097054
+7,Decision Tree,euthyroid,T3,0.010648
+7,Decision Tree,euthyroid,TT4,0.019083
+7,Decision Tree,euthyroid,on_thyroxine,0.023001
+7,Decision Tree,euthyroid,T4U,0.000344
+7,Decision Tree,euthyroid,sex,0.0
+7,Decision Tree,euthyroid,query_hypothyroid,0.0
+7,Random Forest,overt_hypothyroid,TSH,0.126857
+7,Random Forest,overt_hypothyroid,FTI,0.149296
+7,Random Forest,overt_hypothyroid,T3,0.029726
+7,Random Forest,overt_hypothyroid,TT4,0.051773
+7,Random Forest,overt_hypothyroid,on_thyroxine,0.002049
+7,Random Forest,overt_hypothyroid,T4U,0.010049
+7,Random Forest,overt_hypothyroid,sex,0.001306
+7,Random Forest,overt_hypothyroid,query_hypothyroid,0.000655
+7,Random Forest,subclinical_hypothyroid,TSH,0.350832
+7,Random Forest,subclinical_hypothyroid,FTI,0.08548
+7,Random Forest,subclinical_hypothyroid,T3,0.031686
+7,Random Forest,subclinical_hypothyroid,TT4,0.035116
+7,Random Forest,subclinical_hypothyroid,on_thyroxine,0.024268
+7,Random Forest,subclinical_hypothyroid,T4U,0.005932
+7,Random Forest,subclinical_hypothyroid,sex,0.001195
+7,Random Forest,subclinical_hypothyroid,query_hypothyroid,0.002287
+7,Random Forest,euthyroid,TSH,0.475882
+7,Random Forest,euthyroid,FTI,0.066452
+7,Random Forest,euthyroid,T3,0.04932
+7,Random Forest,euthyroid,TT4,0.03584
+7,Random Forest,euthyroid,on_thyroxine,0.022245
+7,Random Forest,euthyroid,T4U,0.010556
+7,Random Forest,euthyroid,sex,0.001971
+7,Random Forest,euthyroid,query_hypothyroid,0.002881
+7,XGBoost,overt_hypothyroid,TSH,3.046784
+7,XGBoost,overt_hypothyroid,FTI,4.117218
+7,XGBoost,overt_hypothyroid,T3,0.36821
+7,XGBoost,overt_hypothyroid,TT4,0.525012
+7,XGBoost,overt_hypothyroid,on_thyroxine,0.005572
+7,XGBoost,overt_hypothyroid,T4U,0.143996
+7,XGBoost,overt_hypothyroid,sex,0.0
+7,XGBoost,overt_hypothyroid,query_hypothyroid,0.007237
+7,XGBoost,subclinical_hypothyroid,TSH,3.758444
+7,XGBoost,subclinical_hypothyroid,FTI,0.760786
+7,XGBoost,subclinical_hypothyroid,T3,0.411901
+7,XGBoost,subclinical_hypothyroid,TT4,0.523536
+7,XGBoost,subclinical_hypothyroid,on_thyroxine,0.652117
+7,XGBoost,subclinical_hypothyroid,T4U,0.292639
+7,XGBoost,subclinical_hypothyroid,sex,0.030908
+7,XGBoost,subclinical_hypothyroid,query_hypothyroid,0.0
+7,XGBoost,euthyroid,TSH,5.855417
+7,XGBoost,euthyroid,FTI,0.135828
+7,XGBoost,euthyroid,T3,0.680396
+7,XGBoost,euthyroid,TT4,0.752982
+7,XGBoost,euthyroid,on_thyroxine,0.149254
+7,XGBoost,euthyroid,T4U,0.388462
+7,XGBoost,euthyroid,sex,0.179155
+7,XGBoost,euthyroid,query_hypothyroid,0.038028
+8,Logistic Regression,overt_hypothyroid,TSH,1.870244
+8,Logistic Regression,overt_hypothyroid,hypopituitary,0.0
+8,Logistic Regression,overt_hypothyroid,FTI,5.610724
+8,Logistic Regression,overt_hypothyroid,T3,0.384732
+8,Logistic Regression,overt_hypothyroid,TT4,0.012145
+8,Logistic Regression,overt_hypothyroid,goitre,0.049687
+8,Logistic Regression,overt_hypothyroid,I131_treatment,0.002138
+8,Logistic Regression,overt_hypothyroid,pregnant,0.007029
+8,Logistic Regression,subclinical_hypothyroid,TSH,1.629101
+8,Logistic Regression,subclinical_hypothyroid,hypopituitary,0.0
+8,Logistic Regression,subclinical_hypothyroid,FTI,2.668992
+8,Logistic Regression,subclinical_hypothyroid,T3,0.070859
+8,Logistic Regression,subclinical_hypothyroid,TT4,0.052135
+8,Logistic Regression,subclinical_hypothyroid,goitre,0.03733
+8,Logistic Regression,subclinical_hypothyroid,I131_treatment,0.002925
+8,Logistic Regression,subclinical_hypothyroid,pregnant,0.087055
+8,Logistic Regression,euthyroid,TSH,3.499345
+8,Logistic Regression,euthyroid,hypopituitary,0.0
+8,Logistic Regression,euthyroid,FTI,2.941733
+8,Logistic Regression,euthyroid,T3,0.313872
+8,Logistic Regression,euthyroid,TT4,0.064279
+8,Logistic Regression,euthyroid,goitre,0.087016
+8,Logistic Regression,euthyroid,I131_treatment,0.000786
+8,Logistic Regression,euthyroid,pregnant,0.094084
+8,Decision Tree,overt_hypothyroid,TSH,0.15051
+8,Decision Tree,overt_hypothyroid,hypopituitary,0.0
+8,Decision Tree,overt_hypothyroid,FTI,0.183626
+8,Decision Tree,overt_hypothyroid,T3,0.013635
+8,Decision Tree,overt_hypothyroid,TT4,0.011271
+8,Decision Tree,overt_hypothyroid,goitre,0.0
+8,Decision Tree,overt_hypothyroid,I131_treatment,0.0
+8,Decision Tree,overt_hypothyroid,pregnant,0.0
+8,Decision Tree,subclinical_hypothyroid,TSH,0.371898
+8,Decision Tree,subclinical_hypothyroid,hypopituitary,0.0
+8,Decision Tree,subclinical_hypothyroid,FTI,0.112027
+8,Decision Tree,subclinical_hypothyroid,T3,0.0
+8,Decision Tree,subclinical_hypothyroid,TT4,0.020983
+8,Decision Tree,subclinical_hypothyroid,goitre,0.0
+8,Decision Tree,subclinical_hypothyroid,I131_treatment,0.0
+8,Decision Tree,subclinical_hypothyroid,pregnant,0.0
+8,Decision Tree,euthyroid,TSH,0.519489
+8,Decision Tree,euthyroid,hypopituitary,0.0
+8,Decision Tree,euthyroid,FTI,0.092755
+8,Decision Tree,euthyroid,T3,0.013635
+8,Decision Tree,euthyroid,TT4,0.030517
+8,Decision Tree,euthyroid,goitre,0.0
+8,Decision Tree,euthyroid,I131_treatment,0.0
+8,Decision Tree,euthyroid,pregnant,0.0
+8,Random Forest,overt_hypothyroid,TSH,0.130281
+8,Random Forest,overt_hypothyroid,hypopituitary,5e-06
+8,Random Forest,overt_hypothyroid,FTI,0.1542
+8,Random Forest,overt_hypothyroid,T3,0.025237
+8,Random Forest,overt_hypothyroid,TT4,0.051511
+8,Random Forest,overt_hypothyroid,goitre,0.000346
+8,Random Forest,overt_hypothyroid,I131_treatment,0.000572
+8,Random Forest,overt_hypothyroid,pregnant,0.000375
+8,Random Forest,subclinical_hypothyroid,TSH,0.35313
+8,Random Forest,subclinical_hypothyroid,hypopituitary,0.0
+8,Random Forest,subclinical_hypothyroid,FTI,0.090474
+8,Random Forest,subclinical_hypothyroid,T3,0.034916
+8,Random Forest,subclinical_hypothyroid,TT4,0.041255
+8,Random Forest,subclinical_hypothyroid,goitre,0.001004
+8,Random Forest,subclinical_hypothyroid,I131_treatment,0.000516
+8,Random Forest,subclinical_hypothyroid,pregnant,0.001197
+8,Random Forest,euthyroid,TSH,0.482437
+8,Random Forest,euthyroid,hypopituitary,5e-06
+8,Random Forest,euthyroid,FTI,0.069521
+8,Random Forest,euthyroid,T3,0.051449
+8,Random Forest,euthyroid,TT4,0.035332
+8,Random Forest,euthyroid,goitre,0.001349
+8,Random Forest,euthyroid,I131_treatment,0.000418
+8,Random Forest,euthyroid,pregnant,0.001572
+8,XGBoost,overt_hypothyroid,TSH,2.812624
+8,XGBoost,overt_hypothyroid,hypopituitary,0.0
+8,XGBoost,overt_hypothyroid,FTI,3.579954
+8,XGBoost,overt_hypothyroid,T3,0.572332
+8,XGBoost,overt_hypothyroid,TT4,2.114105
+8,XGBoost,overt_hypothyroid,goitre,0.0
+8,XGBoost,overt_hypothyroid,I131_treatment,0.0
+8,XGBoost,overt_hypothyroid,pregnant,0.0
+8,XGBoost,subclinical_hypothyroid,TSH,3.208746
+8,XGBoost,subclinical_hypothyroid,hypopituitary,0.0
+8,XGBoost,subclinical_hypothyroid,FTI,0.626769
+8,XGBoost,subclinical_hypothyroid,T3,0.581466
+8,XGBoost,subclinical_hypothyroid,TT4,0.418872
+8,XGBoost,subclinical_hypothyroid,goitre,0.0
+8,XGBoost,subclinical_hypothyroid,I131_treatment,0.013542
+8,XGBoost,subclinical_hypothyroid,pregnant,0.0
+8,XGBoost,euthyroid,TSH,5.115232
+8,XGBoost,euthyroid,hypopituitary,0.0
+8,XGBoost,euthyroid,FTI,0.254738
+8,XGBoost,euthyroid,T3,0.780604
+8,XGBoost,euthyroid,TT4,0.558892
+8,XGBoost,euthyroid,goitre,0.0
+8,XGBoost,euthyroid,I131_treatment,0.006903
+8,XGBoost,euthyroid,pregnant,0.0
+9,Logistic Regression,overt_hypothyroid,hypopituitary,0.0
+9,Logistic Regression,overt_hypothyroid,TSH,1.013272
+9,Logistic Regression,overt_hypothyroid,FTI,4.510547
+9,Logistic Regression,overt_hypothyroid,T3,0.299972
+9,Logistic Regression,overt_hypothyroid,TT4,0.772957
+9,Logistic Regression,overt_hypothyroid,pregnant,0.012989
+9,Logistic Regression,overt_hypothyroid,goitre,0.011525
+9,Logistic Regression,overt_hypothyroid,on_thyroxine,0.739143
+9,Logistic Regression,subclinical_hypothyroid,hypopituitary,0.0
+9,Logistic Regression,subclinical_hypothyroid,TSH,0.941479
+9,Logistic Regression,subclinical_hypothyroid,FTI,2.151824
+9,Logistic Regression,subclinical_hypothyroid,T3,0.05539
+9,Logistic Regression,subclinical_hypothyroid,TT4,0.500597
+9,Logistic Regression,subclinical_hypothyroid,pregnant,0.047593
+9,Logistic Regression,subclinical_hypothyroid,goitre,0.008092
+9,Logistic Regression,subclinical_hypothyroid,on_thyroxine,4.91051
+9,Logistic Regression,euthyroid,hypopituitary,0.0
+9,Logistic Regression,euthyroid,TSH,1.95475
+9,Logistic Regression,euthyroid,FTI,2.358723
+9,Logistic Regression,euthyroid,T3,0.355362
+9,Logistic Regression,euthyroid,TT4,0.27236
+9,Logistic Regression,euthyroid,pregnant,0.034603
+9,Logistic Regression,euthyroid,goitre,0.019617
+9,Logistic Regression,euthyroid,on_thyroxine,4.171367
+9,Decision Tree,overt_hypothyroid,hypopituitary,0.0
+9,Decision Tree,overt_hypothyroid,TSH,0.153445
+9,Decision Tree,overt_hypothyroid,FTI,0.182093
+9,Decision Tree,overt_hypothyroid,T3,0.010466
+9,Decision Tree,overt_hypothyroid,TT4,0.000171
+9,Decision Tree,overt_hypothyroid,pregnant,0.0
+9,Decision Tree,overt_hypothyroid,goitre,0.0
+9,Decision Tree,overt_hypothyroid,on_thyroxine,0.0
+9,Decision Tree,subclinical_hypothyroid,hypopituitary,0.0
+9,Decision Tree,subclinical_hypothyroid,TSH,0.366147
+9,Decision Tree,subclinical_hypothyroid,FTI,0.099971
+9,Decision Tree,subclinical_hypothyroid,T3,0.0
+9,Decision Tree,subclinical_hypothyroid,TT4,0.011516
+9,Decision Tree,subclinical_hypothyroid,pregnant,0.0
+9,Decision Tree,subclinical_hypothyroid,goitre,0.0
+9,Decision Tree,subclinical_hypothyroid,on_thyroxine,0.037414
+9,Decision Tree,euthyroid,hypopituitary,0.0
+9,Decision Tree,euthyroid,TSH,0.519592
+9,Decision Tree,euthyroid,FTI,0.095129
+9,Decision Tree,euthyroid,T3,0.010466
+9,Decision Tree,euthyroid,TT4,0.01166
+9,Decision Tree,euthyroid,pregnant,0.0
+9,Decision Tree,euthyroid,goitre,0.0
+9,Decision Tree,euthyroid,on_thyroxine,0.037414
+9,Random Forest,overt_hypothyroid,hypopituitary,3e-06
+9,Random Forest,overt_hypothyroid,TSH,0.130137
+9,Random Forest,overt_hypothyroid,FTI,0.142655
+9,Random Forest,overt_hypothyroid,T3,0.021902
+9,Random Forest,overt_hypothyroid,TT4,0.053903
+9,Random Forest,overt_hypothyroid,pregnant,0.000158
+9,Random Forest,overt_hypothyroid,goitre,0.000173
+9,Random Forest,overt_hypothyroid,on_thyroxine,0.004498
+9,Random Forest,subclinical_hypothyroid,hypopituitary,0.0
+9,Random Forest,subclinical_hypothyroid,TSH,0.358513
+9,Random Forest,subclinical_hypothyroid,FTI,0.080963
+9,Random Forest,subclinical_hypothyroid,T3,0.034296
+9,Random Forest,subclinical_hypothyroid,TT4,0.032455
+9,Random Forest,subclinical_hypothyroid,pregnant,0.000812
+9,Random Forest,subclinical_hypothyroid,goitre,0.00028
+9,Random Forest,subclinical_hypothyroid,on_thyroxine,0.039206
+9,Random Forest,euthyroid,hypopituitary,3e-06
+9,Random Forest,euthyroid,TSH,0.486931
+9,Random Forest,euthyroid,FTI,0.065561
+9,Random Forest,euthyroid,T3,0.048299
+9,Random Forest,euthyroid,TT4,0.036984
+9,Random Forest,euthyroid,pregnant,0.000971
+9,Random Forest,euthyroid,goitre,0.000452
+9,Random Forest,euthyroid,on_thyroxine,0.03474
+9,XGBoost,overt_hypothyroid,hypopituitary,0.0
+9,XGBoost,overt_hypothyroid,TSH,2.401713
+9,XGBoost,overt_hypothyroid,FTI,2.675514
+9,XGBoost,overt_hypothyroid,T3,0.243261
+9,XGBoost,overt_hypothyroid,TT4,2.210345
+9,XGBoost,overt_hypothyroid,pregnant,0.0
+9,XGBoost,overt_hypothyroid,goitre,0.0
+9,XGBoost,overt_hypothyroid,on_thyroxine,0.038286
+9,XGBoost,subclinical_hypothyroid,hypopituitary,0.0
+9,XGBoost,subclinical_hypothyroid,TSH,3.603786
+9,XGBoost,subclinical_hypothyroid,FTI,0.851917
+9,XGBoost,subclinical_hypothyroid,T3,0.667278
+9,XGBoost,subclinical_hypothyroid,TT4,0.450909
+9,XGBoost,subclinical_hypothyroid,pregnant,0.0
+9,XGBoost,subclinical_hypothyroid,goitre,0.0
+9,XGBoost,subclinical_hypothyroid,on_thyroxine,0.947248
+9,XGBoost,euthyroid,hypopituitary,0.0
+9,XGBoost,euthyroid,TSH,5.859636
+9,XGBoost,euthyroid,FTI,0.394973
+9,XGBoost,euthyroid,T3,0.819996
+9,XGBoost,euthyroid,TT4,0.526263
+9,XGBoost,euthyroid,pregnant,0.0
+9,XGBoost,euthyroid,goitre,0.0
+9,XGBoost,euthyroid,on_thyroxine,0.186493

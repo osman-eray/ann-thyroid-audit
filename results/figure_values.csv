@@ -1,0 +1,72 @@
+figure,item,metric,value
+1,Overt hypothyroid,n,166
+1,Subclinical hypothyroid,n,368
+1,Euthyroid,n,6666
+6,SVM (RBF) / A,sensitivity_macro,0.5755
+6,SVM (RBF) / A,specificity_macro,0.7603
+6,SVM (RBF) / B,sensitivity_macro,0.9651
+6,SVM (RBF) / B,specificity_macro,0.9831
+6,SVM (Linear) / A,sensitivity_macro,0.5997
+6,SVM (Linear) / A,specificity_macro,0.7574
+6,SVM (Linear) / B,sensitivity_macro,0.9772
+6,SVM (Linear) / B,specificity_macro,0.9857
+6,Logistic Regression / A,sensitivity_macro,0.7168
+6,Logistic Regression / A,specificity_macro,0.8418
+6,Logistic Regression / B,sensitivity_macro,0.9766
+6,Logistic Regression / B,specificity_macro,0.9878
+6,KNN / A,sensitivity_macro,0.6289
+6,KNN / A,specificity_macro,0.7801
+6,KNN / B,sensitivity_macro,0.9248
+6,KNN / B,specificity_macro,0.9583
+7,Logistic Regression / A,auc_macro_mean,0.9843
+7,Logistic Regression / A,auc_weighted_mean,0.98
+7,Logistic Regression / B,auc_macro_mean,0.9922
+7,Logistic Regression / B,auc_weighted_mean,0.9909
+7,Decision Tree / A,auc_macro_mean,0.9951
+7,Decision Tree / A,auc_weighted_mean,0.9961
+7,Decision Tree / B,auc_macro_mean,0.9942
+7,Decision Tree / B,auc_weighted_mean,0.9943
+7,KNN / A,auc_macro_mean,0.9109
+7,KNN / A,auc_weighted_mean,0.9016
+7,KNN / B,auc_macro_mean,0.9725
+7,KNN / B,auc_weighted_mean,0.9716
+7,SVM (RBF) / A,auc_macro_mean,0.9921
+7,SVM (RBF) / A,auc_weighted_mean,0.9935
+7,SVM (RBF) / B,auc_macro_mean,0.9933
+7,SVM (RBF) / B,auc_weighted_mean,0.9937
+7,SVM (Linear) / A,auc_macro_mean,0.991
+7,SVM (Linear) / A,auc_weighted_mean,0.9914
+7,SVM (Linear) / B,auc_macro_mean,0.9927
+7,SVM (Linear) / B,auc_weighted_mean,0.9923
+7,Random Forest / A,auc_macro_mean,0.9973
+7,Random Forest / A,auc_weighted_mean,0.9995
+7,Random Forest / B,auc_macro_mean,0.9965
+7,Random Forest / B,auc_weighted_mean,0.998
+7,AdaBoost / A,auc_macro_mean,0.9912
+7,AdaBoost / A,auc_weighted_mean,0.9901
+7,AdaBoost / B,auc_macro_mean,0.9911
+7,AdaBoost / B,auc_weighted_mean,0.99
+7,Bagging / A,auc_macro_mean,0.9974
+7,Bagging / A,auc_weighted_mean,0.9997
+7,Bagging / B,auc_macro_mean,0.9965
+7,Bagging / B,auc_weighted_mean,0.9978
+7,XGBoost / A,auc_macro_mean,0.9972
+7,XGBoost / A,auc_weighted_mean,0.9994
+7,XGBoost / B,auc_macro_mean,0.9963
+7,XGBoost / B,auc_weighted_mean,0.9976
+7,Stacking (RF+SVM) / A,auc_macro_mean,0.9974
+7,Stacking (RF+SVM) / A,auc_weighted_mean,0.9996
+7,Stacking (RF+SVM) / B,auc_macro_mean,0.9964
+7,Stacking (RF+SVM) / B,auc_weighted_mean,0.9977
+8,Logistic Regression / Overt hypothyroid,top_feature,FTI
+8,Logistic Regression / Subclinical hypothyroid,top_feature,on_thyroxine
+8,Logistic Regression / Euthyroid,top_feature,TSH
+8,Decision Tree / Overt hypothyroid,top_feature,FTI
+8,Decision Tree / Subclinical hypothyroid,top_feature,TSH
+8,Decision Tree / Euthyroid,top_feature,TSH
+8,Random Forest / Overt hypothyroid,top_feature,FTI
+8,Random Forest / Subclinical hypothyroid,top_feature,TSH
+8,Random Forest / Euthyroid,top_feature,TSH
+8,XGBoost / Overt hypothyroid,top_feature,FTI
+8,XGBoost / Subclinical hypothyroid,top_feature,TSH
+8,XGBoost / Euthyroid,top_feature,TSH

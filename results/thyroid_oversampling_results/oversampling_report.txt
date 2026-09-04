@@ -1,0 +1,27 @@
+======================================================================
+DENGESİZLİK STRATEJİSİ KARŞILAŞTIRMASI — ann-thyroid
+HFS sabit (8 özellik); yalnızca dengeleme stratejisi değişir.
+======================================================================
+
+STRATEJİ ORTALAMASI (tüm modeller):
+----------------------------------------------------------------------
+Strateji          ROC-AUC     Macro-F1    Spec        
+RandomOverSampler 0.9954      0.9305      0.9918
+CostSensitive     0.9955      0.9295      0.9907
+SMOTE             0.9955      0.9287      0.9917  ← önerilen
+ClassWeight       0.9956      0.9275      0.9877
+SMOTEENN          0.9953      0.9230      0.9910
+ADASYN            0.9952      0.9225      0.9909
+BorderlineSMOTE   0.9950      0.9207      0.9889
+
+
+AZINLIK SINIF DUYARLILIĞI (recall, strateji başına):
+----------------------------------------------------------------------
+Strateji          Overt hypo      Subclin. hypo   Euthyroid   
+ADASYN            0.9949±0.0115  0.9793±0.0187  0.9802
+BorderlineSMOTE   0.9899±0.0200  0.9658±0.0265  0.9806
+ClassWeight       0.9818±0.0219  0.9707±0.0261  0.9827
+CostSensitive     0.9869±0.0190  0.9851±0.0199  0.9822
+RandomOverSampler 0.9909±0.0181  0.9878±0.0125  0.9821
+SMOTE             0.9869±0.0235  0.9874±0.0158  0.9817
+SMOTEENN          0.9909±0.0197  0.9856±0.0154  0.9797

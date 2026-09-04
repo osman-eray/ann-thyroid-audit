@@ -1,0 +1,89 @@
+========================================================================
+SINIF-BAZLI SHAP + SIRALAMA UYUMU — ann-thyroid
+R1-72, R1-73, R1-80, R1-81
+========================================================================
+
+[R1-72/73] SINIF-BAZLI SHAP ÖNEM SIRALAMASI
+(sınıflar ORTALANMADI — her sınıf ayrı)
+------------------------------------------------------------------------
+
+  [Logistic Regression]
+    overt_hypothyroid          top4: FTI(5.5157), TSH(1.8779), TT4(0.8351), T4U(0.5977)
+    subclinical_hypothyroid    top4: on_thyroxine(3.7262), FTI(2.5113), TSH(1.7062), TT4(0.3308)
+    euthyroid                  top4: TSH(3.5841), on_thyroxine(3.4865), FTI(3.0044), TT4(0.5346)
+
+  [Decision Tree]
+    overt_hypothyroid          top4: FTI(0.1789), TSH(0.1494), TT4(0.0149), T3(0.0116)
+    subclinical_hypothyroid    top4: TSH(0.3660), FTI(0.1043), on_thyroxine(0.0292), TT4(0.0190)
+    euthyroid                  top4: TSH(0.5142), FTI(0.0872), TT4(0.0330), on_thyroxine(0.0292)
+
+  [Random Forest]
+    overt_hypothyroid          top4: FTI(0.1464), TSH(0.1304), TT4(0.0510), T3(0.0288)
+    subclinical_hypothyroid    top4: TSH(0.3501), FTI(0.0822), TT4(0.0374), T3(0.0339)
+    euthyroid                  top4: TSH(0.4792), FTI(0.0677), T3(0.0528), TT4(0.0351)
+
+  [XGBoost]
+    overt_hypothyroid          top4: FTI(3.7536), TSH(2.5685), TT4(1.1217), T3(0.5132)
+    subclinical_hypothyroid    top4: TSH(3.6628), FTI(0.6936), on_thyroxine(0.6286), T3(0.5629)
+    euthyroid                  top4: TSH(5.3753), T3(0.7229), TT4(0.5302), T4U(0.3024)
+
+  → SINIFA ÖZGÜ ÖRÜNTÜ VAR MI? (her sınıfın en önemli özelliği)
+    Logistic Regression  {'overt_hypothyroid': 'FTI', 'subclinical_hypothyroid': 'on_thyroxine', 'euthyroid': 'TSH'} → FARKLI (ortalama bilgi gizler)
+    Decision Tree        {'overt_hypothyroid': 'FTI', 'subclinical_hypothyroid': 'TSH', 'euthyroid': 'TSH'} → FARKLI (ortalama bilgi gizler)
+    Random Forest        {'overt_hypothyroid': 'FTI', 'subclinical_hypothyroid': 'TSH', 'euthyroid': 'TSH'} → FARKLI (ortalama bilgi gizler)
+    XGBoost              {'overt_hypothyroid': 'FTI', 'subclinical_hypothyroid': 'TSH', 'euthyroid': 'TSH'} → FARKLI (ortalama bilgi gizler)
+
+
+[R1-80] SIRALAMA UYUMU (Spearman ρ, 10 split ort ± std)
+------------------------------------------------------------------------
+Model               Karşılaştırma             Spearman ρ        p (ort)   
+Decision Tree       HFS vs Permutation        0.671±0.236      0.1343
+Decision Tree       HFS vs SHAP               0.687±0.252      0.1337
+Decision Tree       SHAP vs Permutation       0.978±0.035      0.0003
+Logistic Regression HFS vs Permutation        0.388±0.232      0.3999
+Logistic Regression HFS vs SHAP               0.462±0.336      0.2812
+Logistic Regression SHAP vs Permutation       0.707±0.140      0.0731
+Random Forest       HFS vs Permutation        0.658±0.235      0.1422
+Random Forest       HFS vs SHAP               0.652±0.323      0.1992
+Random Forest       SHAP vs Permutation       0.910±0.038      0.0024
+XGBoost             HFS vs Permutation        0.671±0.248      0.1406
+XGBoost             HFS vs SHAP               0.716±0.268      0.1247
+XGBoost             SHAP vs Permutation       0.925±0.062      0.0029
+
+  → ρ yüksek: HFS'nin seçtiği önem sırası, modelin fiilen
+    kullandığı önem sırasıyla uyumlu.
+  → ρ düşük: HFS istatistiksel olarak seçiyor ama model başka
+    özellikleri kullanıyor (yorumlanabilirlik açısından önemli).
+
+
+[R1-81] YEREL SHAP — TEMSİLİ AZINLIK VAKALAR
+------------------------------------------------------------------------
+
+  [Logistic Regression]
+    overt_hypothyroid          [correct      ] → tahmin: overt_hypothyroid         
+      en etkili: TSH=+145.8839, FTI=+28.2792, TT4=-3.8804
+    subclinical_hypothyroid    [correct      ] → tahmin: subclinical_hypothyroid   
+      en etkili: TSH=+1.7374, FTI=+1.4396, on_thyroxine=+1.2024
+
+  [Decision Tree]
+    overt_hypothyroid          [correct      ] → tahmin: overt_hypothyroid         
+      en etkili: FTI=+0.6504, TSH=+0.0208, T4U=-0.0024
+    subclinical_hypothyroid    [correct      ] → tahmin: subclinical_hypothyroid   
+      en etkili: TSH=+0.3912, FTI=+0.2518, T3=+0.0254
+
+  [Random Forest]
+    overt_hypothyroid          [correct      ] → tahmin: overt_hypothyroid         
+      en etkili: FTI=+0.3929, TSH=+0.0937, TT4=+0.0869
+    subclinical_hypothyroid    [correct      ] → tahmin: subclinical_hypothyroid   
+      en etkili: TSH=+0.2857, FTI=+0.2136, TT4=+0.0899
+
+  [XGBoost]
+    overt_hypothyroid          [correct      ] → tahmin: overt_hypothyroid         
+      en etkili: FTI=+3.7807, TSH=+1.9099, T4U=-0.5561
+    overt_hypothyroid          [misclassified] → tahmin: euthyroid                 
+      en etkili: FTI=+2.0501, TSH=+1.4892, TT4=-0.7357
+    subclinical_hypothyroid    [correct      ] → tahmin: subclinical_hypothyroid   
+      en etkili: TSH=+2.6703, FTI=+1.8468, TT4=+1.0377
+
+  → Yanlış sınıflanan vakalarda hangi özelliğin modeli yanılttığı
+    görülebilir; bu, klinik güven için kritik bilgidir.

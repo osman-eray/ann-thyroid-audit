@@ -1,0 +1,121 @@
+pair,metric,model,mean_ref,mean_test,delta,wilcoxon_stat,p_value,significant,p_holm,p_bh,sig_holm,sig_bh
+HFS_only_effect,roc_auc_ovr,Logistic Regression,0.98,0.9837,0.0037,18.0,0.375,no,1.0,0.53571,no,no
+HFS_only_effect,roc_auc_ovr,Decision Tree,0.9961,0.9944,-0.0017,11.0,0.1730709208049953,no,0.86535,0.28845,no,no
+HFS_only_effect,roc_auc_ovr,KNN,0.9016,0.9653,0.0637,0.0,0.001953125,yes,0.01953,0.00488,yes,yes
+HFS_only_effect,roc_auc_ovr,SVM (RBF),0.9935,0.9931,-0.0003,27.0,1.0,no,1.0,1.0,no,no
+HFS_only_effect,roc_auc_ovr,SVM (Linear),0.9914,0.9914,-0.0001,19.0,0.431640625,no,1.0,0.53955,no,no
+HFS_only_effect,roc_auc_ovr,Random Forest,0.9995,0.998,-0.0015,0.0,0.001953125,yes,0.01953,0.00488,yes,yes
+HFS_only_effect,roc_auc_ovr,AdaBoost,0.9901,0.9901,0.0,,1.0,no,1.0,1.0,no,no
+HFS_only_effect,roc_auc_ovr,Bagging,0.9997,0.998,-0.0016,0.0,0.001953125,yes,0.01953,0.00488,yes,yes
+HFS_only_effect,roc_auc_ovr,XGBoost,0.9994,0.9979,-0.0014,1.0,0.00390625,yes,0.02344,0.00781,yes,yes
+HFS_only_effect,roc_auc_ovr,Stacking (RF+SVM),0.9996,0.9981,-0.0015,0.0,0.001953125,yes,0.01953,0.00488,yes,yes
+HFS_only_effect,specificity_macro,Logistic Regression,0.8418,0.8158,-0.0259,0.0,0.001953125,yes,0.01953,0.00651,yes,yes
+HFS_only_effect,specificity_macro,Decision Tree,0.9943,0.9938,-0.0005,17.0,0.5146697234497355,no,1.0,0.64334,no,no
+HFS_only_effect,specificity_macro,KNN,0.7801,0.8456,0.0655,0.0,0.001953125,yes,0.01953,0.00651,yes,yes
+HFS_only_effect,specificity_macro,SVM (RBF),0.7603,0.8745,0.1143,0.0,0.001953125,yes,0.01953,0.00651,yes,yes
+HFS_only_effect,specificity_macro,SVM (Linear),0.7574,0.7643,0.0069,21.0,0.8588323362422003,no,1.0,0.95426,no,no
+HFS_only_effect,specificity_macro,Random Forest,0.996,0.9925,-0.0034,5.0,0.038151710173415135,yes,0.26706,0.09538,no,no
+HFS_only_effect,specificity_macro,AdaBoost,0.9469,0.9469,0.0,,1.0,no,1.0,1.0,no,no
+HFS_only_effect,specificity_macro,Bagging,0.9943,0.9907,-0.0035,13.0,0.16015625,no,0.80078,0.26693,no,no
+HFS_only_effect,specificity_macro,XGBoost,0.9909,0.9897,-0.0012,20.0,0.4921875,no,1.0,0.64334,no,no
+HFS_only_effect,specificity_macro,Stacking (RF+SVM),0.9927,0.9871,-0.0057,10.0,0.083984375,no,0.50391,0.16797,no,no
+HFS_only_effect,f1_macro,Logistic Regression,0.7592,0.7225,-0.0367,5.0,0.01953125,yes,0.13672,0.04883,no,yes
+HFS_only_effect,f1_macro,Decision Tree,0.9737,0.9599,-0.0138,1.0,0.010862224704815628,yes,0.0869,0.03621,no,yes
+HFS_only_effect,f1_macro,KNN,0.6784,0.7946,0.1161,0.0,0.001953125,yes,0.01953,0.00977,yes,yes
+HFS_only_effect,f1_macro,SVM (RBF),0.6307,0.8297,0.1989,0.0,0.001953125,yes,0.01953,0.00977,yes,yes
+HFS_only_effect,f1_macro,SVM (Linear),0.6231,0.6366,0.0135,22.0,0.9527650219907529,no,1.0,1.0,no,no
+HFS_only_effect,f1_macro,Random Forest,0.9754,0.965,-0.0104,6.0,0.050612432239184685,no,0.24414,0.0723,no,no
+HFS_only_effect,f1_macro,AdaBoost,0.8652,0.8652,0.0,,1.0,no,1.0,1.0,no,no
+HFS_only_effect,f1_macro,Bagging,0.9788,0.9652,-0.0136,6.0,0.02734375,yes,0.16406,0.05469,no,no
+HFS_only_effect,f1_macro,XGBoost,0.9696,0.962,-0.0076,21.0,0.556640625,no,1.0,0.6958,no,no
+HFS_only_effect,f1_macro,Stacking (RF+SVM),0.9719,0.9596,-0.0123,8.0,0.048828125,yes,0.24414,0.0723,no,no
+SMOTE_only_effect,roc_auc_ovr,Logistic Regression,0.98,0.9886,0.0086,2.0,0.005859375,yes,0.04688,0.01953,yes,yes
+SMOTE_only_effect,roc_auc_ovr,Decision Tree,0.9961,0.9956,-0.0005,14.0,0.5754030229127536,no,1.0,0.625,no,no
+SMOTE_only_effect,roc_auc_ovr,KNN,0.9016,0.9211,0.0195,0.0,0.001953125,yes,0.01953,0.00977,yes,yes
+SMOTE_only_effect,roc_auc_ovr,SVM (RBF),0.9935,0.9889,-0.0045,0.0,0.001953125,yes,0.01953,0.00977,yes,yes
+SMOTE_only_effect,roc_auc_ovr,SVM (Linear),0.9914,0.9915,0.0001,11.0,0.10546875,no,0.63281,0.21094,no,no
+SMOTE_only_effect,roc_auc_ovr,Random Forest,0.9995,0.9996,0.0001,15.0,0.232421875,no,0.92969,0.33203,no,no
+SMOTE_only_effect,roc_auc_ovr,AdaBoost,0.9901,0.9901,-0.0,0.0,0.31731050786291415,no,0.95193,0.39664,no,no
+SMOTE_only_effect,roc_auc_ovr,Bagging,0.9997,0.9994,-0.0003,12.0,0.130859375,no,0.6543,0.2181,no,no
+SMOTE_only_effect,roc_auc_ovr,XGBoost,0.9994,0.9993,-0.0,22.0,0.625,no,1.0,0.625,no,no
+SMOTE_only_effect,roc_auc_ovr,Stacking (RF+SVM),0.9996,0.9995,-0.0001,9.0,0.064453125,no,0.45117,0.16113,no,no
+SMOTE_only_effect,specificity_macro,Logistic Regression,0.8418,0.9849,0.1432,0.0,0.001953125,yes,0.01953,0.00488,yes,yes
+SMOTE_only_effect,specificity_macro,Decision Tree,0.9943,0.9967,0.0025,7.0,0.23672357063785732,no,0.94689,0.33818,no,no
+SMOTE_only_effect,specificity_macro,KNN,0.7801,0.9019,0.1218,0.0,0.001953125,yes,0.01953,0.00488,yes,yes
+SMOTE_only_effect,specificity_macro,SVM (RBF),0.7603,0.9615,0.2013,0.0,0.001953125,yes,0.01953,0.00488,yes,yes
+SMOTE_only_effect,specificity_macro,SVM (Linear),0.7574,0.9853,0.2279,0.0,0.001953125,yes,0.01953,0.00488,yes,yes
+SMOTE_only_effect,specificity_macro,Random Forest,0.996,0.9978,0.0018,4.0,0.0499499764547464,yes,0.24975,0.08325,no,no
+SMOTE_only_effect,specificity_macro,AdaBoost,0.9469,0.9892,0.0423,10.0,0.916511907863894,no,1.0,0.91651,no,no
+SMOTE_only_effect,specificity_macro,Bagging,0.9943,0.9972,0.0029,3.5,0.013671875,yes,0.08203,0.02734,no,yes
+SMOTE_only_effect,specificity_macro,XGBoost,0.9909,0.9917,0.0008,19.0,0.431640625,no,1.0,0.53955,no,no
+SMOTE_only_effect,specificity_macro,Stacking (RF+SVM),0.9927,0.9929,0.0002,21.0,0.8589549227374824,no,1.0,0.91651,no,no
+SMOTE_only_effect,f1_macro,Logistic Regression,0.7592,0.8714,0.1122,0.0,0.001953125,yes,0.01953,0.00488,yes,yes
+SMOTE_only_effect,f1_macro,Decision Tree,0.9737,0.967,-0.0067,3.0,0.06297905121445523,no,0.3149,0.10497,no,no
+SMOTE_only_effect,f1_macro,KNN,0.6784,0.7072,0.0287,0.0,0.001953125,yes,0.01953,0.00488,yes,yes
+SMOTE_only_effect,f1_macro,SVM (RBF),0.6307,0.8828,0.252,0.0,0.001953125,yes,0.01953,0.00488,yes,yes
+SMOTE_only_effect,f1_macro,SVM (Linear),0.6231,0.871,0.248,0.0,0.001953125,yes,0.01953,0.00488,yes,yes
+SMOTE_only_effect,f1_macro,Random Forest,0.9754,0.9782,0.0028,3.0,0.03569190011680441,yes,0.21415,0.07138,no,no
+SMOTE_only_effect,f1_macro,AdaBoost,0.8652,0.8844,0.0192,10.0,0.916511907863894,no,1.0,1.0,no,no
+SMOTE_only_effect,f1_macro,Bagging,0.9788,0.9792,0.0004,23.0,0.6953125,no,1.0,0.86914,no,no
+SMOTE_only_effect,f1_macro,XGBoost,0.9696,0.9671,-0.0025,18.0,0.375,no,1.0,0.53571,no,no
+SMOTE_only_effect,f1_macro,Stacking (RF+SVM),0.9719,0.971,-0.001,27.0,1.0,no,1.0,1.0,no,no
+HFS_incremental_over_SMOTE,roc_auc_ovr,Logistic Regression,0.9886,0.9909,0.0022,25.0,0.845703125,no,1.0,0.93967,no,no
+HFS_incremental_over_SMOTE,roc_auc_ovr,Decision Tree,0.9956,0.9943,-0.0014,7.0,0.23672357063785732,no,0.94689,0.33818,no,no
+HFS_incremental_over_SMOTE,roc_auc_ovr,KNN,0.9211,0.9716,0.0504,0.0,0.001953125,yes,0.01953,0.00977,yes,yes
+HFS_incremental_over_SMOTE,roc_auc_ovr,SVM (RBF),0.9889,0.9937,0.0047,9.0,0.064453125,no,0.32227,0.10742,no,no
+HFS_incremental_over_SMOTE,roc_auc_ovr,SVM (Linear),0.9915,0.9923,0.0008,27.0,1.0,no,1.0,1.0,no,no
+HFS_incremental_over_SMOTE,roc_auc_ovr,Random Forest,0.9996,0.998,-0.0016,1.0,0.00390625,yes,0.03125,0.00977,yes,yes
+HFS_incremental_over_SMOTE,roc_auc_ovr,AdaBoost,0.9901,0.99,-0.0,0.0,0.31731050786291415,no,0.95193,0.39664,no,no
+HFS_incremental_over_SMOTE,roc_auc_ovr,Bagging,0.9994,0.9978,-0.0016,0.0,0.001953125,yes,0.01953,0.00977,yes,yes
+HFS_incremental_over_SMOTE,roc_auc_ovr,XGBoost,0.9993,0.9976,-0.0018,1.0,0.00390625,yes,0.03125,0.00977,yes,yes
+HFS_incremental_over_SMOTE,roc_auc_ovr,Stacking (RF+SVM),0.9995,0.9977,-0.0018,4.0,0.013671875,yes,0.08203,0.02734,no,yes
+HFS_incremental_over_SMOTE,specificity_macro,Logistic Regression,0.9849,0.9878,0.0028,13.0,0.16015625,no,0.80078,0.26693,no,no
+HFS_incremental_over_SMOTE,specificity_macro,Decision Tree,0.9967,0.9951,-0.0016,3.0,0.06297905121445523,no,0.37787,0.12596,no,no
+HFS_incremental_over_SMOTE,specificity_macro,KNN,0.9019,0.9583,0.0564,0.0,0.001953125,yes,0.01953,0.01953,yes,yes
+HFS_incremental_over_SMOTE,specificity_macro,SVM (RBF),0.9615,0.9831,0.0216,1.0,0.00390625,yes,0.03516,0.01953,yes,yes
+HFS_incremental_over_SMOTE,specificity_macro,SVM (Linear),0.9853,0.9857,0.0004,22.0,0.625,no,1.0,0.69444,no,no
+HFS_incremental_over_SMOTE,specificity_macro,Random Forest,0.9978,0.9954,-0.0024,3.0,0.009765625,yes,0.07812,0.03255,no,yes
+HFS_incremental_over_SMOTE,specificity_macro,AdaBoost,0.9892,0.9895,0.0003,7.0,0.892738400944348,no,1.0,0.89274,no,no
+HFS_incremental_over_SMOTE,specificity_macro,Bagging,0.9972,0.9939,-0.0033,5.0,0.038151710173415135,yes,0.26706,0.09538,no,no
+HFS_incremental_over_SMOTE,specificity_macro,XGBoost,0.9917,0.9915,-0.0002,21.0,0.556640625,no,1.0,0.69444,no,no
+HFS_incremental_over_SMOTE,specificity_macro,Stacking (RF+SVM),0.9929,0.9918,-0.0011,21.0,0.556640625,no,1.0,0.69444,no,no
+HFS_incremental_over_SMOTE,f1_macro,Logistic Regression,0.8714,0.8655,-0.0058,21.0,0.556640625,no,1.0,0.6958,no,no
+HFS_incremental_over_SMOTE,f1_macro,Decision Tree,0.967,0.9545,-0.0125,3.0,0.06297905121445523,no,0.37787,0.12596,no,no
+HFS_incremental_over_SMOTE,f1_macro,KNN,0.7072,0.8174,0.1103,0.0,0.001953125,yes,0.01953,0.01953,yes,yes
+HFS_incremental_over_SMOTE,f1_macro,SVM (RBF),0.8828,0.8788,-0.004,23.0,0.6953125,no,1.0,0.77257,no,no
+HFS_incremental_over_SMOTE,f1_macro,SVM (Linear),0.871,0.8466,-0.0244,3.0,0.009765625,yes,0.08789,0.04883,no,yes
+HFS_incremental_over_SMOTE,f1_macro,Random Forest,0.9782,0.9621,-0.0161,7.0,0.037109375,yes,0.29688,0.09538,no,no
+HFS_incremental_over_SMOTE,f1_macro,AdaBoost,0.8844,0.8894,0.005,7.0,0.892738400944348,no,1.0,0.89274,no,no
+HFS_incremental_over_SMOTE,f1_macro,Bagging,0.9792,0.9667,-0.0125,5.0,0.038151710173415135,yes,0.29688,0.09538,no,no
+HFS_incremental_over_SMOTE,f1_macro,XGBoost,0.9671,0.9561,-0.011,15.0,0.232421875,no,0.9668,0.33203,no,no
+HFS_incremental_over_SMOTE,f1_macro,Stacking (RF+SVM),0.971,0.9585,-0.0125,14.0,0.193359375,no,0.9668,0.32227,no,no
+total_effect,roc_auc_ovr,Logistic Regression,0.98,0.9909,0.0108,4.0,0.013671875,yes,0.06836,0.02279,no,yes
+total_effect,roc_auc_ovr,Decision Tree,0.9961,0.9943,-0.0019,12.0,0.21352435403618242,no,0.71885,0.26691,no,no
+total_effect,roc_auc_ovr,KNN,0.9016,0.9716,0.07,0.0,0.001953125,yes,0.01953,0.00651,yes,yes
+total_effect,roc_auc_ovr,SVM (RBF),0.9935,0.9937,0.0002,22.0,0.625,no,1.0,0.69444,no,no
+total_effect,roc_auc_ovr,SVM (Linear),0.9914,0.9923,0.0009,25.0,0.845703125,no,1.0,0.8457,no,no
+total_effect,roc_auc_ovr,Random Forest,0.9995,0.998,-0.0015,2.0,0.005859375,yes,0.03516,0.01172,yes,yes
+total_effect,roc_auc_ovr,AdaBoost,0.9901,0.99,-0.0,0.0,0.17971249487899976,no,0.71885,0.25673,no,no
+total_effect,roc_auc_ovr,Bagging,0.9997,0.9978,-0.0018,0.0,0.001953125,yes,0.01953,0.00651,yes,yes
+total_effect,roc_auc_ovr,XGBoost,0.9994,0.9976,-0.0018,0.0,0.001953125,yes,0.01953,0.00651,yes,yes
+total_effect,roc_auc_ovr,Stacking (RF+SVM),0.9996,0.9977,-0.0019,1.0,0.00390625,yes,0.02734,0.00977,yes,yes
+total_effect,specificity_macro,Logistic Regression,0.8418,0.9878,0.146,0.0,0.001953125,yes,0.01953,0.00488,yes,yes
+total_effect,specificity_macro,Decision Tree,0.9943,0.9951,0.0008,19.0,0.6784023758521882,no,1.0,0.97976,no,no
+total_effect,specificity_macro,KNN,0.7801,0.9583,0.1782,0.0,0.001953125,yes,0.01953,0.00488,yes,yes
+total_effect,specificity_macro,SVM (RBF),0.7603,0.9831,0.2229,0.0,0.001953125,yes,0.01953,0.00488,yes,yes
+total_effect,specificity_macro,SVM (Linear),0.7574,0.9857,0.2283,0.0,0.001953125,yes,0.01953,0.00488,yes,yes
+total_effect,specificity_macro,Random Forest,0.996,0.9954,-0.0005,19.0,0.431640625,no,1.0,0.86328,no,no
+total_effect,specificity_macro,AdaBoost,0.9469,0.9895,0.0426,6.0,0.6858304344516057,no,1.0,0.97976,no,no
+total_effect,specificity_macro,Bagging,0.9943,0.9939,-0.0004,27.0,1.0,no,1.0,1.0,no,no
+total_effect,specificity_macro,XGBoost,0.9909,0.9915,0.0006,26.0,0.921875,no,1.0,1.0,no,no
+total_effect,specificity_macro,Stacking (RF+SVM),0.9927,0.9918,-0.0009,26.0,0.921875,no,1.0,1.0,no,no
+total_effect,f1_macro,Logistic Regression,0.7592,0.8655,0.1063,0.0,0.001953125,yes,0.01953,0.00488,yes,yes
+total_effect,f1_macro,Decision Tree,0.9737,0.9545,-0.0192,3.0,0.020879263166351643,yes,0.12528,0.04176,no,yes
+total_effect,f1_macro,KNN,0.6784,0.8174,0.139,0.0,0.001953125,yes,0.01953,0.00488,yes,yes
+total_effect,f1_macro,SVM (RBF),0.6307,0.8788,0.2481,0.0,0.001953125,yes,0.01953,0.00488,yes,yes
+total_effect,f1_macro,SVM (Linear),0.6231,0.8466,0.2235,0.0,0.001953125,yes,0.01953,0.00488,yes,yes
+total_effect,f1_macro,Random Forest,0.9754,0.9621,-0.0133,11.0,0.10546875,no,0.42188,0.15067,no,no
+total_effect,f1_macro,AdaBoost,0.8652,0.8894,0.0242,6.0,0.6858304344516057,no,0.68583,0.68583,no,no
+total_effect,f1_macro,Bagging,0.9788,0.9667,-0.0121,10.0,0.083984375,no,0.41992,0.13997,no,no
+total_effect,f1_macro,XGBoost,0.9696,0.9561,-0.0135,14.0,0.193359375,no,0.58008,0.2417,no,no
+total_effect,f1_macro,Stacking (RF+SVM),0.9719,0.9585,-0.0135,17.0,0.322265625,no,0.64453,0.35807,no,no

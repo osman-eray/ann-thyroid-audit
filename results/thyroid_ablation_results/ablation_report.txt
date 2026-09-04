@@ -1,0 +1,96 @@
+======================================================================
+ABLASYON RAPORU — THYROID — 10 run
+Koşullar: A=baseline, C=HFS-only, D=SMOTE-only, B=HFS+SMOTE
+======================================================================
+
+NAÏVE MAJORITY-CLASS BASELINE (R1-58)
+----------------------------------------------------------------------
+  Accuracy: 0.9257  (çoğunluk sınıfı %92.6 → yüksek accuracy ama işe yaramaz)
+  Macro-F1: 0.3205  (azınlık sınıflar tamamen kaçırılıyor)
+
+KOŞUL BAZLI ORTALAMALAR (tüm modeller)
+----------------------------------------------------------------------
+  A_baseline     ROC-AUC=0.9851  Spec(macro)=0.9055  Macro-F1=0.8426
+  C_HFSonly      ROC-AUC=0.9910  Spec(macro)=0.9201  Macro-F1=0.8660
+  D_SMOTEonly    ROC-AUC=0.9874  Spec(macro)=0.9799  Macro-F1=0.9079
+  B_HFS_SMOTE    ROC-AUC=0.9924  Spec(macro)=0.9872  Macro-F1=0.9096
+
+
+ABLASYON — SPECIFICITY KAYNAĞI (anahtar soru)
+----------------------------------------------------------------------
+Aşağıdaki modeller baseline'da düşük specificity gösteriyordu.
+HFS-only vs SMOTE-only karşılaştırması iyileşmenin kaynağını gösterir:
+
+  SVM (Linear)         A=0.757 → C(HFS)=0.764 | D(SMOTE)=0.985 | B(both)=0.986
+  SVM (RBF)            A=0.760 → C(HFS)=0.875 | D(SMOTE)=0.962 | B(both)=0.983
+  KNN                  A=0.780 → C(HFS)=0.846 | D(SMOTE)=0.902 | B(both)=0.958
+  Logistic Regression  A=0.842 → C(HFS)=0.816 | D(SMOTE)=0.985 | B(both)=0.988
+
+
+WILCOXON — anlamlı sonuçlar (p<0.05)
+----------------------------------------------------------------------
+
+  [HFS_only_effect] — 15 anlamlı:
+    KNN                  roc_auc_ovr        Δ=+0.0637  p=0.0020
+    Random Forest        roc_auc_ovr        Δ=-0.0015  p=0.0020
+    Bagging              roc_auc_ovr        Δ=-0.0016  p=0.0020
+    XGBoost              roc_auc_ovr        Δ=-0.0014  p=0.0039
+    Stacking (RF+SVM)    roc_auc_ovr        Δ=-0.0015  p=0.0020
+    Logistic Regression  specificity_macro  Δ=-0.0259  p=0.0020
+    KNN                  specificity_macro  Δ=+0.0655  p=0.0020
+    SVM (RBF)            specificity_macro  Δ=+0.1143  p=0.0020
+    Random Forest        specificity_macro  Δ=-0.0034  p=0.0382
+    Logistic Regression  f1_macro           Δ=-0.0367  p=0.0195
+    Decision Tree        f1_macro           Δ=-0.0138  p=0.0109
+    KNN                  f1_macro           Δ=+0.1161  p=0.0020
+    SVM (RBF)            f1_macro           Δ=+0.1989  p=0.0020
+    Bagging              f1_macro           Δ=-0.0136  p=0.0273
+    Stacking (RF+SVM)    f1_macro           Δ=-0.0123  p=0.0488
+
+  [SMOTE_only_effect] — 14 anlamlı:
+    Logistic Regression  roc_auc_ovr        Δ=+0.0086  p=0.0059
+    KNN                  roc_auc_ovr        Δ=+0.0195  p=0.0020
+    SVM (RBF)            roc_auc_ovr        Δ=-0.0045  p=0.0020
+    Logistic Regression  specificity_macro  Δ=+0.1432  p=0.0020
+    KNN                  specificity_macro  Δ=+0.1218  p=0.0020
+    SVM (RBF)            specificity_macro  Δ=+0.2013  p=0.0020
+    SVM (Linear)         specificity_macro  Δ=+0.2279  p=0.0020
+    Random Forest        specificity_macro  Δ=+0.0018  p=0.0499
+    Bagging              specificity_macro  Δ=+0.0029  p=0.0137
+    Logistic Regression  f1_macro           Δ=+0.1122  p=0.0020
+    KNN                  f1_macro           Δ=+0.0287  p=0.0020
+    SVM (RBF)            f1_macro           Δ=+0.2520  p=0.0020
+    SVM (Linear)         f1_macro           Δ=+0.2480  p=0.0020
+    Random Forest        f1_macro           Δ=+0.0028  p=0.0357
+
+  [HFS_incremental_over_SMOTE] — 13 anlamlı:
+    KNN                  roc_auc_ovr        Δ=+0.0504  p=0.0020
+    Random Forest        roc_auc_ovr        Δ=-0.0016  p=0.0039
+    Bagging              roc_auc_ovr        Δ=-0.0016  p=0.0020
+    XGBoost              roc_auc_ovr        Δ=-0.0018  p=0.0039
+    Stacking (RF+SVM)    roc_auc_ovr        Δ=-0.0018  p=0.0137
+    KNN                  specificity_macro  Δ=+0.0564  p=0.0020
+    SVM (RBF)            specificity_macro  Δ=+0.0216  p=0.0039
+    Random Forest        specificity_macro  Δ=-0.0024  p=0.0098
+    Bagging              specificity_macro  Δ=-0.0033  p=0.0382
+    KNN                  f1_macro           Δ=+0.1103  p=0.0020
+    SVM (Linear)         f1_macro           Δ=-0.0244  p=0.0098
+    Random Forest        f1_macro           Δ=-0.0161  p=0.0371
+    Bagging              f1_macro           Δ=-0.0125  p=0.0382
+
+  [total_effect] — 15 anlamlı:
+    Logistic Regression  roc_auc_ovr        Δ=+0.0108  p=0.0137
+    KNN                  roc_auc_ovr        Δ=+0.0700  p=0.0020
+    Random Forest        roc_auc_ovr        Δ=-0.0015  p=0.0059
+    Bagging              roc_auc_ovr        Δ=-0.0018  p=0.0020
+    XGBoost              roc_auc_ovr        Δ=-0.0018  p=0.0020
+    Stacking (RF+SVM)    roc_auc_ovr        Δ=-0.0019  p=0.0039
+    Logistic Regression  specificity_macro  Δ=+0.1460  p=0.0020
+    KNN                  specificity_macro  Δ=+0.1782  p=0.0020
+    SVM (RBF)            specificity_macro  Δ=+0.2229  p=0.0020
+    SVM (Linear)         specificity_macro  Δ=+0.2283  p=0.0020
+    Logistic Regression  f1_macro           Δ=+0.1063  p=0.0020
+    Decision Tree        f1_macro           Δ=-0.0192  p=0.0209
+    KNN                  f1_macro           Δ=+0.1390  p=0.0020
+    SVM (RBF)            f1_macro           Δ=+0.2481  p=0.0020
+    SVM (Linear)         f1_macro           Δ=+0.2235  p=0.0020

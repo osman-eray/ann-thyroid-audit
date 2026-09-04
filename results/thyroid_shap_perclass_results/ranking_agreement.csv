@@ -1,0 +1,121 @@
+run_id,model,ranking_a,ranking_b,spearman_rho,p_value,n_features
+0,Logistic Regression,HFS,SHAP,0.381,0.35181,8
+0,Logistic Regression,HFS,Permutation,0.2857,0.49273,8
+0,Logistic Regression,SHAP,Permutation,0.7381,0.03655,8
+0,Decision Tree,HFS,SHAP,0.5367,0.17019,8
+0,Decision Tree,HFS,Permutation,0.5367,0.17019,8
+0,Decision Tree,SHAP,Permutation,1.0,0.0,8
+0,Random Forest,HFS,SHAP,0.4524,0.2604,8
+0,Random Forest,HFS,Permutation,0.4431,0.2715,8
+0,Random Forest,SHAP,Permutation,0.9222,0.00111,8
+0,XGBoost,HFS,SHAP,0.515,0.19155,8
+0,XGBoost,HFS,Permutation,0.5367,0.17019,8
+0,XGBoost,SHAP,Permutation,0.9081,0.00181,8
+1,Logistic Regression,HFS,SHAP,0.7143,0.04653,8
+1,Logistic Regression,HFS,Permutation,0.619,0.10173,8
+1,Logistic Regression,SHAP,Permutation,0.6667,0.07099,8
+1,Decision Tree,HFS,SHAP,0.9222,0.00111,8
+1,Decision Tree,HFS,Permutation,0.8264,0.01144,8
+1,Decision Tree,SHAP,Permutation,0.9036,0.00208,8
+1,Random Forest,HFS,SHAP,0.9762,3e-05,8
+1,Random Forest,HFS,Permutation,0.8264,0.01144,8
+1,Random Forest,SHAP,Permutation,0.8503,0.00747,8
+1,XGBoost,HFS,SHAP,1.0,0.0,8
+1,XGBoost,HFS,Permutation,0.9222,0.00111,8
+1,XGBoost,SHAP,Permutation,0.9222,0.00111,8
+2,Logistic Regression,HFS,SHAP,0.0952,0.82251,8
+2,Logistic Regression,HFS,Permutation,0.0476,0.91085,8
+2,Logistic Regression,SHAP,Permutation,0.4762,0.23294,8
+2,Decision Tree,HFS,SHAP,0.3904,0.33903,8
+2,Decision Tree,HFS,Permutation,0.3904,0.33903,8
+2,Decision Tree,SHAP,Permutation,1.0,0.0,8
+2,Random Forest,HFS,SHAP,0.2381,0.57016,8
+2,Random Forest,HFS,Permutation,0.4311,0.2862,8
+2,Random Forest,SHAP,Permutation,0.9581,0.00018,8
+2,XGBoost,HFS,SHAP,0.3904,0.33903,8
+2,XGBoost,HFS,Permutation,0.3904,0.33903,8
+2,XGBoost,SHAP,Permutation,1.0,0.0,8
+3,Logistic Regression,HFS,SHAP,0.7857,0.02082,8
+3,Logistic Regression,HFS,Permutation,0.381,0.35181,8
+3,Logistic Regression,SHAP,Permutation,0.5952,0.11953,8
+3,Decision Tree,HFS,SHAP,0.9132,0.00153,8
+3,Decision Tree,HFS,Permutation,0.9132,0.00153,8
+3,Decision Tree,SHAP,Permutation,1.0,0.0,8
+3,Random Forest,HFS,SHAP,0.8333,0.01018,8
+3,Random Forest,HFS,Permutation,0.8264,0.01144,8
+3,Random Forest,SHAP,Permutation,0.8982,0.00244,8
+3,XGBoost,HFS,SHAP,0.9132,0.00153,8
+3,XGBoost,HFS,Permutation,0.9386,0.00055,8
+3,XGBoost,SHAP,Permutation,0.973,5e-05,8
+4,Logistic Regression,HFS,SHAP,0.4048,0.31989,8
+4,Logistic Regression,HFS,Permutation,0.2381,0.57016,8
+4,Logistic Regression,SHAP,Permutation,0.7143,0.04653,8
+4,Decision Tree,HFS,SHAP,0.6469,0.08299,8
+4,Decision Tree,HFS,Permutation,0.6469,0.08299,8
+4,Decision Tree,SHAP,Permutation,1.0,0.0,8
+4,Random Forest,HFS,SHAP,0.4524,0.2604,8
+4,Random Forest,HFS,Permutation,0.6099,0.10835,8
+4,Random Forest,SHAP,Permutation,0.9759,3e-05,8
+4,XGBoost,HFS,SHAP,0.5123,0.19422,8
+4,XGBoost,HFS,Permutation,0.6469,0.08299,8
+4,XGBoost,SHAP,Permutation,0.9618,0.00014,8
+5,Logistic Regression,HFS,SHAP,0.8095,0.0149,8
+5,Logistic Regression,HFS,Permutation,0.619,0.10173,8
+5,Logistic Regression,SHAP,Permutation,0.7857,0.02082,8
+5,Decision Tree,HFS,SHAP,0.8982,0.00244,8
+5,Decision Tree,HFS,Permutation,0.9222,0.00111,8
+5,Decision Tree,SHAP,Permutation,0.9759,3e-05,8
+5,Random Forest,HFS,SHAP,1.0,0.0,8
+5,Random Forest,HFS,Permutation,0.881,0.00385,8
+5,Random Forest,SHAP,Permutation,0.881,0.00385,8
+5,XGBoost,HFS,SHAP,0.9762,3e-05,8
+5,XGBoost,HFS,Permutation,0.9048,0.00201,8
+5,XGBoost,SHAP,Permutation,0.9286,0.00086,8
+6,Logistic Regression,HFS,SHAP,0.6429,0.08556,8
+6,Logistic Regression,HFS,Permutation,0.5952,0.11953,8
+6,Logistic Regression,SHAP,Permutation,0.8571,0.00653,8
+6,Decision Tree,HFS,SHAP,0.8264,0.01144,8
+6,Decision Tree,HFS,Permutation,0.7066,0.05006,8
+6,Decision Tree,SHAP,Permutation,0.9277,0.00089,8
+6,Random Forest,HFS,SHAP,0.9762,3e-05,8
+6,Random Forest,HFS,Permutation,0.7807,0.02221,8
+6,Random Forest,SHAP,Permutation,0.8783,0.0041,8
+6,XGBoost,HFS,SHAP,0.9762,3e-05,8
+6,XGBoost,HFS,Permutation,0.6905,0.05799,8
+6,XGBoost,SHAP,Permutation,0.8095,0.0149,8
+7,Logistic Regression,HFS,SHAP,0.7143,0.04653,8
+7,Logistic Regression,HFS,Permutation,0.7143,0.04653,8
+7,Logistic Regression,SHAP,Permutation,0.8333,0.01018,8
+7,Decision Tree,HFS,SHAP,0.8982,0.00244,8
+7,Decision Tree,HFS,Permutation,0.8982,0.00244,8
+7,Decision Tree,SHAP,Permutation,1.0,0.0,8
+7,Random Forest,HFS,SHAP,0.9524,0.00026,8
+7,Random Forest,HFS,Permutation,0.9048,0.00201,8
+7,Random Forest,SHAP,Permutation,0.9048,0.00201,8
+7,XGBoost,HFS,SHAP,0.9524,0.00026,8
+7,XGBoost,HFS,Permutation,0.8982,0.00244,8
+7,XGBoost,SHAP,Permutation,0.8503,0.00747,8
+8,Logistic Regression,HFS,SHAP,0.2857,0.49273,8
+8,Logistic Regression,HFS,Permutation,0.1667,0.69324,8
+8,Logistic Regression,SHAP,Permutation,0.5238,0.18272,8
+8,Decision Tree,HFS,SHAP,0.6469,0.08299,8
+8,Decision Tree,HFS,Permutation,0.6469,0.08299,8
+8,Decision Tree,SHAP,Permutation,1.0,0.0,8
+8,Random Forest,HFS,SHAP,0.4048,0.31989,8
+8,Random Forest,HFS,Permutation,0.6831,0.06183,8
+8,Random Forest,SHAP,Permutation,0.9271,0.00092,8
+8,XGBoost,HFS,SHAP,0.5611,0.14786,8
+8,XGBoost,HFS,Permutation,0.5611,0.14786,8
+8,XGBoost,SHAP,Permutation,1.0,0.0,8
+9,Logistic Regression,HFS,SHAP,-0.2143,0.61034,8
+9,Logistic Regression,HFS,Permutation,0.2143,0.61034,8
+9,Logistic Regression,SHAP,Permutation,0.881,0.00385,8
+9,Decision Tree,HFS,SHAP,0.1952,0.64323,8
+9,Decision Tree,HFS,Permutation,0.2196,0.60133,8
+9,Decision Tree,SHAP,Permutation,0.975,4e-05,8
+9,Random Forest,HFS,SHAP,0.2381,0.57016,8
+9,Random Forest,HFS,Permutation,0.1952,0.64323,8
+9,Random Forest,SHAP,Permutation,0.9027,0.00214,8
+9,XGBoost,HFS,SHAP,0.366,0.37262,8
+9,XGBoost,HFS,Permutation,0.2196,0.60133,8
+9,XGBoost,SHAP,Permutation,0.9,0.00232,8
