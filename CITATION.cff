@@ -8,15 +8,15 @@ type: software
 authors:
   - family-names: Eray
     given-names: Osman
-    orcid: 'https://orcid.org/0000-0000-0000-0000'   # REPLACE with your ORCID
+    orcid: 'https://orcid.org/0000-0002-3534-962X'   
     affiliation: >-
       Department of Computer Technologies, Korkuteli Vocational School,
       Akdeniz University, Antalya, Türkiye
     email: oeray@akdeniz.edu.tr
-repository-code: 'https://github.com/USERNAME/ann-thyroid-audit'   # REPLACE
+repository-code: 'https://github.com/osman-eray/ann-thyroid-audit'   
 license: MIT
 version: 1.0.0
-date-released: '2026-09-15'   # REPLACE with the release date
+date-released: '2026-09-04'   
 keywords:
   - machine learning
   - benchmark audit
