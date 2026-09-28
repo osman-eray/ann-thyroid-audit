@@ -15,8 +15,8 @@ authors:
     email: oeray@akdeniz.edu.tr
 repository-code: 'https://github.com/osman-eray/ann-thyroid-audit'   
 license: MIT
-version: 1.0.0
-date-released: '2026-09-04'   
+version: 1.0.2
+date-released: '2026-09-28'   
 keywords:
   - machine learning
   - benchmark audit
