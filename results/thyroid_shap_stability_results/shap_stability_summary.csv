@@ -1,0 +1,5 @@
+model,n_runs,kendall_w,mean_spearman
+Decision Tree,10,0.8862,0.8736
+Logistic Regression,10,0.6411,0.6013
+Random Forest,10,0.7139,0.6821
+XGBoost,10,0.8543,0.8381

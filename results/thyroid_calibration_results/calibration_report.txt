@@ -1,0 +1,35 @@
+======================================================================
+KALİBRASYON ANALİZİ — ann-thyroid
+Brier & ECE: düşük = iyi kalibrasyon. raw vs sigmoid vs isotonic.
+======================================================================
+
+Model             Cal       Brier           ECE             MCE             
+----------------------------------------------------------------------
+Decision Tree     isotonic  0.0055±0.0034  0.0055±0.0033  0.3810±0.1078
+Decision Tree     raw       0.0060±0.0038  0.0059±0.0038  0.1508±0.1775
+Decision Tree     sigmoid   0.0056±0.0035  0.0057±0.0034  0.3600±0.1234
+KNN               isotonic  0.0177±0.0044  0.0153±0.0042  0.5400±0.1111
+KNN               raw       0.0215±0.0054  0.0241±0.0067  0.5231±0.0543
+KNN               sigmoid   0.0192±0.0050  0.0184±0.0048  0.6324±0.1000
+Logistic Regressionisotonic  0.0667±0.0033  0.1662±0.0084  0.5287±0.0441
+Logistic Regressionraw       0.0217±0.0037  0.0523±0.0068  0.5363±0.0700
+Logistic Regressionsigmoid   0.0851±0.0030  0.2088±0.0038  0.4937±0.1104
+Random Forest     isotonic  0.0054±0.0026  0.0052±0.0020  0.6301±0.1381
+Random Forest     raw       0.0050±0.0029  0.0065±0.0017  0.4512±0.0785
+Random Forest     sigmoid   0.0049±0.0031  0.0048±0.0028  0.5416±0.1732
+SVM (RBF)         isotonic  0.0250±0.0055  0.0262±0.0064  0.6646±0.0903
+SVM (RBF)         raw       0.0165±0.0054  0.0263±0.0121  0.6100±0.0880
+SVM (RBF)         sigmoid   0.0248±0.0052  0.0262±0.0065  0.6522±0.1021
+XGBoost           isotonic  0.0057±0.0030  0.0058±0.0028  0.5821±0.1289
+XGBoost           raw       0.0063±0.0033  0.0064±0.0032  0.6159±0.1369
+XGBoost           sigmoid   0.0062±0.0033  0.0064±0.0033  0.6239±0.1618
+
+
+EN İYİ KALİBRASYON MODU (en düşük ECE, model başına):
+----------------------------------------------------------------------
+  Decision Tree      en iyi=isotonic  ECE=0.0055  (raw ECE=0.0059)
+  KNN                en iyi=isotonic  ECE=0.0153  (raw ECE=0.0241)
+  Logistic Regression en iyi=raw       ECE=0.0523  (raw ECE=0.0523)
+  Random Forest      en iyi=sigmoid   ECE=0.0048  (raw ECE=0.0065)
+  SVM (RBF)          en iyi=isotonic  ECE=0.0262  (raw ECE=0.0263)
+  XGBoost            en iyi=isotonic  ECE=0.0058  (raw ECE=0.0064)

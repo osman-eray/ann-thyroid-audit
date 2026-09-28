@@ -118,8 +118,9 @@ statistical tests consume.
 |---|---|---|---|
 | 3.1 | `python 9.thyroid_shap_perclass_ranking.py` | `thyroid_shap_perclass_results/` incl. `ranking_agreement.csv` | R2 c.4 |
 | 3.2 | `python fig4_5_shap_permutation_UPDATED.py` | `shap_permutation_results/` incl. `permutation_importance.csv`, six `perm_*.png` | R2 c.4 |
-| 3.3 | `python fig7_roc_curves.py` | Figure 7 | AdaBoost pin |
-| 3.4 | `python 11.make_figures_1_6_7_8.py` | Figures 1, 6, 7, 8 | — |
+| 3.3 | `python fig5_permutation_panel.py` | `Figure5_permutation_importance.png` — the 3 × 2 composite | R2 c.4 |
+| 3.4 | `python fig7_roc_curves.py` | Figure 7 | AdaBoost pin |
+| 3.5 | `python 11.make_figures_1_6_7_8.py` | Figures 1, 6, 7, 8 | — |
 
 3.1 feeds the lower panel of Table 12; 3.2 regenerates Figure 5. Both now score permutation
 importance on macro-F1 rather than accuracy.
@@ -146,6 +147,25 @@ smallest attainable exact two-sided p-value is 0.00195, which Holm-corrected ove
 cannot fall below 0.070 — so the Holm-corrected pairwise test is uninformative here by
 construction, and the inference rests on the Nemenyi procedure and the equivalence tests.
 Do not report "0 of 36 significant" as evidence of absence.
+
+### Stage 5 — the estimator check added in the third revision (fast)
+
+| # | command | produces | answers |
+|---|---|---|---|
+| 5.1 | `python hfs_discrete_estimation.py` | `discrete_estimation_results/` — four CSVs | R1 third round, condition of acceptance |
+
+`hfs_discrete_estimation.py` runs the selection stage twice on the same folds and the same
+seeds: once exactly as released, and once with the binary indicators declared discrete in the
+`mutual_info_classif` call, as Equation (2) specifies. Nothing else differs. On a dense array
+`discrete_features='auto'` resolves to `False`, so the released run applies the Kraskov
+nearest-neighbour estimator — which adds noise to its inputs — to attributes that take two
+values. The script writes the selected sets, the hybrid scores, the Table 7 row and the weight
+sweep under both settings, and reproduces the deposited values under the released setting.
+
+The four outputs are `hfs_scores_by_mode.csv`, `hfs_selected_by_mode.csv`,
+`table7_row_by_mode.csv` and `table9_weight_sweep_by_mode.csv`. Table 9b in the paper is read
+off the last two.
+
 
 ---
 

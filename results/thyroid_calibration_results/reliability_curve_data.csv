@@ -1,0 +1,355 @@
+class,bin,bin_lower,bin_upper,mean_confidence,mean_accuracy,count,model,calibration
+overt_hypothyroid,0,0.0,0.1,0.0007,0.0,1375,Logistic Regression,raw
+overt_hypothyroid,1,0.1,0.2,0.1458,0.0,9,Logistic Regression,raw
+overt_hypothyroid,3,0.3,0.4,0.3605,0.0,3,Logistic Regression,raw
+overt_hypothyroid,5,0.5,0.6,0.5435,0.5,2,Logistic Regression,raw
+overt_hypothyroid,6,0.6,0.7,0.6531,0.5,2,Logistic Regression,raw
+overt_hypothyroid,7,0.7,0.8,0.7634,1.0,1,Logistic Regression,raw
+overt_hypothyroid,8,0.8,0.9,0.8134,0.2,5,Logistic Regression,raw
+overt_hypothyroid,9,0.9,1.0,0.991,0.6744,43,Logistic Regression,raw
+subclinical_hypothyroid,0,0.0,0.1,0.0312,0.0,1162,Logistic Regression,raw
+subclinical_hypothyroid,1,0.1,0.2,0.142,0.0,98,Logistic Regression,raw
+subclinical_hypothyroid,2,0.2,0.3,0.2393,0.0,39,Logistic Regression,raw
+subclinical_hypothyroid,3,0.3,0.4,0.345,0.0,26,Logistic Regression,raw
+subclinical_hypothyroid,4,0.4,0.5,0.4449,0.0,15,Logistic Regression,raw
+subclinical_hypothyroid,5,0.5,0.6,0.549,0.0769,13,Logistic Regression,raw
+subclinical_hypothyroid,6,0.6,0.7,0.6452,0.4667,15,Logistic Regression,raw
+subclinical_hypothyroid,7,0.7,0.8,0.7528,0.7692,13,Logistic Regression,raw
+subclinical_hypothyroid,8,0.8,0.9,0.8479,1.0,13,Logistic Regression,raw
+subclinical_hypothyroid,9,0.9,1.0,0.9784,0.9348,46,Logistic Regression,raw
+euthyroid,0,0.0,0.1,0.0121,0.2079,101,Logistic Regression,raw
+euthyroid,1,0.1,0.2,0.157,0.1667,12,Logistic Regression,raw
+euthyroid,2,0.2,0.3,0.2499,0.2308,13,Logistic Regression,raw
+euthyroid,3,0.3,0.4,0.3524,0.5714,14,Logistic Regression,raw
+euthyroid,4,0.4,0.5,0.4524,0.9412,17,Logistic Regression,raw
+euthyroid,5,0.5,0.6,0.5641,1.0,14,Logistic Regression,raw
+euthyroid,6,0.6,0.7,0.6542,1.0,25,Logistic Regression,raw
+euthyroid,7,0.7,0.8,0.7601,1.0,37,Logistic Regression,raw
+euthyroid,8,0.8,0.9,0.8604,1.0,96,Logistic Regression,raw
+euthyroid,9,0.9,1.0,0.9677,1.0,1111,Logistic Regression,raw
+overt_hypothyroid,0,0.0,0.1,0.0177,0.0,1280,Logistic Regression,sigmoid
+overt_hypothyroid,1,0.1,0.2,0.129,0.0,61,Logistic Regression,sigmoid
+overt_hypothyroid,2,0.2,0.3,0.2421,0.0,27,Logistic Regression,sigmoid
+overt_hypothyroid,3,0.3,0.4,0.3398,0.0714,14,Logistic Regression,sigmoid
+overt_hypothyroid,4,0.4,0.5,0.4435,0.1176,17,Logistic Regression,sigmoid
+overt_hypothyroid,5,0.5,0.6,0.553,0.2,5,Logistic Regression,sigmoid
+overt_hypothyroid,6,0.6,0.7,0.6371,0.5714,7,Logistic Regression,sigmoid
+overt_hypothyroid,7,0.7,0.8,0.7574,0.7778,18,Logistic Regression,sigmoid
+overt_hypothyroid,8,0.8,0.9,0.8362,1.0,9,Logistic Regression,sigmoid
+overt_hypothyroid,9,0.9,1.0,0.9764,1.0,2,Logistic Regression,sigmoid
+subclinical_hypothyroid,0,0.0,0.1,0.0571,0.0,4,Logistic Regression,sigmoid
+subclinical_hypothyroid,1,0.1,0.2,0.1621,0.0,12,Logistic Regression,sigmoid
+subclinical_hypothyroid,2,0.2,0.3,0.272,0.0011,886,Logistic Regression,sigmoid
+subclinical_hypothyroid,3,0.3,0.4,0.3373,0.0312,320,Logistic Regression,sigmoid
+subclinical_hypothyroid,4,0.4,0.5,0.4461,0.0874,103,Logistic Regression,sigmoid
+subclinical_hypothyroid,5,0.5,0.6,0.5493,0.2286,70,Logistic Regression,sigmoid
+subclinical_hypothyroid,6,0.6,0.7,0.6484,0.8214,28,Logistic Regression,sigmoid
+subclinical_hypothyroid,7,0.7,0.8,0.7367,0.9333,15,Logistic Regression,sigmoid
+subclinical_hypothyroid,8,0.8,0.9,0.8359,0.5,2,Logistic Regression,sigmoid
+euthyroid,0,0.0,0.1,0.0181,0.284,81,Logistic Regression,sigmoid
+euthyroid,1,0.1,0.2,0.1497,0.5926,27,Logistic Regression,sigmoid
+euthyroid,2,0.2,0.3,0.2476,0.4737,19,Logistic Regression,sigmoid
+euthyroid,3,0.3,0.4,0.352,0.6944,36,Logistic Regression,sigmoid
+euthyroid,4,0.4,0.5,0.4561,0.9649,57,Logistic Regression,sigmoid
+euthyroid,5,0.5,0.6,0.5558,0.9286,98,Logistic Regression,sigmoid
+euthyroid,6,0.6,0.7,0.6644,0.9804,409,Logistic Regression,sigmoid
+euthyroid,7,0.7,0.8,0.7266,1.0,708,Logistic Regression,sigmoid
+euthyroid,8,0.8,0.9,0.8431,1.0,3,Logistic Regression,sigmoid
+euthyroid,9,0.9,1.0,0.9095,1.0,2,Logistic Regression,sigmoid
+overt_hypothyroid,0,0.0,0.1,0.0001,0.0,1377,Logistic Regression,isotonic
+overt_hypothyroid,1,0.1,0.2,0.1351,0.0,3,Logistic Regression,isotonic
+overt_hypothyroid,3,0.3,0.4,0.3435,0.0,3,Logistic Regression,isotonic
+overt_hypothyroid,4,0.4,0.5,0.4502,0.5,2,Logistic Regression,isotonic
+overt_hypothyroid,5,0.5,0.6,0.5509,0.0,5,Logistic Regression,isotonic
+overt_hypothyroid,6,0.6,0.7,0.6564,0.5,6,Logistic Regression,isotonic
+overt_hypothyroid,7,0.7,0.8,0.7174,0.8333,30,Logistic Regression,isotonic
+overt_hypothyroid,8,0.8,0.9,0.8249,0.6667,3,Logistic Regression,isotonic
+overt_hypothyroid,9,0.9,1.0,0.9587,0.1818,11,Logistic Regression,isotonic
+subclinical_hypothyroid,0,0.0,0.1,0.0113,0.0,229,Logistic Regression,isotonic
+subclinical_hypothyroid,1,0.1,0.2,0.1674,0.0,24,Logistic Regression,isotonic
+subclinical_hypothyroid,2,0.2,0.3,0.2806,0.0012,830,Logistic Regression,isotonic
+subclinical_hypothyroid,3,0.3,0.4,0.3406,0.0275,218,Logistic Regression,isotonic
+subclinical_hypothyroid,4,0.4,0.5,0.4467,0.2308,39,Logistic Regression,isotonic
+subclinical_hypothyroid,5,0.5,0.6,0.543,0.2381,21,Logistic Regression,isotonic
+subclinical_hypothyroid,6,0.6,0.7,0.6439,0.15,20,Logistic Regression,isotonic
+subclinical_hypothyroid,7,0.7,0.8,0.7525,0.75,20,Logistic Regression,isotonic
+subclinical_hypothyroid,8,0.8,0.9,0.8589,0.9444,18,Logistic Regression,isotonic
+subclinical_hypothyroid,9,0.9,1.0,0.9442,0.8571,21,Logistic Regression,isotonic
+euthyroid,0,0.0,0.1,0.0241,0.2267,75,Logistic Regression,isotonic
+euthyroid,1,0.1,0.2,0.1494,0.1765,17,Logistic Regression,isotonic
+euthyroid,2,0.2,0.3,0.2509,0.2727,22,Logistic Regression,isotonic
+euthyroid,3,0.3,0.4,0.3558,0.8261,23,Logistic Regression,isotonic
+euthyroid,4,0.4,0.5,0.4584,0.75,20,Logistic Regression,isotonic
+euthyroid,5,0.5,0.6,0.5542,0.8824,34,Logistic Regression,isotonic
+euthyroid,6,0.6,0.7,0.6593,0.9722,216,Logistic Regression,isotonic
+euthyroid,7,0.7,0.8,0.7194,1.0,800,Logistic Regression,isotonic
+euthyroid,8,0.8,0.9,0.8308,1.0,24,Logistic Regression,isotonic
+euthyroid,9,0.9,1.0,0.9879,1.0,209,Logistic Regression,isotonic
+overt_hypothyroid,0,0.0,0.1,0.0,0.0014,1407,Decision Tree,raw
+overt_hypothyroid,9,0.9,1.0,1.0,0.9394,33,Decision Tree,raw
+subclinical_hypothyroid,0,0.0,0.1,0.0,0.0007,1365,Decision Tree,raw
+subclinical_hypothyroid,9,0.9,1.0,0.998,0.9733,75,Decision Tree,raw
+euthyroid,0,0.0,0.1,0.0014,0.037,108,Decision Tree,raw
+euthyroid,9,0.9,1.0,1.0,0.9977,1332,Decision Tree,raw
+overt_hypothyroid,0,0.0,0.1,0.0008,0.0,1405,Decision Tree,sigmoid
+overt_hypothyroid,6,0.6,0.7,0.6301,0.6667,3,Decision Tree,sigmoid
+overt_hypothyroid,9,0.9,1.0,0.9969,0.9688,32,Decision Tree,sigmoid
+subclinical_hypothyroid,0,0.0,0.1,0.0005,0.0,1363,Decision Tree,sigmoid
+subclinical_hypothyroid,3,0.3,0.4,0.333,1.0,1,Decision Tree,sigmoid
+subclinical_hypothyroid,6,0.6,0.7,0.6644,0.0,2,Decision Tree,sigmoid
+subclinical_hypothyroid,9,0.9,1.0,0.9964,0.9865,74,Decision Tree,sigmoid
+euthyroid,0,0.0,0.1,0.0028,0.0189,106,Decision Tree,sigmoid
+euthyroid,3,0.3,0.4,0.3556,0.6,5,Decision Tree,sigmoid
+euthyroid,6,0.6,0.7,0.6663,0.0,1,Decision Tree,sigmoid
+euthyroid,9,0.9,1.0,0.9988,1.0,1328,Decision Tree,sigmoid
+overt_hypothyroid,0,0.0,0.1,0.0005,0.0,1405,Decision Tree,isotonic
+overt_hypothyroid,6,0.6,0.7,0.6557,0.6667,3,Decision Tree,isotonic
+overt_hypothyroid,9,0.9,1.0,0.9977,0.9688,32,Decision Tree,isotonic
+subclinical_hypothyroid,0,0.0,0.1,0.0002,0.0,1363,Decision Tree,isotonic
+subclinical_hypothyroid,3,0.3,0.4,0.333,1.0,1,Decision Tree,isotonic
+subclinical_hypothyroid,6,0.6,0.7,0.65,0.0,2,Decision Tree,isotonic
+subclinical_hypothyroid,9,0.9,1.0,0.9968,0.9865,74,Decision Tree,isotonic
+euthyroid,0,0.0,0.1,0.0025,0.0189,106,Decision Tree,isotonic
+euthyroid,3,0.3,0.4,0.3463,0.6,5,Decision Tree,isotonic
+euthyroid,6,0.6,0.7,0.6666,0.0,1,Decision Tree,isotonic
+euthyroid,9,0.9,1.0,0.9993,1.0,1328,Decision Tree,isotonic
+overt_hypothyroid,0,0.0,0.1,0.0,0.0021,1397,KNN,raw
+overt_hypothyroid,1,0.1,0.2,0.2,0.0,2,KNN,raw
+overt_hypothyroid,3,0.3,0.4,0.4,0.0,3,KNN,raw
+overt_hypothyroid,5,0.5,0.6,0.6,0.5,2,KNN,raw
+overt_hypothyroid,7,0.7,0.8,0.8,0.3333,3,KNN,raw
+overt_hypothyroid,9,0.9,1.0,1.0,0.8485,33,KNN,raw
+subclinical_hypothyroid,0,0.0,0.1,0.0,0.0054,1308,KNN,raw
+subclinical_hypothyroid,1,0.1,0.2,0.2,0.1111,18,KNN,raw
+subclinical_hypothyroid,3,0.3,0.4,0.4,0.0556,18,KNN,raw
+subclinical_hypothyroid,5,0.5,0.6,0.6,0.1429,21,KNN,raw
+subclinical_hypothyroid,7,0.7,0.8,0.8,0.4167,12,KNN,raw
+subclinical_hypothyroid,9,0.9,1.0,1.0,0.8889,63,KNN,raw
+euthyroid,0,0.0,0.1,0.0,0.125,96,KNN,raw
+euthyroid,1,0.1,0.2,0.2,0.5333,15,KNN,raw
+euthyroid,3,0.3,0.4,0.4,0.8261,23,KNN,raw
+euthyroid,5,0.5,0.6,0.6,0.9048,21,KNN,raw
+euthyroid,7,0.7,0.8,0.8,0.9,20,KNN,raw
+euthyroid,9,0.9,1.0,1.0,0.9937,1265,KNN,raw
+overt_hypothyroid,0,0.0,0.1,0.0002,0.0021,1398,KNN,sigmoid
+overt_hypothyroid,1,0.1,0.2,0.1459,0.0,2,KNN,sigmoid
+overt_hypothyroid,2,0.2,0.3,0.2346,0.0,2,KNN,sigmoid
+overt_hypothyroid,3,0.3,0.4,0.3047,0.0,1,KNN,sigmoid
+overt_hypothyroid,6,0.6,0.7,0.6797,1.0,1,KNN,sigmoid
+overt_hypothyroid,8,0.8,0.9,0.8693,0.5,2,KNN,sigmoid
+overt_hypothyroid,9,0.9,1.0,0.9882,0.8235,34,KNN,sigmoid
+subclinical_hypothyroid,0,0.0,0.1,0.0009,0.0068,1328,KNN,sigmoid
+subclinical_hypothyroid,1,0.1,0.2,0.166,0.0,9,KNN,sigmoid
+subclinical_hypothyroid,2,0.2,0.3,0.2725,0.0769,13,KNN,sigmoid
+subclinical_hypothyroid,3,0.3,0.4,0.3715,0.1429,7,KNN,sigmoid
+subclinical_hypothyroid,4,0.4,0.5,0.4762,0.0,4,KNN,sigmoid
+subclinical_hypothyroid,5,0.5,0.6,0.5391,0.25,4,KNN,sigmoid
+subclinical_hypothyroid,6,0.6,0.7,0.6644,0.4,5,KNN,sigmoid
+subclinical_hypothyroid,8,0.8,0.9,0.887,1.0,2,KNN,sigmoid
+subclinical_hypothyroid,9,0.9,1.0,0.9794,0.8529,68,KNN,sigmoid
+euthyroid,0,0.0,0.1,0.0175,0.1471,102,KNN,sigmoid
+euthyroid,1,0.1,0.2,0.1217,0.25,4,KNN,sigmoid
+euthyroid,3,0.3,0.4,0.3329,0.5,6,KNN,sigmoid
+euthyroid,4,0.4,0.5,0.4608,0.75,4,KNN,sigmoid
+euthyroid,5,0.5,0.6,0.5236,1.0,4,KNN,sigmoid
+euthyroid,6,0.6,0.7,0.6367,0.875,8,KNN,sigmoid
+euthyroid,7,0.7,0.8,0.7324,0.9333,15,KNN,sigmoid
+euthyroid,8,0.8,0.9,0.8375,0.9091,11,KNN,sigmoid
+euthyroid,9,0.9,1.0,0.9989,0.9922,1286,KNN,sigmoid
+overt_hypothyroid,0,0.0,0.1,0.0003,0.0021,1402,KNN,isotonic
+overt_hypothyroid,2,0.2,0.3,0.2469,0.0,1,KNN,isotonic
+overt_hypothyroid,4,0.4,0.5,0.4144,1.0,1,KNN,isotonic
+overt_hypothyroid,5,0.5,0.6,0.5938,0.0,1,KNN,isotonic
+overt_hypothyroid,6,0.6,0.7,0.6982,1.0,1,KNN,isotonic
+overt_hypothyroid,8,0.8,0.9,0.8481,0.0,2,KNN,isotonic
+overt_hypothyroid,9,0.9,1.0,0.9945,0.875,32,KNN,isotonic
+subclinical_hypothyroid,0,0.0,0.1,0.0013,0.006,1325,KNN,isotonic
+subclinical_hypothyroid,1,0.1,0.2,0.1524,0.0769,13,KNN,isotonic
+subclinical_hypothyroid,2,0.2,0.3,0.2415,0.125,16,KNN,isotonic
+subclinical_hypothyroid,3,0.3,0.4,0.3311,0.0,4,KNN,isotonic
+subclinical_hypothyroid,4,0.4,0.5,0.4661,0.3,10,KNN,isotonic
+subclinical_hypothyroid,5,0.5,0.6,0.5077,0.0,2,KNN,isotonic
+subclinical_hypothyroid,7,0.7,0.8,0.7449,0.5556,9,KNN,isotonic
+subclinical_hypothyroid,8,0.8,0.9,0.8682,0.8,5,KNN,isotonic
+subclinical_hypothyroid,9,0.9,1.0,0.9947,0.9107,56,KNN,isotonic
+euthyroid,0,0.0,0.1,0.0053,0.1023,88,KNN,isotonic
+euthyroid,1,0.1,0.2,0.1375,0.4286,7,KNN,isotonic
+euthyroid,2,0.2,0.3,0.2551,0.3333,9,KNN,isotonic
+euthyroid,3,0.3,0.4,0.3016,0.0,1,KNN,isotonic
+euthyroid,4,0.4,0.5,0.4636,1.0,3,KNN,isotonic
+euthyroid,5,0.5,0.6,0.5385,0.6364,11,KNN,isotonic
+euthyroid,6,0.6,0.7,0.6689,1.0,4,KNN,isotonic
+euthyroid,7,0.7,0.8,0.7582,0.8824,17,KNN,isotonic
+euthyroid,8,0.8,0.9,0.8476,0.8462,13,KNN,isotonic
+euthyroid,9,0.9,1.0,0.9984,0.993,1287,KNN,isotonic
+overt_hypothyroid,0,0.0,0.1,0.001,0.0,1387,SVM (RBF),raw
+overt_hypothyroid,1,0.1,0.2,0.1556,0.25,4,SVM (RBF),raw
+overt_hypothyroid,2,0.2,0.3,0.2781,0.0,1,SVM (RBF),raw
+overt_hypothyroid,3,0.3,0.4,0.397,0.0,1,SVM (RBF),raw
+overt_hypothyroid,4,0.4,0.5,0.476,0.0,2,SVM (RBF),raw
+overt_hypothyroid,5,0.5,0.6,0.5539,0.25,4,SVM (RBF),raw
+overt_hypothyroid,6,0.6,0.7,0.6332,0.0,3,SVM (RBF),raw
+overt_hypothyroid,7,0.7,0.8,0.701,1.0,1,SVM (RBF),raw
+overt_hypothyroid,8,0.8,0.9,0.8396,0.0,1,SVM (RBF),raw
+overt_hypothyroid,9,0.9,1.0,0.9895,0.8333,36,SVM (RBF),raw
+subclinical_hypothyroid,0,0.0,0.1,0.0043,0.0,1296,SVM (RBF),raw
+subclinical_hypothyroid,1,0.1,0.2,0.1474,0.0,20,SVM (RBF),raw
+subclinical_hypothyroid,2,0.2,0.3,0.2304,0.0,16,SVM (RBF),raw
+subclinical_hypothyroid,3,0.3,0.4,0.3503,0.125,8,SVM (RBF),raw
+subclinical_hypothyroid,4,0.4,0.5,0.4451,0.1667,6,SVM (RBF),raw
+subclinical_hypothyroid,5,0.5,0.6,0.5696,0.1429,7,SVM (RBF),raw
+subclinical_hypothyroid,6,0.6,0.7,0.6715,0.0,3,SVM (RBF),raw
+subclinical_hypothyroid,7,0.7,0.8,0.765,0.3636,11,SVM (RBF),raw
+subclinical_hypothyroid,8,0.8,0.9,0.8544,0.8,10,SVM (RBF),raw
+subclinical_hypothyroid,9,0.9,1.0,0.9875,0.9365,63,SVM (RBF),raw
+euthyroid,0,0.0,0.1,0.0121,0.1078,102,SVM (RBF),raw
+euthyroid,1,0.1,0.2,0.1442,0.3636,11,SVM (RBF),raw
+euthyroid,2,0.2,0.3,0.2394,0.5,10,SVM (RBF),raw
+euthyroid,3,0.3,0.4,0.3473,1.0,6,SVM (RBF),raw
+euthyroid,4,0.4,0.5,0.4332,0.8,10,SVM (RBF),raw
+euthyroid,5,0.5,0.6,0.5465,0.875,8,SVM (RBF),raw
+euthyroid,6,0.6,0.7,0.6494,0.875,8,SVM (RBF),raw
+euthyroid,7,0.7,0.8,0.7693,1.0,20,SVM (RBF),raw
+euthyroid,8,0.8,0.9,0.854,1.0,19,SVM (RBF),raw
+euthyroid,9,0.9,1.0,0.9948,1.0,1246,SVM (RBF),raw
+overt_hypothyroid,0,0.0,0.1,0.0007,0.0007,1391,SVM (RBF),sigmoid
+overt_hypothyroid,3,0.3,0.4,0.3565,0.0,1,SVM (RBF),sigmoid
+overt_hypothyroid,9,0.9,1.0,0.979,0.6667,48,SVM (RBF),sigmoid
+subclinical_hypothyroid,0,0.0,0.1,0.0012,0.0,1326,SVM (RBF),sigmoid
+subclinical_hypothyroid,3,0.3,0.4,0.3066,0.0,1,SVM (RBF),sigmoid
+subclinical_hypothyroid,6,0.6,0.7,0.6205,0.0,5,SVM (RBF),sigmoid
+subclinical_hypothyroid,9,0.9,1.0,0.9626,0.6852,108,SVM (RBF),sigmoid
+euthyroid,0,0.0,0.1,0.0306,0.3141,156,SVM (RBF),sigmoid
+euthyroid,3,0.3,0.4,0.3795,1.0,5,SVM (RBF),sigmoid
+euthyroid,6,0.6,0.7,0.6684,1.0,2,SVM (RBF),sigmoid
+euthyroid,9,0.9,1.0,0.9982,1.0,1277,SVM (RBF),sigmoid
+overt_hypothyroid,0,0.0,0.1,0.0005,0.0007,1391,SVM (RBF),isotonic
+overt_hypothyroid,3,0.3,0.4,0.33,0.0,1,SVM (RBF),isotonic
+overt_hypothyroid,9,0.9,1.0,0.9823,0.6667,48,SVM (RBF),isotonic
+subclinical_hypothyroid,0,0.0,0.1,0.0003,0.0,1326,SVM (RBF),isotonic
+subclinical_hypothyroid,3,0.3,0.4,0.3315,0.0,2,SVM (RBF),isotonic
+subclinical_hypothyroid,6,0.6,0.7,0.6331,0.0,4,SVM (RBF),isotonic
+subclinical_hypothyroid,8,0.8,0.9,0.8382,0.0,2,SVM (RBF),isotonic
+subclinical_hypothyroid,9,0.9,1.0,0.9701,0.6981,106,SVM (RBF),isotonic
+euthyroid,0,0.0,0.1,0.0249,0.3052,154,SVM (RBF),isotonic
+euthyroid,1,0.1,0.2,0.1618,1.0,2,SVM (RBF),isotonic
+euthyroid,3,0.3,0.4,0.3669,1.0,4,SVM (RBF),isotonic
+euthyroid,6,0.6,0.7,0.669,1.0,3,SVM (RBF),isotonic
+euthyroid,9,0.9,1.0,0.9993,1.0,1277,SVM (RBF),isotonic
+overt_hypothyroid,0,0.0,0.1,0.001,0.0,1404,Random Forest,raw
+overt_hypothyroid,1,0.1,0.2,0.15,0.0,1,Random Forest,raw
+overt_hypothyroid,6,0.6,0.7,0.63,1.0,1,Random Forest,raw
+overt_hypothyroid,7,0.7,0.8,0.765,1.0,2,Random Forest,raw
+overt_hypothyroid,8,0.8,0.9,0.8717,0.6667,6,Random Forest,raw
+overt_hypothyroid,9,0.9,1.0,0.9846,1.0,26,Random Forest,raw
+subclinical_hypothyroid,0,0.0,0.1,0.0031,0.0,1352,Random Forest,raw
+subclinical_hypothyroid,1,0.1,0.2,0.1436,0.0,11,Random Forest,raw
+subclinical_hypothyroid,2,0.2,0.3,0.29,1.0,1,Random Forest,raw
+subclinical_hypothyroid,3,0.3,0.4,0.37,0.0,1,Random Forest,raw
+subclinical_hypothyroid,4,0.4,0.5,0.47,0.0,1,Random Forest,raw
+subclinical_hypothyroid,6,0.6,0.7,0.675,1.0,2,Random Forest,raw
+subclinical_hypothyroid,7,0.7,0.8,0.7625,0.75,4,Random Forest,raw
+subclinical_hypothyroid,8,0.8,0.9,0.8717,1.0,6,Random Forest,raw
+subclinical_hypothyroid,9,0.9,1.0,0.9694,1.0,62,Random Forest,raw
+euthyroid,0,0.0,0.1,0.0282,0.0108,93,Random Forest,raw
+euthyroid,1,0.1,0.2,0.1411,0.2222,9,Random Forest,raw
+euthyroid,2,0.2,0.3,0.246,0.0,5,Random Forest,raw
+euthyroid,3,0.3,0.4,0.335,0.0,2,Random Forest,raw
+euthyroid,4,0.4,0.5,0.5,1.0,1,Random Forest,raw
+euthyroid,6,0.6,0.7,0.63,1.0,1,Random Forest,raw
+euthyroid,7,0.7,0.8,0.7625,0.75,4,Random Forest,raw
+euthyroid,8,0.8,0.9,0.8645,1.0,11,Random Forest,raw
+euthyroid,9,0.9,1.0,0.9965,1.0,1314,Random Forest,raw
+overt_hypothyroid,0,0.0,0.1,0.0002,0.0,1405,Random Forest,sigmoid
+overt_hypothyroid,4,0.4,0.5,0.4438,1.0,1,Random Forest,sigmoid
+overt_hypothyroid,8,0.8,0.9,0.8998,1.0,1,Random Forest,sigmoid
+overt_hypothyroid,9,0.9,1.0,0.9901,0.9394,33,Random Forest,sigmoid
+subclinical_hypothyroid,0,0.0,0.1,0.0002,0.0,1364,Random Forest,sigmoid
+subclinical_hypothyroid,1,0.1,0.2,0.1754,0.0,1,Random Forest,sigmoid
+subclinical_hypothyroid,3,0.3,0.4,0.336,1.0,1,Random Forest,sigmoid
+subclinical_hypothyroid,6,0.6,0.7,0.634,1.0,1,Random Forest,sigmoid
+subclinical_hypothyroid,8,0.8,0.9,0.8484,0.0,1,Random Forest,sigmoid
+subclinical_hypothyroid,9,0.9,1.0,0.9915,1.0,72,Random Forest,sigmoid
+euthyroid,0,0.0,0.1,0.0097,0.0189,106,Random Forest,sigmoid
+euthyroid,1,0.1,0.2,0.1488,1.0,1,Random Forest,sigmoid
+euthyroid,3,0.3,0.4,0.3657,0.0,1,Random Forest,sigmoid
+euthyroid,5,0.5,0.6,0.556,0.0,1,Random Forest,sigmoid
+euthyroid,6,0.6,0.7,0.6638,0.0,1,Random Forest,sigmoid
+euthyroid,8,0.8,0.9,0.8244,1.0,1,Random Forest,sigmoid
+euthyroid,9,0.9,1.0,0.9997,1.0,1329,Random Forest,sigmoid
+overt_hypothyroid,0,0.0,0.1,0.0001,0.0014,1407,Random Forest,isotonic
+overt_hypothyroid,1,0.1,0.2,0.1404,1.0,1,Random Forest,isotonic
+overt_hypothyroid,2,0.2,0.3,0.2075,1.0,1,Random Forest,isotonic
+overt_hypothyroid,3,0.3,0.4,0.3326,1.0,2,Random Forest,isotonic
+overt_hypothyroid,5,0.5,0.6,0.536,1.0,2,Random Forest,isotonic
+overt_hypothyroid,6,0.6,0.7,0.6565,1.0,2,Random Forest,isotonic
+overt_hypothyroid,8,0.8,0.9,0.8314,0.0,1,Random Forest,isotonic
+overt_hypothyroid,9,0.9,1.0,0.9945,0.9583,24,Random Forest,isotonic
+subclinical_hypothyroid,0,0.0,0.1,0.0,0.0,1365,Random Forest,isotonic
+subclinical_hypothyroid,1,0.1,0.2,0.1168,1.0,1,Random Forest,isotonic
+subclinical_hypothyroid,2,0.2,0.3,0.2447,0.5,2,Random Forest,isotonic
+subclinical_hypothyroid,6,0.6,0.7,0.6499,1.0,2,Random Forest,isotonic
+subclinical_hypothyroid,7,0.7,0.8,0.7297,1.0,2,Random Forest,isotonic
+subclinical_hypothyroid,8,0.8,0.9,0.8433,1.0,5,Random Forest,isotonic
+subclinical_hypothyroid,9,0.9,1.0,0.9893,1.0,63,Random Forest,isotonic
+euthyroid,0,0.0,0.1,0.0093,0.0115,87,Random Forest,isotonic
+euthyroid,1,0.1,0.2,0.1587,0.1667,6,Random Forest,isotonic
+euthyroid,2,0.2,0.3,0.2703,0.0,2,Random Forest,isotonic
+euthyroid,3,0.3,0.4,0.3468,0.0,4,Random Forest,isotonic
+euthyroid,4,0.4,0.5,0.464,0.0,2,Random Forest,isotonic
+euthyroid,6,0.6,0.7,0.6674,0.0,2,Random Forest,isotonic
+euthyroid,7,0.7,0.8,0.7677,0.3333,3,Random Forest,isotonic
+euthyroid,8,0.8,0.9,0.8714,0.0,2,Random Forest,isotonic
+euthyroid,9,0.9,1.0,0.9999,0.9985,1332,Random Forest,isotonic
+overt_hypothyroid,0,0.0,0.1,0.0,0.0,1404,XGBoost,raw
+overt_hypothyroid,1,0.1,0.2,0.1123,1.0,1,XGBoost,raw
+overt_hypothyroid,5,0.5,0.6,0.5941,0.0,1,XGBoost,raw
+overt_hypothyroid,7,0.7,0.8,0.7369,1.0,1,XGBoost,raw
+overt_hypothyroid,9,0.9,1.0,0.9928,0.9394,33,XGBoost,raw
+subclinical_hypothyroid,0,0.0,0.1,0.0002,0.0015,1360,XGBoost,raw
+subclinical_hypothyroid,1,0.1,0.2,0.1431,0.2,5,XGBoost,raw
+subclinical_hypothyroid,2,0.2,0.3,0.2649,0.0,1,XGBoost,raw
+subclinical_hypothyroid,4,0.4,0.5,0.4312,0.5,2,XGBoost,raw
+subclinical_hypothyroid,7,0.7,0.8,0.7291,0.0,1,XGBoost,raw
+subclinical_hypothyroid,9,0.9,1.0,0.9979,0.9859,71,XGBoost,raw
+euthyroid,0,0.0,0.1,0.0033,0.0286,105,XGBoost,raw
+euthyroid,1,0.1,0.2,0.1459,0.0,1,XGBoost,raw
+euthyroid,2,0.2,0.3,0.2708,1.0,1,XGBoost,raw
+euthyroid,5,0.5,0.6,0.5419,1.0,1,XGBoost,raw
+euthyroid,7,0.7,0.8,0.735,1.0,1,XGBoost,raw
+euthyroid,8,0.8,0.9,0.8577,0.6,5,XGBoost,raw
+euthyroid,9,0.9,1.0,0.9998,0.9985,1326,XGBoost,raw
+overt_hypothyroid,0,0.0,0.1,0.0003,0.0,1405,XGBoost,sigmoid
+overt_hypothyroid,6,0.6,0.7,0.6517,1.0,1,XGBoost,sigmoid
+overt_hypothyroid,9,0.9,1.0,0.9953,0.9412,34,XGBoost,sigmoid
+subclinical_hypothyroid,0,0.0,0.1,0.0005,0.0022,1363,XGBoost,sigmoid
+subclinical_hypothyroid,1,0.1,0.2,0.1232,0.0,2,XGBoost,sigmoid
+subclinical_hypothyroid,3,0.3,0.4,0.324,0.3333,3,XGBoost,sigmoid
+subclinical_hypothyroid,6,0.6,0.7,0.6237,0.0,1,XGBoost,sigmoid
+subclinical_hypothyroid,9,0.9,1.0,0.9956,0.9859,71,XGBoost,sigmoid
+euthyroid,0,0.0,0.1,0.0037,0.0286,105,XGBoost,sigmoid
+euthyroid,3,0.3,0.4,0.3619,0.5,2,XGBoost,sigmoid
+euthyroid,6,0.6,0.7,0.6757,0.6667,3,XGBoost,sigmoid
+euthyroid,8,0.8,0.9,0.8764,1.0,2,XGBoost,sigmoid
+euthyroid,9,0.9,1.0,0.9992,0.9977,1328,XGBoost,sigmoid
+overt_hypothyroid,0,0.0,0.1,0.0,0.0,1404,XGBoost,isotonic
+overt_hypothyroid,2,0.2,0.3,0.2849,0.0,1,XGBoost,isotonic
+overt_hypothyroid,4,0.4,0.5,0.4727,1.0,1,XGBoost,isotonic
+overt_hypothyroid,7,0.7,0.8,0.7904,0.0,1,XGBoost,isotonic
+overt_hypothyroid,8,0.8,0.9,0.8756,1.0,3,XGBoost,isotonic
+overt_hypothyroid,9,0.9,1.0,0.996,0.9667,30,XGBoost,isotonic
+subclinical_hypothyroid,0,0.0,0.1,0.0003,0.0015,1362,XGBoost,isotonic
+subclinical_hypothyroid,1,0.1,0.2,0.1571,0.5,2,XGBoost,isotonic
+subclinical_hypothyroid,2,0.2,0.3,0.2115,0.5,2,XGBoost,isotonic
+subclinical_hypothyroid,3,0.3,0.4,0.3542,0.0,3,XGBoost,isotonic
+subclinical_hypothyroid,7,0.7,0.8,0.7136,1.0,1,XGBoost,isotonic
+subclinical_hypothyroid,8,0.8,0.9,0.8612,1.0,1,XGBoost,isotonic
+subclinical_hypothyroid,9,0.9,1.0,0.9927,0.9855,69,XGBoost,isotonic
+euthyroid,0,0.0,0.1,0.0077,0.0196,102,XGBoost,isotonic
+euthyroid,1,0.1,0.2,0.1453,0.0,2,XGBoost,isotonic
+euthyroid,2,0.2,0.3,0.2096,1.0,1,XGBoost,isotonic
+euthyroid,5,0.5,0.6,0.5273,0.0,1,XGBoost,isotonic
+euthyroid,6,0.6,0.7,0.6458,1.0,3,XGBoost,isotonic
+euthyroid,7,0.7,0.8,0.7885,0.5,2,XGBoost,isotonic
+euthyroid,8,0.8,0.9,0.8429,0.5,2,XGBoost,isotonic
+euthyroid,9,0.9,1.0,0.9998,0.9985,1327,XGBoost,isotonic

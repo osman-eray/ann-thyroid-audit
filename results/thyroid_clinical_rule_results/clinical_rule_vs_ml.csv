@@ -1,0 +1,7 @@
+rule,ml_model,rule_f1_macro,ml_f1_macro,delta_f1_macro,rule_spec,ml_spec,delta_spec
+ClinicalRule_fixed,ML_Logistic Regression,0.7762,0.8655,0.0893,0.972,0.9878,0.0157
+ClinicalRule_fixed,ML_Random Forest,0.7762,0.9623,0.1861,0.972,0.9955,0.0234
+ClinicalRule_fixed,ML_XGBoost,0.7762,0.9583,0.1821,0.972,0.9918,0.0198
+ClinicalRule_tuned,ML_Logistic Regression,0.8845,0.8655,-0.019,0.9905,0.9878,-0.0028
+ClinicalRule_tuned,ML_Random Forest,0.8845,0.9623,0.0778,0.9905,0.9955,0.0049
+ClinicalRule_tuned,ML_XGBoost,0.8845,0.9583,0.0738,0.9905,0.9918,0.0013

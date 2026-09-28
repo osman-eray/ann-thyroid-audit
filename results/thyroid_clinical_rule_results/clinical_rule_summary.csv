@@ -1,0 +1,6 @@
+method,accuracy_mean,accuracy_std,f1_macro_mean,f1_macro_std,specificity_macro_mean,specificity_macro_std,roc_auc_ovr_mean,roc_auc_ovr_std,sens_overt_hypothyroid_mean,sens_overt_hypothyroid_std,spec_overt_hypothyroid_mean,spec_overt_hypothyroid_std,sens_subclinical_hypothyroid_mean,sens_subclinical_hypothyroid_std,spec_subclinical_hypothyroid_mean,spec_subclinical_hypothyroid_std,sens_euthyroid_mean,sens_euthyroid_std,spec_euthyroid_mean,spec_euthyroid_std
+ClinicalRule_fixed,0.9202,0.0061,0.7762,0.0207,0.972,0.0021,,,0.8788,0.0589,0.9917,0.0021,0.9865,0.0142,0.9245,0.0067,0.9176,0.006,1.0,0.0
+ClinicalRule_tuned,0.9729,0.0031,0.8845,0.0181,0.9905,0.0011,,,0.8788,0.0589,0.9959,0.0014,0.9865,0.0142,0.9756,0.0028,0.9745,0.003,1.0,0.0
+ML_Logistic Regression,0.9665,0.007,0.8655,0.0183,0.9878,0.0026,0.9909,0.0025,0.9758,0.0239,0.9888,0.0027,0.9892,0.0107,0.9763,0.0067,0.965,0.0081,0.9981,0.0039
+ML_Random Forest,0.9903,0.0067,0.9623,0.0207,0.9955,0.0025,0.9981,0.0017,1.0,0.0,0.998,0.0013,0.9946,0.007,0.9921,0.0071,0.9898,0.0073,0.9963,0.0048
+ML_XGBoost,0.9897,0.0061,0.9583,0.0216,0.9918,0.0047,0.9976,0.0017,0.9848,0.0294,0.9982,0.0012,0.9784,0.0223,0.9922,0.0064,0.9905,0.0066,0.985,0.0147

@@ -27,6 +27,8 @@ version-dependent and the supplementary's claim was false as written. Both are n
 | `verify_class_semantics.py` | record-level match against `allhypo` and `thyroid0387`; reads the thresholds out of `thyroid.theory` | R1 major 2, R2 c.5 |
 | `fs_statistical_tests.py` | Friedman, Kendall's W, Nemenyi, Holm-corrected Wilcoxon, TOST equivalence | R1 major 3, R2 c.3 |
 | `perclass_and_dispersion.py` | class-wise sensitivity/specificity/PR-AUC, Table 8 dispersion, balancing-strategy omnibus tests | R2 c.6, R1 major 3–4 |
+| `fig5_permutation_panel.py` | assembles Figure 5 from `permutation_importance.csv`; the composite was previously produced by hand outside the pipeline | deposit integrity |
+| `hfs_discrete_estimation.py` | runs the selection stage under both information-gain estimators on the same folds and seeds; produces Table 9b | R1 third round |
 
 ## Fixed after first test run
 
@@ -50,3 +52,50 @@ The per-class column names in `ablation_all_runs.csv` (`sens_hyperthyroid`, `pra
 misleading. They were left alone rather than renamed, because renaming them silently would break
 any external reader of the published CSVs. `perclass_and_dispersion.py` maps them to the
 laboratory-phenotype designations on read, and the README documents the mapping.
+
+
+---
+
+# Third revision (v1.0.2)
+
+No released script was modified. The release adds one script, the per-split outputs the paper
+refers to, and one encoding repair.
+
+## Added
+
+| file | why |
+|---|---|
+| `code/hfs_discrete_estimation.py` | R1 asked whether the findings about the selection scheme depend on the information-gain estimator. They do. The script runs the stage both ways on identical folds and seeds. |
+| `results/discrete_estimation_results/` | its four per-split outputs; Table 9b is read off them |
+| `results/thyroid_sensitivity_results/` | Table 9 and Supplementary S5 |
+| `results/thyroid_clinical_rule_results/` | Table 10, including the per-split `elapsed_s` behind the run-time ratio |
+| `results/thyroid_calibration_results/` | Table 11 |
+| `results/thyroid_shap_stability_results/` | Table 12, upper panel |
+| `results/thyroid_smote_realism_results/` | Supplementary S3 |
+| `results/thyroid_dca_results/` | Supplementary S4 |
+
+R1 reported that the Data Availability Statement and Supplementary S7.4 promised "the per-split
+output files from which every reported value is computed", and that six result directories were
+absent from v1.0.1. All six are now present.
+
+## Repaired
+
+`results/thyroid_calibration_results/calibration_report.txt` had been written as UTF-8, then
+read back as cp1252 and encoded as UTF-8 a second time, so its Turkish characters were mojibake
+(`KALİBRASYON` appeared as `KALÄ°BRASYON`). The text is restored. No number was affected.
+
+## A number corrected in the paper, not in the code
+
+The run-time ratio in Table 10 and Sections 3.8 and 4.4 is 197, not the 193 previously printed.
+193 came from dividing the rounded table cells (40.47 / 0.21). Computed from the per-split times
+now deposited, the means are 40.472 s for random forest and 0.205 s for the tuned rule, giving
+197.2 — and 197.5 as the mean of the per-split ratios. Table 10 now prints 0.205 s and 0.011 s so
+that the ratio is reproducible from the table itself. The logistic-regression comparison
+(2.960 / 0.205 = 14.4, "one-fourteenth") is unchanged.
+
+## Not changed, and why
+
+Scripts 1–11 and the figure scripts are untouched in this round. This is deliberate: the
+discrete-estimation comparison is only like for like if the released scripts still reproduce the
+deposited per-split values exactly, so the estimator change lives in a separate script rather
+than as an edit to `1.thyroid_ablation_ann7200_SAMME.py`.

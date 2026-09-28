@@ -1,0 +1,43 @@
+======================================================================
+SHAP STABİLİTE ANALİZİ — ann-thyroid
+Kendall's W: 1.0=tam sıralama uyumu, 0=rastgele
+======================================================================
+
+Model               Kendall W     Mean Spearman   #runs   
+----------------------------------------------------------------------
+Decision Tree       0.8862        0.8736          10      
+Logistic Regression 0.6411        0.6013          10      
+Random Forest       0.7139        0.6821          10      
+XGBoost             0.8543        0.8381          10      
+
+
+EN KARARLI TOP ÖZELLİKLER (model başına, top3 frekansı):
+----------------------------------------------------------------------
+
+  [Decision Tree]
+    TSH                |SHAP|=0.3432±0.0066  top3: 10/10
+    FTI                |SHAP|=0.1235±0.0084  top3: 10/10
+    TT4                |SHAP|=0.0223±0.0165  top3: 5/10
+    on_thyroxine       |SHAP|=0.0117±0.0098  top3: 5/10
+    T3                 |SHAP|=0.0081±0.0030  top3: 0/10
+
+  [Logistic Regression]
+    FTI                |SHAP|=3.6775±0.9794  top3: 10/10
+    TSH                |SHAP|=2.3893±0.7915  top3: 10/10
+    on_thyroxine       |SHAP|=1.4991±1.3147  top3: 6/10
+    TT4                |SHAP|=0.5675±0.5446  top3: 1/10
+    T3                 |SHAP|=0.3297±0.0913  top3: 3/10
+
+  [Random Forest]
+    TSH                |SHAP|=0.3199±0.0041  top3: 10/10
+    FTI                |SHAP|=0.0988±0.0040  top3: 10/10
+    TT4                |SHAP|=0.0412±0.0033  top3: 7/10
+    T3                 |SHAP|=0.0385±0.0037  top3: 3/10
+    on_thyroxine       |SHAP|=0.0120±0.0101  top3: 0/10
+
+  [XGBoost]
+    TSH                |SHAP|=3.8689±0.1863  top3: 10/10
+    FTI                |SHAP|=1.5607±0.1338  top3: 10/10
+    TT4                |SHAP|=0.7145±0.2255  top3: 7/10
+    T3                 |SHAP|=0.5997±0.1048  top3: 3/10
+    on_thyroxine       |SHAP|=0.1833±0.1552  top3: 0/10

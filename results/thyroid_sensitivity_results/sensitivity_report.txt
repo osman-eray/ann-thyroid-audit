@@ -1,0 +1,29 @@
+======================================================================
+HFS PARAMETRE DUYARLILIK ANALİZİ — ann-thyroid
+Varsayılan: k=8, w=0.5, theta=0.9
+======================================================================
+
+
+[k] tarama (diğerleri varsayılanda sabit)
+----------------------------------------------------------------------
+  k=4      ROC=0.9929  Macro-F1=0.9085  Spec=0.9866  (seçilen≈4.0)
+  k=6      ROC=0.9950  Macro-F1=0.9255  Spec=0.9901  (seçilen≈6.0)
+  k=8      ROC=0.9955  Macro-F1=0.9287  Spec=0.9917  (seçilen≈8.0)  ← varsayılan
+  k=10     ROC=0.9947  Macro-F1=0.9304  Spec=0.9911  (seçilen≈10.0)
+  k=12     ROC=0.9951  Macro-F1=0.9392  Spec=0.9921  (seçilen≈12.0)
+
+[w] tarama (diğerleri varsayılanda sabit)
+----------------------------------------------------------------------
+  w=0.0    ROC=0.9939  Macro-F1=0.9052  Spec=0.9899  (seçilen≈8.0)
+  w=0.25   ROC=0.9951  Macro-F1=0.9260  Spec=0.9906  (seçilen≈8.0)
+  w=0.5    ROC=0.9955  Macro-F1=0.9287  Spec=0.9917  (seçilen≈8.0)  ← varsayılan
+  w=0.75   ROC=0.9965  Macro-F1=0.9382  Spec=0.9929  (seçilen≈8.0)
+  w=1.0    ROC=0.9968  Macro-F1=0.9394  Spec=0.9928  (seçilen≈8.0)
+
+[theta] tarama (diğerleri varsayılanda sabit)
+----------------------------------------------------------------------
+  theta=0.8    ROC=0.9955  Macro-F1=0.9287  Spec=0.9917  (seçilen≈8.0)
+  theta=0.85   ROC=0.9955  Macro-F1=0.9287  Spec=0.9917  (seçilen≈8.0)
+  theta=0.9    ROC=0.9955  Macro-F1=0.9287  Spec=0.9917  (seçilen≈8.0)  ← varsayılan
+  theta=0.95   ROC=0.9955  Macro-F1=0.9287  Spec=0.9917  (seçilen≈8.0)
+  theta=0.99   ROC=0.9955  Macro-F1=0.9287  Spec=0.9917  (seçilen≈8.0)

@@ -1,0 +1,321 @@
+model,run_id,feature,mean_abs_shap
+Logistic Regression,0,TSH,2.3455955334821614
+Logistic Regression,0,hypopituitary,6.708525567685103e-20
+Logistic Regression,0,FTI,3.3535550231623246
+Logistic Regression,0,T3,0.3233597007427594
+Logistic Regression,0,TT4,0.10442554444278891
+Logistic Regression,0,on_thyroxine,1.4386247735891753
+Logistic Regression,0,pregnant,0.07487340725965018
+Logistic Regression,0,query_hypothyroid,0.015552687999715003
+Decision Tree,0,TSH,0.3489444581438839
+Decision Tree,0,hypopituitary,0.0
+Decision Tree,0,FTI,0.1207606994091262
+Decision Tree,0,T3,0.005864232196400565
+Decision Tree,0,TT4,0.016860660562715374
+Decision Tree,0,on_thyroxine,0.018797604745520467
+Decision Tree,0,pregnant,0.0
+Decision Tree,0,query_hypothyroid,0.0
+Random Forest,0,TSH,0.32569899610894776
+Random Forest,0,hypopituitary,4.248034467750447e-06
+Random Forest,0,FTI,0.0945975986978402
+Random Forest,0,T3,0.0336234715390108
+Random Forest,0,TT4,0.04376690057343422
+Random Forest,0,on_thyroxine,0.019070411801188035
+Random Forest,0,pregnant,0.0009464017690110994
+Random Forest,0,query_hypothyroid,0.0026020602503453376
+XGBoost,0,TSH,3.944579839706421
+XGBoost,0,hypopituitary,0.0
+XGBoost,0,FTI,1.407909870147705
+XGBoost,0,T3,0.7426170110702515
+XGBoost,0,TT4,0.8315690755844116
+XGBoost,0,on_thyroxine,0.29771512746810913
+XGBoost,0,pregnant,0.0
+XGBoost,0,query_hypothyroid,0.020867088809609413
+Logistic Regression,1,TSH,1.761992060062179
+Logistic Regression,1,FTI,2.320331074965841
+Logistic Regression,1,T3,0.2924471065877761
+Logistic Regression,1,TT4,1.2468235305109558
+Logistic Regression,1,on_thyroxine,2.5080491322905933
+Logistic Regression,1,T4U,0.20097558345470357
+Logistic Regression,1,query_hypothyroid,0.029244613823675582
+Logistic Regression,1,I131_treatment,0.002827288786904729
+Decision Tree,1,TSH,0.33934283311932484
+Decision Tree,1,FTI,0.12831873526093598
+Decision Tree,1,T3,0.006744869408365911
+Decision Tree,1,TT4,0.023835450026884045
+Decision Tree,1,on_thyroxine,0.017514627256717742
+Decision Tree,1,T4U,0.0052523974199071895
+Decision Tree,1,query_hypothyroid,0.0
+Decision Tree,1,I131_treatment,0.0
+Random Forest,1,TSH,0.319073429817699
+Random Forest,1,FTI,0.09619028451338624
+Random Forest,1,T3,0.039287866989174206
+Random Forest,1,TT4,0.04300888223723881
+Random Forest,1,on_thyroxine,0.019001290093814564
+Random Forest,1,T4U,0.008055287763093501
+Random Forest,1,query_hypothyroid,0.001707156675027016
+Random Forest,1,I131_treatment,0.0004472058705662789
+XGBoost,1,TSH,3.913788318634033
+XGBoost,1,FTI,1.5663137435913086
+XGBoost,1,T3,0.5006901025772095
+XGBoost,1,TT4,0.45081815123558044
+XGBoost,1,on_thyroxine,0.23580415546894073
+XGBoost,1,T4U,0.18924671411514282
+XGBoost,1,query_hypothyroid,0.012906361371278763
+XGBoost,1,I131_treatment,0.0
+Logistic Regression,2,hypopituitary,1.3247327726896287e-19
+Logistic Regression,2,TSH,2.5857998643071682
+Logistic Regression,2,FTI,3.22765262438418
+Logistic Regression,2,TT4,0.05233176193190647
+Logistic Regression,2,T3,0.32822254797551087
+Logistic Regression,2,goitre,0.008617095092705937
+Logistic Regression,2,pregnant,0.050331268307113396
+Logistic Regression,2,thyroid_surgery,0.16199415914668544
+Decision Tree,2,hypopituitary,0.0
+Decision Tree,2,TSH,0.3494385098744855
+Decision Tree,2,FTI,0.13188757948184476
+Decision Tree,2,TT4,0.012752286449574553
+Decision Tree,2,T3,0.006495109248869354
+Decision Tree,2,goitre,0.0
+Decision Tree,2,pregnant,0.0
+Decision Tree,2,thyroid_surgery,0.0025885006695763064
+Random Forest,2,hypopituitary,4.952356776381837e-06
+Random Forest,2,TSH,0.32208881817455215
+Random Forest,2,FTI,0.10355024733701787
+Random Forest,2,TT4,0.03985555433280375
+Random Forest,2,T3,0.03619738901019599
+Random Forest,2,goitre,0.00024902801108800187
+Random Forest,2,pregnant,0.0008820737144844297
+Random Forest,2,thyroid_surgery,0.002483005670223845
+XGBoost,2,hypopituitary,0.0
+XGBoost,2,TSH,3.7414536476135254
+XGBoost,2,FTI,1.7232826948165894
+XGBoost,2,TT4,0.8330795764923096
+XGBoost,2,T3,0.6067532300949097
+XGBoost,2,goitre,0.0
+XGBoost,2,pregnant,0.0
+XGBoost,2,thyroid_surgery,0.03306350111961365
+Logistic Regression,3,TSH,3.7949205415230716
+Logistic Regression,3,FTI,3.257532614035848
+Logistic Regression,3,T3,0.251512622788575
+Logistic Regression,3,TT4,0.2125754441154898
+Logistic Regression,3,goitre,0.04819620834912979
+Logistic Regression,3,pregnant,0.092554833738882
+Logistic Regression,3,lithium,0.055377725163435705
+Logistic Regression,3,query_on_thyroxine,0.18762439061076047
+Decision Tree,3,TSH,0.3488958588652732
+Decision Tree,3,FTI,0.1195956452675791
+Decision Tree,3,T3,0.008401894255709584
+Decision Tree,3,TT4,0.02482851807134423
+Decision Tree,3,goitre,0.0
+Decision Tree,3,pregnant,0.0
+Decision Tree,3,lithium,0.0
+Decision Tree,3,query_on_thyroxine,0.0
+Random Forest,3,TSH,0.3194132098891861
+Random Forest,3,FTI,0.10048408700400262
+Random Forest,3,T3,0.04054045827616607
+Random Forest,3,TT4,0.0385676238621327
+Random Forest,3,goitre,0.0003663055961038052
+Random Forest,3,pregnant,0.0007207486859896133
+Random Forest,3,lithium,0.0001957754727060307
+Random Forest,3,query_on_thyroxine,0.0009469132423188226
+XGBoost,3,TSH,3.6611828804016113
+XGBoost,3,FTI,1.5890296697616577
+XGBoost,3,T3,0.8159892559051514
+XGBoost,3,TT4,0.8302169442176819
+XGBoost,3,goitre,0.0
+XGBoost,3,pregnant,0.0
+XGBoost,3,lithium,0.0
+XGBoost,3,query_on_thyroxine,0.0
+Logistic Regression,4,TSH,3.736892571264087
+Logistic Regression,4,hypopituitary,8.386824956359723e-20
+Logistic Regression,4,FTI,2.7326527264797695
+Logistic Regression,4,T3,0.25738207187199125
+Logistic Regression,4,TT4,0.2626351124992115
+Logistic Regression,4,pregnant,0.02392152469021511
+Logistic Regression,4,goitre,0.07761190008810227
+Logistic Regression,4,query_on_thyroxine,0.046836658794957756
+Decision Tree,4,TSH,0.32919555412143564
+Decision Tree,4,hypopituitary,0.0
+Decision Tree,4,FTI,0.10333094911079865
+Decision Tree,4,T3,0.007502438358269359
+Decision Tree,4,TT4,0.06913775741214857
+Decision Tree,4,pregnant,0.0
+Decision Tree,4,goitre,0.0
+Decision Tree,4,query_on_thyroxine,0.0
+Random Forest,4,TSH,0.3160635179167811
+Random Forest,4,hypopituitary,1.573597459153692e-06
+Random Forest,4,FTI,0.09517302810292162
+Random Forest,4,T3,0.047453845440115286
+Random Forest,4,TT4,0.0482024585357589
+Random Forest,4,pregnant,0.000950763321031073
+Random Forest,4,goitre,0.00029692557933914433
+Random Forest,4,query_on_thyroxine,0.0004989622211551026
+XGBoost,4,TSH,3.5606117248535156
+XGBoost,4,hypopituitary,0.0
+XGBoost,4,FTI,1.472554087638855
+XGBoost,4,T3,0.6067737936973572
+XGBoost,4,TT4,0.622180700302124
+XGBoost,4,pregnant,0.0
+XGBoost,4,goitre,0.0
+XGBoost,4,query_on_thyroxine,0.002499657217413187
+Logistic Regression,5,TSH,2.3141797229268692
+Logistic Regression,5,FTI,4.773333140443071
+Logistic Regression,5,T3,0.5407044788549051
+Logistic Regression,5,TT4,0.7705718347685644
+Logistic Regression,5,on_thyroxine,2.0922284289906425
+Logistic Regression,5,T4U,0.3119350235632092
+Logistic Regression,5,query_hypothyroid,0.02279270159009072
+Logistic Regression,5,sex,0.36863115620968373
+Decision Tree,5,TSH,0.33516999521619806
+Decision Tree,5,FTI,0.12061918367373436
+Decision Tree,5,T3,0.016719469757769837
+Decision Tree,5,TT4,0.020952576127486626
+Decision Tree,5,on_thyroxine,0.021488517202069724
+Decision Tree,5,T4U,0.0061646801229035585
+Decision Tree,5,query_hypothyroid,0.0
+Decision Tree,5,sex,0.0
+Random Forest,5,TSH,0.3111269048458699
+Random Forest,5,FTI,0.10318190090673386
+Random Forest,5,T3,0.04055512856738902
+Random Forest,5,TT4,0.035750944377039455
+Random Forest,5,on_thyroxine,0.02076269859222083
+Random Forest,5,T4U,0.008985101336024995
+Random Forest,5,query_hypothyroid,0.002334267405398682
+Random Forest,5,sex,0.0016895982504309417
+XGBoost,5,TSH,4.003378391265869
+XGBoost,5,FTI,1.640570044517517
+XGBoost,5,T3,0.49045348167419434
+XGBoost,5,TT4,0.3859703242778778
+XGBoost,5,on_thyroxine,0.2817288041114807
+XGBoost,5,T4U,0.2545326054096222
+XGBoost,5,query_hypothyroid,0.020215755328536034
+XGBoost,5,sex,0.067574143409729
+Logistic Regression,6,TSH,1.479623602009674
+Logistic Regression,6,FTI,4.876247375848263
+Logistic Regression,6,T3,0.38521308987753095
+Logistic Regression,6,TT4,0.6860140103304337
+Logistic Regression,6,T4U,0.39305376394786995
+Logistic Regression,6,on_thyroxine,3.139928164404556
+Logistic Regression,6,sex,0.19468102573098345
+Logistic Regression,6,query_hypothyroid,0.01022531625965032
+Decision Tree,6,TSH,0.3472219053714147
+Decision Tree,6,FTI,0.1201677596071832
+Decision Tree,6,T3,0.005946667201622887
+Decision Tree,6,TT4,0.013111197258167393
+Decision Tree,6,T4U,0.000628764237176746
+Decision Tree,6,on_thyroxine,0.019044553800170005
+Decision Tree,6,sex,0.0
+Decision Tree,6,query_hypothyroid,0.0
+Random Forest,6,TSH,0.320475074615377
+Random Forest,6,FTI,0.09287044327202894
+Random Forest,6,T3,0.038315034831344616
+Random Forest,6,TT4,0.037735079354400146
+Random Forest,6,T4U,0.008317943587874663
+Random Forest,6,on_thyroxine,0.0190436020401693
+Random Forest,6,sex,0.0021154023696709893
+Random Forest,6,query_hypothyroid,0.0019809976406356686
+XGBoost,6,TSH,3.9761269092559814
+XGBoost,6,FTI,1.7413864135742188
+XGBoost,6,T3,0.5251672267913818
+XGBoost,6,TT4,0.4970293641090393
+XGBoost,6,T4U,0.29684123396873474
+XGBoost,6,on_thyroxine,0.35815271735191345
+XGBoost,6,sex,0.05494976043701172
+XGBoost,6,query_hypothyroid,0.044010523706674576
+Logistic Regression,7,TSH,2.238064373167064
+Logistic Regression,7,FTI,5.488460039925872
+Logistic Regression,7,T3,0.4245476267653367
+Logistic Regression,7,TT4,1.780861188362666
+Logistic Regression,7,on_thyroxine,2.5375497215437774
+Logistic Regression,7,T4U,0.6894945511718793
+Logistic Regression,7,sex,0.37131940952712006
+Logistic Regression,7,query_hypothyroid,0.03271250285269007
+Decision Tree,7,TSH,0.34020614531302895
+Decision Tree,7,FTI,0.13473044142427715
+Decision Tree,7,T3,0.007098738175614895
+Decision Tree,7,TT4,0.012757936049568347
+Decision Tree,7,on_thyroxine,0.015333930574913267
+Decision Tree,7,T4U,0.00022942516401663765
+Decision Tree,7,sex,0.0
+Decision Tree,7,query_hypothyroid,0.0
+Random Forest,7,TSH,0.31785734701904317
+Random Forest,7,FTI,0.10040933220410639
+Random Forest,7,T3,0.03691066602904845
+Random Forest,7,TT4,0.0409092090501183
+Random Forest,7,on_thyroxine,0.016187489866981365
+Random Forest,7,T4U,0.008845646432610139
+Random Forest,7,sex,0.0014905096068890315
+Random Forest,7,query_hypothyroid,0.0019412518826511529
+XGBoost,7,TSH,4.220213890075684
+XGBoost,7,FTI,1.6712758541107178
+XGBoost,7,T3,0.4868357479572296
+XGBoost,7,TT4,0.6005097031593323
+XGBoost,7,on_thyroxine,0.2689807713031769
+XGBoost,7,T4U,0.2750324308872223
+XGBoost,7,sex,0.07002126425504684
+XGBoost,7,query_hypothyroid,0.015088187530636787
+Logistic Regression,8,TSH,2.3328963748253986
+Logistic Regression,8,hypopituitary,1.4176147993773766e-19
+Logistic Regression,8,FTI,3.7404828176124747
+Logistic Regression,8,T3,0.2564878070023535
+Logistic Regression,8,TT4,0.042852979408661895
+Logistic Regression,8,goitre,0.05801094958349894
+Logistic Regression,8,I131_treatment,0.001949675948044391
+Logistic Regression,8,pregnant,0.06272266702980277
+Decision Tree,8,TSH,0.3472990671250295
+Decision Tree,8,hypopituitary,0.0
+Decision Tree,8,FTI,0.12946927493365581
+Decision Tree,8,T3,0.009089736918664217
+Decision Tree,8,TT4,0.020923716131987243
+Decision Tree,8,goitre,0.0
+Decision Tree,8,I131_treatment,0.0
+Decision Tree,8,pregnant,0.0
+Random Forest,8,TSH,0.3219493092770536
+Random Forest,8,hypopituitary,3.435086086058498e-06
+Random Forest,8,FTI,0.10473170855136857
+Random Forest,8,T3,0.03720070648833708
+Random Forest,8,TT4,0.042699525176198426
+Random Forest,8,goitre,0.0008994304694473865
+Random Forest,8,I131_treatment,0.0005017606759112691
+Random Forest,8,pregnant,0.0010481169358911404
+XGBoost,8,TSH,3.712200164794922
+XGBoost,8,hypopituitary,0.0
+XGBoost,8,FTI,1.4871550798416138
+XGBoost,8,T3,0.6448007822036743
+XGBoost,8,TT4,1.0306222438812256
+XGBoost,8,goitre,0.0
+XGBoost,8,I131_treatment,0.006815171334892511
+XGBoost,8,pregnant,0.0
+Logistic Regression,9,hypopituitary,9.930465813623585e-20
+Logistic Regression,9,TSH,1.303103117201783
+Logistic Regression,9,FTI,3.005019352221972
+Logistic Regression,9,T3,0.23680236143994887
+Logistic Regression,9,TT4,0.516061855437762
+Logistic Regression,9,pregnant,0.03081567065620556
+Logistic Regression,9,goitre,0.013087641521412131
+Logistic Regression,9,on_thyroxine,3.274469859920419
+Decision Tree,9,hypopituitary,0.0
+Decision Tree,9,TSH,0.3463949175871481
+Decision Tree,9,FTI,0.12573089191446035
+Decision Tree,9,T3,0.006977623060636242
+Decision Tree,9,TT4,0.0077822763133716935
+Decision Tree,9,pregnant,0.0
+Decision Tree,9,goitre,0.0
+Decision Tree,9,on_thyroxine,0.024942889729261626
+Random Forest,9,hypopituitary,2.2915428720819484e-06
+Random Forest,9,TSH,0.3251936674378384
+Random Forest,9,FTI,0.09639263203094589
+Random Forest,9,T3,0.03483207151960621
+Random Forest,9,TT4,0.041114278260647355
+Random Forest,9,pregnant,0.0006471287379494074
+Random Forest,9,goitre,0.0003015071542528112
+Random Forest,9,on_thyroxine,0.026148079588132978
+XGBoost,9,hypopituitary,0.0
+XGBoost,9,TSH,3.955048084259033
+XGBoost,9,FTI,1.3074672222137451
+XGBoost,9,T3,0.5768450498580933
+XGBoost,9,TT4,1.062505841255188
+XGBoost,9,pregnant,0.0
+XGBoost,9,goitre,0.0
+XGBoost,9,on_thyroxine,0.3906753659248352

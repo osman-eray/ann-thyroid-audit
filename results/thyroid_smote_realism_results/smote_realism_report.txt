@@ -1,0 +1,91 @@
+========================================================================
+SMOTE GERÇEKÇİLİK / BİYOLOJİK TUTARLILIK — ann-thyroid
+R1-34/35/36/37
+========================================================================
+
+[R1-37] SINIF DAĞILIMI — SMOTE ÖNCESİ / SONRASI (10 split ort.)
+------------------------------------------------------------------------
+  overt_hypothyroid          önce=  133.0  sonra= 5333.0  sentetik=+ 5200.0
+  subclinical_hypothyroid    önce=  294.0  sonra= 5333.0  sentetik=+ 5039.0
+  euthyroid                  önce= 5333.0  sonra= 5333.0  sentetik=+    0.0
+
+  Toplam: 5760 → 15999 (+10239 sentetik örnek)
+  SMOTE k_neighbors = 5 (en küçük sınıf train'de ≈133 örnek → k=5 uygun)
+
+
+[R1-35] FİZYOLOJİK ARALIK İHLALLERİ (sentetik örnekler)
+------------------------------------------------------------------------
+Özellik   İhlal %     Sentetik aralık           Orijinal aralık           
+FTI       0.000       [2.00, 154.97][2.00, 642.00]
+T3        0.000       [0.05, 4.10]  [0.05, 18.00]
+T4U       0.000       [0.56, 1.65]  [0.17, 2.33]
+TSH       0.000       [6.10, 529.86][0.00, 530.00]
+TT4       0.000       [2.00, 149.99][2.00, 600.00]
+
+  → Toplam fizyolojik aralık ihlali: 0
+  → SMOTE interpolasyon yaptığı için sentetik değerler daima
+    mevcut örneklerin konveks kabuğu içinde kalır; bu nedenle
+    aralık dışına çıkmaz. (Beklenen ve doğrulanan davranış.)
+
+
+[R1-35] BINARY BÜTÜNLÜK (SMOTE 0/1 arası ara değer üretti mi?)
+------------------------------------------------------------------------
+  on_thyroxine                 ara-değer %  3.06  aralık=[0.000, 1.000]
+  sex                          ara-değer %  2.38  aralık=[0.000, 1.000]
+  thyroid_surgery              ara-değer %  0.65  aralık=[0.000, 1.000]
+  I131_treatment               ara-değer %  0.38  aralık=[0.000, 1.000]
+  query_on_thyroxine           ara-değer %  0.21  aralık=[0.000, 1.000]
+  lithium                      ara-değer %  0.18  aralık=[0.000, 1.000]
+  query_hypothyroid            ara-değer %  0.08  aralık=[0.000, 1.000]
+  goitre                       ara-değer %  0.00  aralık=[0.000, 0.000]
+  hypopituitary                ara-değer %  0.00  aralık=[0.000, 0.000]
+  pregnant                     ara-değer %  0.00  aralık=[0.000, 0.000]
+
+  → SMOTE sürekli interpolasyon yapar; binary özelliklerde
+    0/1 arası kesirli değerler üretmesi beklenen bir davranıştır.
+    Bu, klinik olarak 'kısmen hamile' gibi yorumlanamaz durumlara
+    karşılık gelir ve SMOTE-NC bir alternatif olabilir (bkz. Limitations).
+
+
+[R1-35] BİYOLOJİK OLARAK TUTARSIZ HORMON KOMBİNASYONLARI
+------------------------------------------------------------------------
+HPT ekseni: TSH ve TT4 negatif geri besleme ile ters yönde hareket eder.
+
+Kural                         Sentetik %      Orijinal %      Fark      
+T3_high_AND_TT4_verylow       0.000           0.073           -0.073
+TSH_high_AND_TT4_high         0.423           0.328           +0.095
+TSH_low_AND_TT4_low           0.000           0.391           -0.391
+TT4_FTI_divergent             0.000           0.014           -0.014
+
+  → 'Fark' pozitifse SMOTE, orijinal veride bulunmayan tutarsız
+    profiller üretiyor demektir. Sıfıra yakınsa sentetik örnekler
+    gerçek verinin biyolojik yapısını koruyor.
+
+
+[R1-34] GERÇEK vs SENTETİK DAĞILIM MESAFESİ (Kolmogorov-Smirnov)
+------------------------------------------------------------------------
+Özellik   Sınıf                     KS ist.     p (ort)     
+FTI       overt_hypothyroid         0.0588      0.7306      
+FTI       subclinical_hypothyroid   0.0343      0.8705      
+T3        overt_hypothyroid         0.0854      0.3290      
+T3        subclinical_hypothyroid   0.0658      0.1912      
+T4U       overt_hypothyroid         0.0705      0.5273      
+T4U       subclinical_hypothyroid   0.0468      0.5782      
+TSH       overt_hypothyroid         0.0379      0.9609      
+TSH       subclinical_hypothyroid   0.0816      0.0551      
+TT4       overt_hypothyroid         0.0689      0.5555      
+TT4       subclinical_hypothyroid   0.0343      0.8709      
+
+  → Düşük KS + yüksek p: sentetik dağılım gerçeğe yakın.
+    Yüksek KS + düşük p: SMOTE dağılımı kaydırmış olabilir.
+
+
+[R1-36] KLİNİK ARALIĞA KISITLAMA — DEĞERLENDİRME
+------------------------------------------------------------------------
+  Fizyolojik aralık ihlali sayısı: 0
+  → Kırpma (clipping) tabanlı bir kısıtlama HİÇBİR sentetik örneği
+    etkilemezdi; SMOTE'un interpolasyon doğası gereği üretilen
+    değerler zaten gözlemlenen aralıkta kalıyor. Dolayısıyla
+    #36'da önerilen kısıtlama bu veri seti için işlemsiz olurdu.
+    Asıl risk aralık ihlali değil, KOMBİNASYON gerçekçiliğidir
+    (yukarıdaki tutarsızlık tablosuna bakınız).

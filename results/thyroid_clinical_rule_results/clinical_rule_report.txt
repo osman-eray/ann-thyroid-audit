@@ -1,0 +1,52 @@
+========================================================================
+KLİNİK KURAL BASELINE vs ML — ann-thyroid
+R1-59: TSH/TT4 eşiklerine dayalı klinik kural baseline
+R1-60: ML'in klinik kurala göre kattığı pratik değer
+========================================================================
+
+KURAL: TSH>4.0 mIU/L & TT4<60.0 nmol/L → overt hypothyroid
+       TSH>4.0 & TT4≥60.0              → subclinical hypothyroid
+       aksi                                     → euthyroid
+
+Yöntem                    Macro-F1          Specificity       Accuracy        
+------------------------------------------------------------------------
+ClinicalRule_fixed        0.7762±0.0207   0.9720±0.0021   0.9202
+ClinicalRule_tuned        0.8845±0.0181   0.9905±0.0011   0.9729
+ML_Logistic Regression    0.8655±0.0183   0.9878±0.0026   0.9665
+ML_Random Forest          0.9623±0.0207   0.9955±0.0025   0.9903
+ML_XGBoost                0.9583±0.0216   0.9918±0.0047   0.9897
+
+
+SINIF BAZLI DUYARLILIK (sensitivity):
+------------------------------------------------------------------------
+Yöntem                    Overt hypo      Subclin. hypo   Euthyroid     
+ClinicalRule_fixed        0.8788          0.9865          0.9176        
+ClinicalRule_tuned        0.8788          0.9865          0.9745        
+ML_Logistic Regression    0.9758          0.9892          0.9650        
+ML_Random Forest          1.0000          0.9946          0.9898        
+ML_XGBoost                0.9848          0.9784          0.9905        
+
+
+ML'İN KURALA GÖRE KATKISI (ΔMacro-F1):
+------------------------------------------------------------------------
+  ML_Logistic Regression   vs ClinicalRule_fixed     ΔF1=+0.0893  ΔSpec=+0.0157
+  ML_Random Forest         vs ClinicalRule_fixed     ΔF1=+0.1861  ΔSpec=+0.0234
+  ML_XGBoost               vs ClinicalRule_fixed     ΔF1=+0.1821  ΔSpec=+0.0198
+  ML_Logistic Regression   vs ClinicalRule_tuned     ΔF1=-0.0190  ΔSpec=-0.0028
+  ML_Random Forest         vs ClinicalRule_tuned     ΔF1=+0.0778  ΔSpec=+0.0049
+  ML_XGBoost               vs ClinicalRule_tuned     ΔF1=+0.0738  ΔSpec=+0.0013
+
+
+OPTİMİZE EDİLEN EŞİKLER (train-fold, run başına):
+------------------------------------------------------------------------
+  TSH eşiği: medyan=6.0  aralık=[6.0, 6.0]
+  TT4 eşiği: medyan=60.0  aralık=[60.0, 60.0]
+
+
+HESAPLAMA MALİYETİ (ortalama, saniye):
+------------------------------------------------------------------------
+  ClinicalRule_fixed        0.011s
+  ClinicalRule_tuned        0.205s
+  ML_Logistic Regression    2.960s
+  ML_Random Forest          40.472s
+  ML_XGBoost                8.595s
