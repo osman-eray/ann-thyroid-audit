@@ -1,0 +1,7 @@
+mode,pair,mean_rho,sd_rho,mean_rho_squared,squared_mean_rho,n
+auto,HFS vs SHAP,0.6295,0.3024,0.4855,0.3963,40
+auto,HFS vs Permutation,0.597,0.2591,0.4218,0.3564,40
+auto,SHAP vs Permutation,0.8801,0.1301,0.7912,0.7747,40
+discrete,HFS vs SHAP,0.91,0.0885,0.8358,0.8281,40
+discrete,HFS vs Permutation,0.8274,0.1187,0.6983,0.6845,40
+discrete,SHAP vs Permutation,0.8877,0.0826,0.7946,0.788,40

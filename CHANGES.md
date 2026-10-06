@@ -99,3 +99,33 @@ Scripts 1–11 and the figure scripts are untouched in this round. This is delib
 discrete-estimation comparison is only like for like if the released scripts still reproduce the
 deposited per-split values exactly, so the estimator change lives in a separate script rather
 than as an edit to `1.thyroid_ablation_ann7200_SAMME.py`.
+
+
+---
+
+# Fourth revision (v1.0.3)
+
+No released script was modified. The release adds one script and its outputs.
+
+## Added
+
+| file | why |
+|---|---|
+| `code/explainability_by_mode.py` | R1 asked whether the agreement between the selection score and model reliance reported in Section 3.10 is itself a property of the released estimator. It is. The script reruns the ranking-agreement analysis under both estimators on identical folds and seeds. |
+| `results/explainability_by_mode_results/` | its three outputs: the per-split agreement table, the selected subsets under both modes, and the summary |
+
+Run under the released setting the script reproduces
+`thyroid_shap_perclass_results/ranking_agreement.csv` in all 120 rows, so the comparison turns on
+the `discrete_features` argument and nothing else.
+
+| Spearman rho | as released | discrete estimation |
+|---|---|---|
+| selection score vs SHAP | 0.630 +/- 0.302 | 0.910 +/- 0.089 |
+| selection score vs permutation importance | 0.597 +/- 0.259 | 0.827 +/- 0.119 |
+| SHAP vs permutation importance | 0.880 +/- 0.130 | 0.888 +/- 0.083 |
+
+## Not changed, and why
+
+Scripts 1-11, the figure scripts and `hfs_discrete_estimation.py` are untouched. As in v1.0.2 this
+is deliberate: the comparison is only like for like if the released scripts still reproduce the
+deposited per-split values exactly, so each estimator check lives in a script of its own.

@@ -153,6 +153,7 @@ Do not report "0 of 36 significant" as evidence of absence.
 | # | command | produces | answers |
 |---|---|---|---|
 | 5.1 | `python hfs_discrete_estimation.py` | `discrete_estimation_results/` — four CSVs | R1 third round, condition of acceptance |
+| 5.2 | `python explainability_by_mode.py` | `explainability_by_mode_results/` — three CSVs | R1 fourth round, point 3 |
 
 `hfs_discrete_estimation.py` runs the selection stage twice on the same folds and the same
 seeds: once exactly as released, and once with the binary indicators declared discrete in the
@@ -165,6 +166,12 @@ sweep under both settings, and reproduces the deposited values under the release
 The four outputs are `hfs_scores_by_mode.csv`, `hfs_selected_by_mode.csv`,
 `table7_row_by_mode.csv` and `table9_weight_sweep_by_mode.csv`. Table 9b in the paper is read
 off the last two.
+
+`explainability_by_mode.py` reruns the ranking-agreement analysis of script 9 twice on identical
+splits and seeds, changing only the same `discrete_features` argument. Under the released setting
+it reproduces `thyroid_shap_perclass_results/ranking_agreement.csv` row for row, so the two
+readings are like for like. Section 3.10 and the last three rows of Table 9b are read off its
+outputs. Permutation importance is scored on macro-F1, as the second revision adopted.
 
 
 ---
