@@ -1,7 +1,8 @@
 # ann-thyroid benchmark audit — code and data
 
-Code accompanying *A Controlled Audit of the ann-thyroid Benchmark*
-(Scientific Reports, submission 7c9aaee8-d21e-46eb-9b22-4614badd4bca).
+Code accompanying *Reported performance differences on the ann-thyroid benchmark reflect
+class labelling rather than method choice*, Scientific Reports (2026),
+https://doi.org/10.1038/s41598-026-76864-4
 
 Everything in this repository runs from the raw UCI files. No intermediate artefact is
 assumed to exist: `make_dataset.py` rebuilds the working dataset, and every table reported
@@ -221,3 +222,15 @@ The continuous attributes are distributed pre-scaled to [0,1]. The scaling const
 undocumented; they were recovered empirically and confirmed against the raw values in
 `allhypo`, and are applied only where the paper reports clinical units:
 age ×100, TSH ×1000, T3 ×100, TT4 ×1000, T4U ×10, FTI ×1000.
+
+---
+
+## Citation
+
+If you use this code or data, please cite the article:
+
+Eray, O. Reported performance differences on the ann-thyroid benchmark reflect class
+labelling rather than method choice. *Scientific Reports* (2026).
+https://doi.org/10.1038/s41598-026-76864-4
+
+and the code archive: https://doi.org/10.5281/zenodo.22296479
