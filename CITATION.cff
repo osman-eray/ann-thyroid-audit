@@ -16,7 +16,8 @@ authors:
 repository-code: 'https://github.com/osman-eray/ann-thyroid-audit'   
 license: MIT
 version: 1.0.3
-date-released: '2026-10-5'   
+date-released: '2026-10-05'
+doi: 10.5281/zenodo.22296479
 keywords:
   - machine learning
   - benchmark audit
@@ -31,3 +32,15 @@ abstract: >-
   files distributed in the same UCI directory, and evaluates whether reported
   performance differences between feature-selection methods and class-balancing
   strategies are large enough to matter.
+preferred-citation:
+  type: article
+  title: >-
+    Reported performance differences on the ann-thyroid benchmark reflect
+    class labelling rather than method choice
+  authors:
+    - family-names: Eray
+      given-names: Osman
+      orcid: 'https://orcid.org/0000-0002-3534-962X'
+  journal: Scientific Reports
+  year: 2026
+  doi: 10.1038/s41598-026-76864-4
